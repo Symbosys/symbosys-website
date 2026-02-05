@@ -1,0 +1,17 @@
+export { StatsSection } from "./StatsSection";
+export { ServicesFixedMarquee } from "./ServicesFixedMarquee";
+export { ServicesIconsMarquee } from "./ServicesIconsMarquee";
+export { SymbosysTechnologies } from "./SymbosysTechnologies";
+export { ExpertSoftware } from "./ExpertSoftware";
+export { TeamAndSpecializations } from "./TeamAndSpecializations";
+export { IndustriesSection } from "./IndustriesSection";
+export { WorkProcessSection } from "./WorkProcessSection";
+export { WhyChooseUs } from "./WhyChooseUs";
+export { BoostBusiness } from "./BoostBusiness";
+export { RecentProjects } from "./RecentProjects";
+export { BusinessBenefits } from "./BusinessBenefits";
+export { WhyChooseSymbosys } from "./WhyChooseSymbosys";
+export { BuildProjectTogether } from "./BuildProjectTogether";
+export { GetInTouch } from "./GetInTouch";
+export { ContactCTA } from "./ContactCTA";
+export { Hero } from "./Hero";
