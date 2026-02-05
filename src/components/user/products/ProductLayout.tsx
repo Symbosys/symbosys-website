@@ -181,7 +181,7 @@ export function ProductLayout({
                                         ) : (
                                             section.items?.map((item, i) => (
                                                 <div key={i} className="group/item">
-                                                    <h3 className="font-semibold text-text-main mb-1.5 text-base group-hover/item:text-[var(--theme)] transition-colors" style={{ ['--theme' as string]: themeColor }}>
+                                                    <h3 className="font-semibold text-text-main mb-1.5 text-base group-hover/item:text-(--theme) transition-colors" style={{ ['--theme' as string]: themeColor }}>
                                                         {item.subtitle}
                                                     </h3>
                                                     <p className="text-text-muted text-sm leading-relaxed">

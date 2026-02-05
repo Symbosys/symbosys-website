@@ -84,7 +84,7 @@ export function ProductsShowcase() {
                     <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-text-main mb-10 leading-[1.1] tracking-tight">
                         Crafting Digital
                         <br />
-                        <span className="bg-clip-text text-transparent bg-linear-to-r from-brand via-brand-blue to-brand-purple animate-gradient bg-[length:200%_auto]">
+                        <span className="bg-clip-text text-transparent bg-linear-to-r from-brand via-brand-blue to-brand-purple animate-gradient bg-size-[200%_auto]">
                             Masterpieces
                         </span>
                     </h1>
@@ -134,7 +134,7 @@ export function ProductsShowcase() {
                         </div>
 
                         {/* Content */}
-                        <h3 className="font-bold text-text-main text-lg mb-2 group-hover:text-[var(--theme-color)] transition-colors duration-300 leading-snug">
+                        <h3 className="font-bold text-text-main text-lg mb-2 group-hover:text-(--theme-color) transition-colors duration-300 leading-snug">
                             {product.name}
                         </h3>
                         <p className="text-text-muted text-sm leading-relaxed line-clamp-2 mb-5">
@@ -142,7 +142,7 @@ export function ProductsShowcase() {
                         </p>
 
                         {/* Arrow Indicator */}
-                        <div className="flex items-center gap-2 text-[var(--theme-color)]">
+                        <div className="flex items-center gap-2 text-(--theme-color)">
                             <span className="text-sm font-semibold">Learn more</span>
                             <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
                         </div>
