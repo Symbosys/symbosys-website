@@ -14,16 +14,16 @@ export function BuildProjectTogether() {
                         <div className="inline-block px-4 py-1.5 rounded-full bg-brand/10 text-brand text-sm font-bold mb-6">
                             Collaboration
                         </div>
-                        <h2 className="text-3xl md:text-5xl font-bold text-text-main mb-6 leading-tight">
+                        <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white mb-6 leading-tight">
                             Let&apos;s Build Your <br />
                             <span className="text-transparent bg-clip-text bg-linear-to-r from-brand to-brand-blue">
                                 Project Together
                             </span>
                         </h2>
-                        <h3 className="text-xl font-semibold text-text-main mb-6">
+                        <h3 className="text-xl font-semibold text-text-main dark:text-white mb-6">
                             Collaborate with our team of experts to bring your vision to life.
                         </h3>
-                        <p className="text-text-muted leading-relaxed mb-6">
+                        <p className="text-text-muted dark:text-gray-400 leading-relaxed mb-6">
                             At Symbosys Technologies, we believe in the power of
                             collaboration. Our team of experts is dedicated to bringing your
                             vision to life by working closely with you to understand your
@@ -31,7 +31,7 @@ export function BuildProjectTogether() {
                             vision or need guidance in shaping your ideas, we&apos;re here to
                             help.
                         </p>
-                        <p className="text-text-muted leading-relaxed mb-8">
+                        <p className="text-text-muted dark:text-gray-400 leading-relaxed mb-8">
                             Our experienced software developers, website developers, graphic
                             designers and project managers are committed to delivering custom
                             solutions that not only meet but exceed your expectations. From
@@ -52,7 +52,7 @@ export function BuildProjectTogether() {
                     <div className="lg:w-1/2 flex flex-col gap-8">
                         {/* Video Block */}
                         <div>
-                            <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl border-4 border-white/50 group">
+                            <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl border-4 border-white/50 dark:border-white/10 group">
                                 <iframe
                                     className="w-full h-full"
                                     src="https://www.youtube.com/embed/DoNe5V0SbsE?si=featured-video"
@@ -61,7 +61,7 @@ export function BuildProjectTogether() {
                                     allowFullScreen
                                 ></iframe>
                             </div>
-                            <p className="text-center text-sm text-text-muted mt-4 italic">
+                            <p className="text-center text-sm text-text-muted dark:text-gray-400 mt-4 italic">
                                 Watch how we bring ideas to reality
                             </p>
                         </div>
@@ -70,7 +70,7 @@ export function BuildProjectTogether() {
                         <div className="w-full relative mt-auto">
                             <div className="absolute inset-0 bg-linear-to-r from-transparent via-brand/5 to-transparent rounded-3xl"></div>
                             <div className="relative glass-card rounded-3xl p-6 overflow-hidden hover:scale-[1.01] transition-transform duration-500">
-                                <h4 className="text-center text-lg font-bold text-text-main mb-4">
+                                <h4 className="text-center text-lg font-bold text-text-main dark:text-white mb-4">
                                     Our Collaborative Workflow
                                 </h4>
                                 <div className="relative w-full aspect-2/1">
@@ -78,7 +78,7 @@ export function BuildProjectTogether() {
                                         src="/home/Project_Together.webp"
                                         alt="Project Development Lifecycle"
                                         fill
-                                        className="object-contain"
+                                        className="object-contain mix-blend-multiply dark:mix-blend-screen dark:opacity-90"
                                     />
                                 </div>
                             </div>

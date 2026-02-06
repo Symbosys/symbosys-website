@@ -74,21 +74,21 @@ export function ProductsShowcase() {
             {/* Hero Header with enhanced design */}
             <div className="text-center mb-24 relative">
                 {/* Decorative elements */}
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 size-96 bg-brand/5 rounded-full blur-3xl pointer-events-none"></div>
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 size-96 bg-brand/5 dark:bg-brand/10 rounded-full blur-3xl pointer-events-none"></div>
 
                 <div className="relative">
                     <div className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-brand/10 text-brand text-sm font-bold mb-8 border border-brand/20 shadow-lg shadow-brand/5">
                         <span className="material-symbols-outlined text-base animate-pulse">auto_awesome</span>
                         Digital Excellence
                     </div>
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-text-main mb-10 leading-[1.1] tracking-tight">
+                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-text-main dark:text-white mb-10 leading-[1.1] tracking-tight">
                         Crafting Digital
                         <br />
                         <span className="bg-clip-text text-transparent bg-linear-to-r from-brand via-brand-blue to-brand-purple animate-gradient bg-size-[200%_auto]">
                             Masterpieces
                         </span>
                     </h1>
-                    <p className="text-text-muted text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed font-medium">
+                    <p className="text-text-muted dark:text-gray-400 text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed font-medium">
                         From stunning websites to powerful enterprise software and
                         innovative mobile apps — we bring your digital vision to life.
                     </p>
@@ -102,21 +102,21 @@ export function ProductsShowcase() {
                     { value: "500+", label: "Projects Delivered", icon: "rocket_launch", color: "from-emerald-500 to-teal-500" },
                     { value: "99%", label: "Client Satisfaction", icon: "sentiment_very_satisfied", color: "from-amber-500 to-orange-500" },
                 ].map((stat, idx) => (
-                    <div key={idx} className="group relative bg-white/60 backdrop-blur-xl border border-white/50 rounded-3xl p-8 hover:bg-white hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 min-w-[180px]">
+                    <div key={idx} className="group relative glass-panel rounded-3xl p-8 hover:-translate-y-1 transition-all duration-500 min-w-[180px]">
                         <div className={`size-12 rounded-2xl bg-linear-to-br ${stat.color} flex items-center justify-center text-white shadow-lg mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}>
                             <span className="material-symbols-outlined text-2xl">{stat.icon}</span>
                         </div>
-                        <div className="text-4xl md:text-5xl font-bold text-text-main mb-1">{stat.value}</div>
-                        <div className="text-text-muted text-sm font-medium">{stat.label}</div>
+                        <div className="text-4xl md:text-5xl font-bold text-text-main dark:text-white mb-1">{stat.value}</div>
+                        <div className="text-text-muted dark:text-gray-400 text-sm font-medium">{stat.label}</div>
                     </div>
                 ))}
             </div>
 
             {/* Section Divider */}
             <div className="flex items-center gap-4 mb-12">
-                <div className="h-px flex-1 bg-linear-to-r from-transparent via-brand/20 to-transparent"></div>
-                <span className="text-text-muted font-medium text-sm tracking-wide uppercase">Our Solutions</span>
-                <div className="h-px flex-1 bg-linear-to-r from-transparent via-brand/20 to-transparent"></div>
+                <div className="h-px flex-1 bg-linear-to-r from-transparent via-brand/20 dark:via-brand/40 to-transparent"></div>
+                <span className="text-text-muted dark:text-gray-400 font-medium text-sm tracking-wide uppercase">Our Solutions</span>
+                <div className="h-px flex-1 bg-linear-to-r from-transparent via-brand/20 dark:via-brand/40 to-transparent"></div>
             </div>
 
             {/* Products Grid */}
@@ -126,7 +126,7 @@ export function ProductsShowcase() {
                         key={idx}
                         href={getProductLink(product.name)}
                         style={{ '--theme-color': product.color } as React.CSSProperties}
-                        className="group relative bg-white/80 backdrop-blur-sm border border-gray-100 rounded-2xl p-6 hover:bg-white hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-200/50 hover:border-gray-200 transition-all duration-300 cursor-pointer block"
+                        className="group relative glass-card rounded-2xl p-6 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 cursor-pointer block"
                     >
                         {/* Icon */}
                         <div className={`size-12 rounded-xl bg-linear-to-br ${product.gradient} flex items-center justify-center text-white shadow-lg mb-5 group-hover:scale-105 transition-transform duration-300`}>
@@ -134,10 +134,10 @@ export function ProductsShowcase() {
                         </div>
 
                         {/* Content */}
-                        <h3 className="font-bold text-text-main text-lg mb-2 group-hover:text-(--theme-color) transition-colors duration-300 leading-snug">
+                        <h3 className="font-bold text-text-main dark:text-white text-lg mb-2 group-hover:text-(--theme-color) transition-colors duration-300 leading-snug">
                             {product.name}
                         </h3>
-                        <p className="text-text-muted text-sm leading-relaxed line-clamp-2 mb-5">
+                        <p className="text-text-muted dark:text-gray-400 text-sm leading-relaxed line-clamp-2 mb-5">
                             {product.description}
                         </p>
 
@@ -153,9 +153,9 @@ export function ProductsShowcase() {
             {/* Enhanced Bottom CTA */}
             <div className="mt-32 relative">
                 {/* Background decoration */}
-                <div className="absolute inset-0 bg-linear-to-r from-brand/5 via-brand-blue/5 to-brand-purple/5 rounded-4xl blur-2xl"></div>
+                <div className="absolute inset-0 bg-linear-to-r from-brand/5 via-brand-blue/5 to-brand-purple/5 dark:from-brand/10 dark:via-brand-blue/10 dark:to-brand-purple/10 rounded-4xl blur-2xl"></div>
 
-                <div className="relative glass-card flex flex-col lg:flex-row items-center gap-8 lg:gap-16 p-10 lg:p-16 rounded-4xl border border-white/50 overflow-hidden">
+                <div className="relative glass-card flex flex-col lg:flex-row items-center gap-8 lg:gap-16 p-10 lg:p-16 rounded-4xl overflow-hidden">
                     {/* Decorative elements */}
                     <div className="absolute -top-40 -left-40 size-80 bg-brand/10 rounded-full blur-3xl"></div>
                     <div className="absolute -bottom-40 -right-40 size-80 bg-brand-blue/10 rounded-full blur-3xl"></div>
@@ -165,16 +165,16 @@ export function ProductsShowcase() {
                             <span className="material-symbols-outlined text-sm">handshake</span>
                             Let&apos;s Collaborate
                         </div>
-                        <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-main mb-4 leading-tight">
+                        <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-main dark:text-white mb-4 leading-tight">
                             Can&apos;t find what you need?
                         </h3>
-                        <p className="text-text-muted text-lg max-w-lg">
+                        <p className="text-text-muted dark:text-gray-400 text-lg max-w-lg mx-auto lg:mx-0">
                             We build custom solutions tailored to your unique requirements. Let&apos;s discuss your vision.
                         </p>
                     </div>
                     <Link
                         href="/contact"
-                        className="group relative overflow-hidden shrink-0 px-10 py-5 bg-text-main text-white font-bold rounded-full shadow-2xl hover:shadow-brand/30 hover:scale-105 active:scale-95 transition-all duration-300"
+                        className="group relative overflow-hidden shrink-0 px-10 py-5 bg-text-main dark:bg-gray-100 text-white dark:text-gray-900 font-bold rounded-full shadow-2xl hover:shadow-brand/30 hover:scale-105 active:scale-95 transition-all duration-300"
                     >
                         <span className="relative z-10 flex items-center gap-3 text-lg">
                             Get Custom Quote

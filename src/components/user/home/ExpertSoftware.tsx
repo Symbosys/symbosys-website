@@ -18,14 +18,14 @@ export function ExpertSoftware() {
                         Expert Solutions
                     </div>
 
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-main mb-4 leading-tight">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-main dark:text-white mb-4 leading-tight">
                         Elevating your digital presence with{" "}
                         <span className="text-transparent bg-clip-text bg-linear-to-r from-brand-purple to-brand-blue">
                             Expert Software Services
                         </span>
                     </h2>
 
-                    <p className="text-text-muted text-lg leading-relaxed mb-6">
+                    <p className="text-text-muted dark:text-gray-400 text-lg leading-relaxed mb-6">
                         Transform Your Business with Expert Software Solutions. Our advanced
                         software solutions are designed to streamline operations and improve
                         customer service for businesses to thrive. Utilizing our technology,
@@ -33,7 +33,7 @@ export function ExpertSoftware() {
                         growth, strengthening their market leadership.
                     </p>
 
-                    <p className="text-text-main font-semibold mb-4">
+                    <p className="text-text-main dark:text-gray-200 font-semibold mb-4">
                         Discover our suite of highly interactive and customer-engaging
                         software offerings:
                     </p>
@@ -43,21 +43,21 @@ export function ExpertSoftware() {
                         {offerings.map((offering, index) => (
                             <div
                                 key={index}
-                                className="flex items-center gap-3 p-3 rounded-xl bg-white/50 backdrop-blur-sm border border-white/60 hover:border-brand-purple/30 hover:bg-white/70 transition-all group cursor-pointer"
+                                className="flex items-center gap-3 p-3 rounded-xl glass-card hover:border-brand-purple/30 transition-all group cursor-pointer"
                             >
                                 <div className="size-10 rounded-lg bg-linear-to-br from-brand-purple to-brand-blue flex items-center justify-center text-white group-hover:scale-110 transition-transform shadow-md">
                                     <span className="material-symbols-outlined text-lg">
                                         {offering.icon}
                                     </span>
                                 </div>
-                                <span className="text-text-main font-medium text-sm">
+                                <span className="text-text-main dark:text-gray-200 font-medium text-sm">
                                     {offering.name}
                                 </span>
                             </div>
                         ))}
                     </div>
 
-                    <p className="text-text-muted text-base mb-6 italic">
+                    <p className="text-text-muted dark:text-gray-400 text-base mb-6 italic">
                         Join us at Symbosys, where every solution is a testament to our
                         commitment to your success.
                     </p>
@@ -72,14 +72,14 @@ export function ExpertSoftware() {
 
                 {/* Right: Image */}
                 <div className="relative">
-                    <div className="absolute inset-0 bg-brand-purple/5 rounded-4xl -rotate-3 scale-95 blur-sm"></div>
+                    <div className="absolute inset-0 bg-brand-purple/5 dark:bg-brand-purple/10 rounded-4xl -rotate-3 scale-95 blur-sm"></div>
                     <div className="relative glass-card rounded-4xl p-8 overflow-hidden group">
                         <div className="relative w-full aspect-square max-w-md mx-auto">
                             <Image
                                 src="/home/ExpertSoftware.webp"
                                 alt="Expert Software Solutions"
                                 fill
-                                className="object-contain group-hover:scale-105 transition-transform duration-500"
+                                className="object-contain group-hover:scale-105 transition-transform duration-500 mix-blend-multiply dark:mix-blend-screen dark:opacity-90"
                                 priority
                             />
                         </div>

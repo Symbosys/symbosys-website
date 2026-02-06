@@ -36,12 +36,12 @@ export function WorkProcessSection() {
                         <div className="text-6xl md:text-8xl font-bold text-transparent bg-clip-text bg-linear-to-br from-brand to-brand-blue">
                             8+
                         </div>
-                        <div className="text-xl md:text-2xl font-bold text-text-main">
+                        <div className="text-xl md:text-2xl font-bold text-text-main dark:text-white">
                             Years of Excellence
                         </div>
                     </div>
                     <div className="h-px md:h-24 w-full md:w-px bg-brand/20"></div>
-                    <p className="text-lg md:text-xl text-text-muted leading-relaxed">
+                    <p className="text-lg md:text-xl text-text-muted dark:text-gray-400 leading-relaxed">
                         We are dedicated to achieving results and surpassing clients&apos;
                         expectations. The joy and satisfaction of our clients are our
                         driving force, pushing us to strive further.
@@ -54,7 +54,7 @@ export function WorkProcessSection() {
                 <div className="inline-block px-4 py-1.5 rounded-full bg-brand/10 text-brand text-sm font-bold mb-4">
                     How We Work
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-text-main">
+                <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white">
                     Our Work Process
                 </h2>
             </div>
@@ -63,7 +63,7 @@ export function WorkProcessSection() {
                 {processes.map((process, index) => (
                     <div
                         key={index}
-                        className="glass-card p-8 rounded-3xl relative overflow-hidden group hover:bg-white/90 transition-all"
+                        className="glass-card p-8 rounded-3xl relative overflow-hidden group transition-all"
                     >
                         <div className="absolute top-0 right-0 p-4 opacity-10 font-bold text-6xl text-brand select-none">
                             0{index + 1}
@@ -73,10 +73,10 @@ export function WorkProcessSection() {
                                 {process.icon}
                             </span>
                         </div>
-                        <h3 className="text-xl font-bold text-text-main mb-3">
+                        <h3 className="text-xl font-bold text-text-main dark:text-white mb-3">
                             {process.title}
                         </h3>
-                        <p className="text-text-muted leading-relaxed">
+                        <p className="text-text-muted dark:text-gray-400 leading-relaxed">
                             {process.description}
                         </p>
                     </div>

@@ -35,10 +35,10 @@ export function PerksAndBenefits() {
     return (
         <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32">
             <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-5xl font-bold text-text-main mb-6">
+                <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white mb-6">
                     Why <span className="text-brand">Symbosys?</span>
                 </h2>
-                <p className="text-text-muted text-lg max-w-2xl mx-auto">
+                <p className="text-text-muted dark:text-gray-400 text-lg max-w-2xl mx-auto">
                     We believe in taking care of our people. Here is what you can expect when you join our team.
                 </p>
             </div>
@@ -47,17 +47,17 @@ export function PerksAndBenefits() {
                 {perks.map((perk, index) => (
                     <div
                         key={index}
-                        className="glass-card p-8 rounded-3xl border border-white/40 hover:border-brand/30 transition-all duration-300 group hover:-translate-y-1 hover:shadow-xl hover:shadow-brand/5"
+                        className="glass-card p-8 rounded-3xl transition-all duration-300 group hover:-translate-y-1 hover:shadow-xl hover:shadow-brand/5"
                     >
-                        <div className="size-14 rounded-2xl bg-brand/5 flex items-center justify-center text-brand mb-6 group-hover:bg-brand group-hover:text-white transition-all duration-300 shadow-sm">
+                        <div className="size-14 rounded-2xl bg-brand/5 dark:bg-brand/10 flex items-center justify-center text-brand mb-6 group-hover:bg-brand group-hover:text-white transition-all duration-300 shadow-sm">
                             <span className="material-symbols-outlined text-3xl">
                                 {perk.icon}
                             </span>
                         </div>
-                        <h3 className="text-xl font-bold text-text-main mb-3">
+                        <h3 className="text-xl font-bold text-text-main dark:text-white mb-3">
                             {perk.title}
                         </h3>
-                        <p className="text-text-muted leading-relaxed">
+                        <p className="text-text-muted dark:text-gray-400 leading-relaxed">
                             {perk.desc}
                         </p>
                     </div>

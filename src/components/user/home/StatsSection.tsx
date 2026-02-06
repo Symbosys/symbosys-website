@@ -50,7 +50,7 @@ export function StatsSection() {
                                     {stat.suffix}
                                 </span>
                             </div>
-                            <p className="text-sm md:text-base text-text-muted font-medium">
+                            <p className="text-sm md:text-base text-text-muted dark:text-gray-400 font-medium">
                                 {stat.label}
                             </p>
                         </div>

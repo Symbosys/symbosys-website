@@ -22,9 +22,9 @@ export function WhyChooseSymbosys() {
 
     return (
         <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32">
-            <div className="glass-panel rounded-4xl p-8 md:p-16 bg-linear-to-b from-white/40 to-white/10">
+            <div className="glass-panel rounded-4xl p-8 md:p-16">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-5xl font-bold text-text-main">
+                    <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white">
                         Why Choose <span className="text-brand">Symbosys</span>
                     </h2>
                 </div>
@@ -35,15 +35,15 @@ export function WhyChooseSymbosys() {
                             key={index}
                             className="flex flex-col items-center text-center group"
                         >
-                            <div className="size-20 rounded-full bg-white shadow-xl flex items-center justify-center text-brand mb-6 group-hover:scale-110 group-hover:bg-brand group-hover:text-white transition-all duration-300">
+                            <div className="size-20 rounded-full bg-white dark:bg-gray-800 shadow-xl flex items-center justify-center text-brand mb-6 group-hover:scale-110 group-hover:bg-brand group-hover:text-white transition-all duration-300">
                                 <span className="material-symbols-outlined text-4xl">
                                     {reason.icon}
                                 </span>
                             </div>
-                            <h3 className="text-xl font-bold text-text-main mb-4">
+                            <h3 className="text-xl font-bold text-text-main dark:text-white mb-4">
                                 {reason.title}
                             </h3>
-                            <p className="text-text-muted leading-relaxed text-sm">
+                            <p className="text-text-muted dark:text-gray-400 leading-relaxed text-sm">
                                 {reason.description}
                             </p>
                         </div>

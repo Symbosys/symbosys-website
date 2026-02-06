@@ -59,7 +59,7 @@ export function BoostBusiness() {
     return (
         <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32">
             <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-5xl font-bold text-text-main mb-6 leading-tight">
+                <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white mb-6 leading-tight">
                     Symbosys services that Boost your <br />
                     <span className="text-brand">business Online & Offline</span>
                 </h2>
@@ -71,15 +71,15 @@ export function BoostBusiness() {
                         key={index}
                         className="glass-card p-8 rounded-3xl hover:-translate-y-2 transition-all duration-300 group cursor-default"
                     >
-                        <div className="size-14 rounded-2xl bg-brand/5 flex items-center justify-center text-brand mb-6 group-hover:bg-brand group-hover:text-white transition-colors duration-300 shadow-sm">
+                        <div className="size-14 rounded-2xl bg-brand/5 dark:bg-brand/10 flex items-center justify-center text-brand mb-6 group-hover:bg-brand group-hover:text-white transition-colors duration-300 shadow-sm">
                             <span className="material-symbols-outlined text-3xl">
                                 {service.icon}
                             </span>
                         </div>
-                        <h3 className="text-xl font-bold text-text-main mb-3">
+                        <h3 className="text-xl font-bold text-text-main dark:text-white mb-3">
                             {service.title}
                         </h3>
-                        <p className="text-text-muted leading-relaxed text-sm">
+                        <p className="text-text-muted dark:text-gray-300 leading-relaxed text-sm">
                             {service.description}
                         </p>
                     </div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar, Footer } from "@/components/layout";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -26,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="light">
+    <html lang="en" className="light" suppressHydrationWarning>
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
@@ -34,11 +35,13 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${spaceGrotesk.variable} ${geistMono.variable} font-sans antialiased flex flex-col min-h-screen`}
+        className={`${spaceGrotesk.variable} ${geistMono.variable} font-sans antialiased flex flex-col min-h-screen bg-background text-foreground transition-colors duration-300`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <ThemeProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

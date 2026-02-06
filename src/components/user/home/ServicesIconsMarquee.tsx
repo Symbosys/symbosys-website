@@ -17,14 +17,14 @@ export function ServicesIconsMarquee() {
                 <span className="inline-block px-4 py-1.5 rounded-full bg-brand/10 text-brand text-sm font-bold mb-4">
                     What We Offer
                 </span>
-                <h2 className="text-3xl md:text-4xl font-bold text-text-main">
+                <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white">
                     Comprehensive IT Solutions
                 </h2>
             </div>
 
             {/* Gradient Masks */}
-            <div className="absolute left-0 top-0 bottom-0 w-32 md:w-64 bg-linear-to-r from-surface to-transparent z-20 pointer-events-none"></div>
-            <div className="absolute right-0 top-0 bottom-0 w-32 md:w-64 bg-linear-to-l from-surface to-transparent z-20 pointer-events-none"></div>
+            <div className="absolute left-0 top-0 bottom-0 w-32 md:w-64 bg-linear-to-r from-surface dark:from-gray-950 to-transparent z-20 pointer-events-none"></div>
+            <div className="absolute right-0 top-0 bottom-0 w-32 md:w-64 bg-linear-to-l from-surface dark:from-gray-950 to-transparent z-20 pointer-events-none"></div>
 
             {/* First Row - Left to Right */}
             <div className="flex whitespace-nowrap overflow-hidden mb-6">
@@ -39,7 +39,7 @@ export function ServicesIconsMarquee() {
                                     {service.icon}
                                 </span>
                             </div>
-                            <span className="text-text-main font-semibold text-lg whitespace-nowrap">
+                            <span className="text-text-main dark:text-gray-200 font-semibold text-lg whitespace-nowrap">
                                 {service.name}
                             </span>
                         </div>
@@ -61,7 +61,7 @@ export function ServicesIconsMarquee() {
                                         {service.icon}
                                     </span>
                                 </div>
-                                <span className="text-text-main font-semibold text-lg whitespace-nowrap">
+                                <span className="text-text-main dark:text-gray-200 font-semibold text-lg whitespace-nowrap">
                                     {service.name}
                                 </span>
                             </div>

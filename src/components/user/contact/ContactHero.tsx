@@ -7,10 +7,10 @@ export function ContactHero() {
                     24/7 Support
                 </span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-text-main mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-text-main dark:text-white mb-6">
                 Let&apos;s Start a <span className="text-brand">Conversation</span>
             </h1>
-            <p className="text-xl text-text-muted max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl text-text-muted dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
                 Have a project idea? Want to join our team? Or just have a question? We
                 are here to help you build your digital future.
             </p>

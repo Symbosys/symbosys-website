@@ -7,14 +7,14 @@ export function MissionAndVision() {
             <div className="flex flex-col lg:flex-row gap-12 items-center mb-32">
                 {/* Image Left */}
                 <div className="w-full lg:w-1/2 relative order-2 lg:order-1">
-                    <div className="absolute inset-0 bg-brand-blue/5 rounded-4xl rotate-3 scale-95 blur-sm"></div>
+                    <div className="absolute inset-0 bg-brand-blue/5 dark:bg-brand-blue/10 rounded-4xl rotate-3 scale-95 blur-sm"></div>
                     <div className="relative glass-card rounded-4xl p-8 overflow-hidden group">
                         <div className="relative w-full aspect-video">
                             <Image
                                 src="/about/mission.webp"
                                 alt="Our Mission"
                                 fill
-                                className="object-contain group-hover:scale-105 transition-transform duration-500"
+                                className="object-contain group-hover:scale-105 transition-transform duration-500 mix-blend-multiply dark:mix-blend-screen dark:opacity-90"
                             />
                         </div>
                         {/* Decors */}
@@ -26,10 +26,10 @@ export function MissionAndVision() {
                     <div className="inline-block px-4 py-1.5 rounded-full bg-brand-blue/10 text-brand-blue text-sm font-bold mb-4">
                         Purpose
                     </div>
-                    <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-6">
+                    <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-6">
                         Our <span className="text-transparent bg-clip-text bg-linear-to-r from-brand-blue to-cyan-500">Mission</span>
                     </h2>
-                    <div className="space-y-4 text-text-muted text-lg leading-relaxed">
+                    <div className="space-y-4 text-text-muted dark:text-gray-400 text-lg leading-relaxed">
                         <p>
                             Welcome to Symbosys, where innovation meets expertise in the realm
                             of Information Technology. We're your go-to IT partner, dedicated
@@ -57,10 +57,10 @@ export function MissionAndVision() {
                     <div className="inline-block px-4 py-1.5 rounded-full bg-brand-purple/10 text-brand-purple text-sm font-bold mb-4">
                         Future
                     </div>
-                    <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-6">
+                    <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-6">
                         Our <span className="text-transparent bg-clip-text bg-linear-to-r from-brand-purple to-pink-500">Vision</span>
                     </h2>
-                    <div className="space-y-4 text-text-muted text-lg leading-relaxed">
+                    <div className="space-y-4 text-text-muted dark:text-gray-400 text-lg leading-relaxed">
                         <p>
                             Our vision is to provide excellent quality in every touch point of
                             the client’s relationship, from the first interaction to continued
@@ -82,14 +82,14 @@ export function MissionAndVision() {
                 </div>
                 {/* Image Right */}
                 <div className="w-full lg:w-1/2 relative order-2">
-                    <div className="absolute inset-0 bg-brand-purple/5 rounded-4xl -rotate-3 scale-95 blur-sm"></div>
+                    <div className="absolute inset-0 bg-brand-purple/5 dark:bg-brand-purple/10 rounded-4xl -rotate-3 scale-95 blur-sm"></div>
                     <div className="relative glass-card rounded-4xl p-8 overflow-hidden group">
                         <div className="relative w-full aspect-video">
                             <Image
                                 src="/about/vision.webp"
                                 alt="Our Vision"
                                 fill
-                                className="object-contain group-hover:scale-105 transition-transform duration-500"
+                                className="object-contain group-hover:scale-105 transition-transform duration-500 mix-blend-multiply dark:mix-blend-screen dark:opacity-90"
                             />
                         </div>
                         {/* Decors */}

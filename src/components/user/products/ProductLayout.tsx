@@ -33,12 +33,12 @@ export function ProductLayout({
     ctaDescription,
 }: ProductLayoutProps) {
     return (
-        <div className="bg-surface text-text-main font-sans antialiased relative overflow-x-hidden min-h-screen">
+        <div className="bg-surface dark:bg-gray-950 text-text-main dark:text-gray-100 font-sans antialiased selection:bg-brand/20 selection:text-brand dark:selection:bg-brand/40 relative overflow-x-hidden min-h-screen transition-colors duration-300">
             {/* Liquid Light Background - Animated Gradient Orbs */}
             <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
                 {/* Primary flowing orb */}
                 <div
-                    className="absolute w-[800px] h-[800px] rounded-full blur-[120px] opacity-[0.15]"
+                    className="absolute w-[800px] h-[800px] rounded-full blur-[120px] opacity-[0.15] dark:opacity-[0.2]"
                     style={{
                         background: `radial-gradient(circle, ${themeColor} 0%, transparent 70%)`,
                         top: '-20%',
@@ -48,7 +48,7 @@ export function ProductLayout({
                 />
                 {/* Secondary flowing orb */}
                 <div
-                    className="absolute w-[600px] h-[600px] rounded-full blur-[100px] opacity-[0.12]"
+                    className="absolute w-[600px] h-[600px] rounded-full blur-[100px] opacity-[0.12] dark:opacity-[0.18]"
                     style={{
                         background: `radial-gradient(circle, ${themeColor} 0%, transparent 70%)`,
                         bottom: '-15%',
@@ -58,7 +58,7 @@ export function ProductLayout({
                 />
                 {/* Tertiary accent orb */}
                 <div
-                    className="absolute w-[400px] h-[400px] rounded-full blur-[80px] opacity-[0.08]"
+                    className="absolute w-[400px] h-[400px] rounded-full blur-[80px] opacity-[0.08] dark:opacity-[0.12]"
                     style={{
                         background: `linear-gradient(135deg, ${themeColor}, transparent)`,
                         top: '40%',
@@ -68,13 +68,13 @@ export function ProductLayout({
                 />
                 {/* Aurora Flow overlay */}
                 <div
-                    className="absolute inset-0 opacity-[0.03]"
+                    className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05]"
                     style={{
                         background: `linear-gradient(135deg, #7C8CFF 0%, #B77CFF 45%, #FF8CCF 100%)`
                     }}
                 />
-                {/* Base white overlay for readability */}
-                <div className="absolute inset-0 bg-linear-to-b from-white/95 via-white/90 to-white/95" />
+                {/* Base overlay for readability */}
+                <div className="absolute inset-0 bg-linear-to-b from-white/95 via-white/90 to-white/95 dark:from-gray-950/95 dark:via-gray-950/90 dark:to-gray-950/95" />
             </div>
 
 
@@ -83,7 +83,7 @@ export function ProductLayout({
                 <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative">
                     {/* Hero-specific glow */}
                     <div
-                        className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full blur-[100px] opacity-[0.2] pointer-events-none"
+                        className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full blur-[100px] opacity-[0.2] dark:opacity-[0.3] pointer-events-none"
                         style={{ background: themeColor }}
                     />
 
@@ -103,7 +103,7 @@ export function ProductLayout({
                         </div>
 
                         {/* Title with enhanced gradient */}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-main mb-8 leading-tight">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-main dark:text-white mb-8 leading-tight">
                             {title}
                             <span
                                 className={`block bg-clip-text text-transparent bg-linear-to-r ${gradient} drop-shadow-sm`}
@@ -113,7 +113,7 @@ export function ProductLayout({
                         </h1>
 
                         {/* Intro Paragraph */}
-                        <p className="text-text-muted text-lg md:text-xl leading-relaxed max-w-4xl mx-auto mb-12">
+                        <p className="text-text-muted dark:text-gray-400 text-lg md:text-xl leading-relaxed max-w-4xl mx-auto mb-12">
                             {description}
                         </p>
 
@@ -141,10 +141,7 @@ export function ProductLayout({
                             {sections.map((section, idx) => (
                                 <div
                                     key={idx}
-                                    className="group relative bg-white/70 backdrop-blur-xl rounded-2xl p-8 border border-white/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
-                                    style={{
-                                        boxShadow: '0 4px 30px rgba(0,0,0,0.05), inset 0 1px 0 rgba(255,255,255,0.8)'
-                                    }}
+                                    className="group relative glass-card rounded-2xl p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
                                 >
                                     {/* Hover glow effect */}
                                     <div
@@ -165,7 +162,7 @@ export function ProductLayout({
                                             <span className="material-symbols-outlined text-2xl">{section.icon}</span>
                                         </div>
                                         <h2
-                                            className="text-xl font-bold text-text-main transition-colors duration-300 pt-3 group-hover:text-(--hover-color)"
+                                            className="text-xl font-bold text-text-main dark:text-white transition-colors duration-300 pt-3 group-hover:text-(--hover-color)"
                                             style={{ ['--hover-color' as string]: themeColor }}
                                         >
                                             {section.title}
@@ -175,16 +172,16 @@ export function ProductLayout({
                                     {/* Content */}
                                     <div className="space-y-5 pl-[72px] relative">
                                         {section.content ? (
-                                            <p className="text-text-muted text-sm leading-relaxed">
+                                            <p className="text-text-muted dark:text-gray-400 text-sm leading-relaxed">
                                                 {section.content}
                                             </p>
                                         ) : (
                                             section.items?.map((item, i) => (
                                                 <div key={i} className="group/item">
-                                                    <h3 className="font-semibold text-text-main mb-1.5 text-base group-hover/item:text-(--theme) transition-colors" style={{ ['--theme' as string]: themeColor }}>
+                                                    <h3 className="font-semibold text-text-main dark:text-white mb-1.5 text-base group-hover/item:text-(--theme) transition-colors" style={{ ['--theme' as string]: themeColor }}>
                                                         {item.subtitle}
                                                     </h3>
-                                                    <p className="text-text-muted text-sm leading-relaxed">
+                                                    <p className="text-text-muted dark:text-gray-400 text-sm leading-relaxed">
                                                         {item.text}
                                                     </p>
                                                 </div>
@@ -224,7 +221,7 @@ export function ProductLayout({
                                 <div className="flex flex-wrap justify-center gap-4">
                                     <Link
                                         href="/contact"
-                                        className="group inline-flex items-center gap-2 px-8 py-4 bg-white font-bold rounded-xl shadow-2xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden"
+                                        className="group inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-600 font-bold rounded-xl shadow-2xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden"
                                         style={{ color: themeColor }}
                                     >
                                         {/* Shine effect */}

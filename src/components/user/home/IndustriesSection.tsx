@@ -25,7 +25,7 @@ export function IndustriesSection() {
     return (
         <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32">
             <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-5xl font-bold text-text-main mb-6 leading-tight max-w-4xl mx-auto">
+                <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white mb-6 leading-tight max-w-4xl mx-auto">
                     We offer managed IT services that are tailored to meet the{" "}
                     <span className="text-brand">unique needs of your industry</span>
                 </h2>
@@ -35,14 +35,14 @@ export function IndustriesSection() {
                 {industries.map((industry, index) => (
                     <div
                         key={index}
-                        className="glass-card p-6 rounded-2xl flex flex-col items-center justify-center gap-4 hover:bg-white/80 transition-all duration-300 group cursor-default"
+                        className="glass-card p-6 rounded-2xl flex flex-col items-center justify-center gap-4 transition-all duration-300 group cursor-default"
                     >
-                        <div className="size-12 rounded-full bg-brand/5 flex items-center justify-center text-brand group-hover:bg-brand group-hover:text-white transition-colors duration-300">
+                        <div className="size-12 rounded-full bg-brand/5 dark:bg-brand/10 flex items-center justify-center text-brand group-hover:bg-brand group-hover:text-white transition-colors duration-300">
                             <span className="material-symbols-outlined text-2xl">
                                 {industry.icon}
                             </span>
                         </div>
-                        <span className="text-text-main font-medium text-center text-sm">
+                        <span className="text-text-main dark:text-gray-300 font-medium text-center text-sm">
                             {industry.name}
                         </span>
                     </div>

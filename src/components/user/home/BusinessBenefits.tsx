@@ -25,14 +25,14 @@ export function BusinessBenefits() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Left: Image */}
                 <div className="relative order-2 lg:order-1">
-                    <div className="absolute inset-0 bg-brand/5 rounded-4xl -rotate-3 scale-95 blur-sm"></div>
+                    <div className="absolute inset-0 bg-brand/5 dark:bg-brand/10 rounded-4xl -rotate-3 scale-95 blur-sm"></div>
                     <div className="relative glass-card rounded-4xl p-8 overflow-hidden group">
                         <div className="relative w-full aspect-square max-w-md mx-auto">
                             <Image
                                 src="/home/your_businesses.webp"
                                 alt="Business Benefits"
                                 fill
-                                className="object-contain group-hover:scale-105 transition-transform duration-500"
+                                className="object-contain group-hover:scale-105 transition-transform duration-500 mix-blend-multiply dark:mix-blend-screen dark:opacity-90"
                                 priority
                             />
                         </div>
@@ -44,7 +44,7 @@ export function BusinessBenefits() {
 
                 {/* Right: Content */}
                 <div className="order-1 lg:order-2">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-main mb-8 leading-tight">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-main dark:text-white mb-8 leading-tight">
                         Here are the benefits your businesses can <span className="text-brand">get from Symbosys.</span>
                     </h2>
 
@@ -57,10 +57,10 @@ export function BusinessBenefits() {
                                     </span>
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-text-main mb-1">
+                                    <h3 className="text-xl font-bold text-text-main dark:text-white mb-1">
                                         {benefit.title}
                                     </h3>
-                                    <p className="text-text-muted text-sm leading-relaxed">
+                                    <p className="text-text-muted dark:text-gray-400 text-sm leading-relaxed">
                                         {benefit.description}
                                     </p>
                                 </div>

@@ -28,10 +28,10 @@ export function CoreValues() {
                 <div className="inline-block px-4 py-1.5 rounded-full bg-brand/10 text-brand text-sm font-bold mb-4">
                     Principles
                 </div>
-                <h2 className="text-3xl md:text-5xl font-bold text-text-main mb-6">
+                <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white mb-6">
                     Core <span className="text-brand">Values</span>
                 </h2>
-                <p className="text-text-muted text-lg max-w-2xl mx-auto">
+                <p className="text-text-muted dark:text-gray-400 text-lg max-w-2xl mx-auto">
                     The principles that guide our culture, innovation, and client relationships.
                 </p>
             </div>
@@ -39,14 +39,14 @@ export function CoreValues() {
             <div className="grid lg:grid-cols-2 gap-12 items-start">
                 {/* Image */}
                 <div className="relative order-2 lg:order-1">
-                    <div className="absolute inset-0 bg-brand/5 rounded-4xl rotate-1 scale-95 blur-sm"></div>
+                    <div className="absolute inset-0 bg-brand/5 dark:bg-brand/10 rounded-4xl rotate-1 scale-95 blur-sm"></div>
                     <div className="glass-card rounded-4xl p-8 sticky top-32">
                         <div className="relative w-full aspect-square">
                             <Image
                                 src="/about/core-values.webp"
                                 alt="Core Values"
                                 fill
-                                className="object-contain"
+                                className="object-contain mix-blend-multiply dark:mix-blend-screen dark:opacity-90"
                             />
                         </div>
                         {/* Background blobs */}
@@ -59,19 +59,19 @@ export function CoreValues() {
                     {values.map((val, index) => (
                         <div
                             key={index}
-                            className="glass-panel p-8 rounded-3xl border border-white/40 hover:border-brand/30 transition-all duration-300 group hover:-translate-y-1 hover:shadow-lg hover:shadow-brand/5"
+                            className="glass-panel p-8 rounded-3xl transition-all duration-300 group hover:-translate-y-1 hover:shadow-lg hover:shadow-brand/5"
                         >
                             <div className="flex items-start gap-6">
-                                <div className="shrink-0 size-14 rounded-2xl bg-brand/10 flex items-center justify-center text-brand group-hover:bg-brand group-hover:text-white transition-all duration-300 shadow-sm">
+                                <div className="shrink-0 size-14 rounded-2xl bg-brand/5 dark:bg-brand/10 flex items-center justify-center text-brand group-hover:bg-brand group-hover:text-white transition-all duration-300 shadow-sm">
                                     <span className="material-symbols-outlined text-3xl">
                                         {val.icon}
                                     </span>
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-text-main mb-3 group-hover:text-brand transition-colors">
+                                    <h3 className="text-xl font-bold text-text-main dark:text-white mb-3 group-hover:text-brand transition-colors">
                                         {val.title}
                                     </h3>
-                                    <p className="text-text-muted leading-relaxed">
+                                    <p className="text-text-muted dark:text-gray-400 leading-relaxed">
                                         {val.description}
                                     </p>
                                 </div>

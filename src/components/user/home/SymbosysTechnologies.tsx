@@ -6,14 +6,14 @@ export function SymbosysTechnologies() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Left: Image */}
                 <div className="relative order-2 lg:order-1">
-                    <div className="absolute inset-0 bg-brand/5 rounded-4xl rotate-3 scale-95 blur-sm"></div>
+                    <div className="absolute inset-0 bg-brand/5 dark:bg-brand/10 rounded-4xl rotate-3 scale-95 blur-sm"></div>
                     <div className="relative glass-card rounded-4xl p-8 overflow-hidden group">
                         <div className="relative w-full aspect-square max-w-md mx-auto">
                             <Image
                                 src="/home/Symbosys_Technologies.webp"
                                 alt="Symbosys Technologies - IT Solutions"
                                 fill
-                                className="object-contain group-hover:scale-105 transition-transform duration-500"
+                                className="object-contain group-hover:scale-105 transition-transform duration-500 mix-blend-multiply dark:mix-blend-screen dark:opacity-90"
                                 priority
                             />
                         </div>
@@ -34,7 +34,7 @@ export function SymbosysTechnologies() {
                         </span>
                     </div>
 
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-main mb-4 leading-tight">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-main dark:text-white mb-4 leading-tight">
                         Symbosys Technologies
                     </h2>
 
@@ -42,7 +42,7 @@ export function SymbosysTechnologies() {
                         THE BEST SOFTWARE COMPANY IN Jharkhand
                     </p>
 
-                    <p className="text-text-muted text-lg leading-relaxed mb-8">
+                    <p className="text-text-muted dark:text-gray-400 text-lg leading-relaxed mb-8">
                         Introducing Symbosys Technologies Pvt. Ltd. – the beacon of
                         innovation in Ranchi&apos;s dynamic IT landscape. As an ISO
                         powerhouse, we design custom software, develop captivating

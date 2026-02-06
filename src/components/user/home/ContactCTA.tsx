@@ -6,10 +6,10 @@ export function ContactCTA() {
                 <div className="absolute top-0 right-0 w-full h-full bg-linear-to-b from-brand/5 via-brand-blue/5 to-transparent -z-10 bg-opacity-50"></div>
                 <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-transparent via-brand/50 to-transparent"></div>
 
-                <h2 className="text-3xl md:text-5xl font-bold text-text-main mb-4 tracking-tight">
+                <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white mb-4 tracking-tight">
                     Ready to <span className="text-brand">flow?</span>
                 </h2>
-                <p className="text-lg text-text-muted mb-10 max-w-2xl mx-auto">
+                <p className="text-lg text-text-muted dark:text-gray-400 mb-10 max-w-2xl mx-auto">
                     Let&apos;s construct a digital reality that surpasses your imagination.
                 </p>
 
@@ -19,7 +19,7 @@ export function ContactCTA() {
                             <div className="space-y-2">
                                 <label
                                     htmlFor="fullName"
-                                    className="text-sm font-semibold text-text-main ml-1"
+                                    className="text-sm font-semibold text-text-main dark:text-white ml-1"
                                 >
                                     Full Name
                                 </label>
@@ -27,14 +27,14 @@ export function ContactCTA() {
                                     id="fullName"
                                     type="text"
                                     placeholder="John Doe"
-                                    className="w-full rounded-2xl border-none bg-white/70 backdrop-blur-sm px-6 py-4 text-text-main placeholder:text-text-muted/60 focus:ring-2 focus:ring-brand/50 shadow-inner transition-all outline-none"
+                                    className="w-full rounded-2xl border-none bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm px-6 py-4 text-text-main dark:text-white placeholder:text-text-muted/60 dark:placeholder:text-gray-500 focus:ring-2 focus:ring-brand/50 shadow-inner transition-all outline-none"
                                 />
                             </div>
 
                             <div className="space-y-2">
                                 <label
                                     htmlFor="email"
-                                    className="text-sm font-semibold text-text-main ml-1"
+                                    className="text-sm font-semibold text-text-main dark:text-white ml-1"
                                 >
                                     Email Address
                                 </label>
@@ -42,7 +42,7 @@ export function ContactCTA() {
                                     id="email"
                                     type="email"
                                     placeholder="john@example.com"
-                                    className="w-full rounded-2xl border-none bg-white/70 backdrop-blur-sm px-6 py-4 text-text-main placeholder:text-text-muted/60 focus:ring-2 focus:ring-brand/50 shadow-inner transition-all outline-none"
+                                    className="w-full rounded-2xl border-none bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm px-6 py-4 text-text-main dark:text-white placeholder:text-text-muted/60 dark:placeholder:text-gray-500 focus:ring-2 focus:ring-brand/50 shadow-inner transition-all outline-none"
                                 />
                             </div>
                         </div>
@@ -50,7 +50,7 @@ export function ContactCTA() {
                         <div className="space-y-2">
                             <label
                                 htmlFor="project"
-                                className="text-sm font-semibold text-text-main ml-1"
+                                className="text-sm font-semibold text-text-main dark:text-white ml-1"
                             >
                                 Project Type
                             </label>
@@ -58,14 +58,14 @@ export function ContactCTA() {
                                 id="project"
                                 type="text"
                                 placeholder="e.g. Web Development, Mobile App"
-                                className="w-full rounded-2xl border-none bg-white/70 backdrop-blur-sm px-6 py-4 text-text-main placeholder:text-text-muted/60 focus:ring-2 focus:ring-brand/50 shadow-inner transition-all outline-none"
+                                className="w-full rounded-2xl border-none bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm px-6 py-4 text-text-main dark:text-white placeholder:text-text-muted/60 dark:placeholder:text-gray-500 focus:ring-2 focus:ring-brand/50 shadow-inner transition-all outline-none"
                             />
                         </div>
 
                         <div className="space-y-2">
                             <label
                                 htmlFor="message"
-                                className="text-sm font-semibold text-text-main ml-1"
+                                className="text-sm font-semibold text-text-main dark:text-white ml-1"
                             >
                                 Message
                             </label>
@@ -73,7 +73,7 @@ export function ContactCTA() {
                                 id="message"
                                 placeholder="Tell us a bit about your project..."
                                 rows={4}
-                                className="w-full rounded-2xl border-none bg-white/70 backdrop-blur-sm px-6 py-4 text-text-main placeholder:text-text-muted/60 focus:ring-2 focus:ring-brand/50 shadow-inner transition-all outline-none resize-none"
+                                className="w-full rounded-2xl border-none bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm px-6 py-4 text-text-main dark:text-white placeholder:text-text-muted/60 dark:placeholder:text-gray-500 focus:ring-2 focus:ring-brand/50 shadow-inner transition-all outline-none resize-none"
                             ></textarea>
                         </div>
 
