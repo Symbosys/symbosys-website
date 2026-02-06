@@ -6,14 +6,14 @@ export const metadata = {
 
 export default function DomainHostingPage() {
     return (
-        <div className="bg-surface text-text-main font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen">
+        <div className="bg-surface text-text-main font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen dark:text-white transition-colors duration-300">
             {/* Liquid Light Immersive Background Canvas */}
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-[15%] -left-[10%] w-[70vw] h-[70vw] bg-linear-to-br from-blue-400/15 via-indigo-400/10 to-violet-400/15 rounded-full blur-3xl light-orb" />
                 <div className="absolute -bottom-[15%] -right-[10%] w-[60vw] h-[60vw] bg-linear-to-tl from-violet-400/12 via-blue-400/10 to-indigo-400/15 rounded-full blur-3xl light-orb-slow" />
                 <div className="absolute top-[30%] left-[40%] w-[40vw] h-[40vw] bg-linear-to-r from-indigo-400/10 via-transparent to-blue-400/10 rounded-full blur-3xl ripple-light" />
                 <div className="absolute inset-0 aurora-bg opacity-30" />
-                <div className="absolute inset-0 bg-white/30 backdrop-blur-xs" />
+                <div className="absolute inset-0 bg-white/30 dark:bg-black/60 backdrop-blur-xl" />
             </div>
 
             <main className="relative z-10 pt-32 pb-20">
@@ -43,14 +43,14 @@ export default function DomainHostingPage() {
                 <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Introduction */}
                     <div className="glass-card rounded-3xl p-8 md:p-12 mb-12">
-                        <p className="text-lg text-text-muted leading-relaxed">
+                        <p className="text-lg text-text-muted dark:text-gray-300 leading-relaxed">
                             As a leading domain and hosting provider, we understand the importance of having reliable and secure web hosting and a memorable domain name to build your brand and attract visitors. Whether you're looking to buy a domain and hosting for the first time or switch to a better service, Symbosys provides top-notch solutions tailored to your needs.
                         </p>
                     </div>
 
                     {/* Services Grid */}
                     <div className="mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-8 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-8 text-center">
                             Types of <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 via-indigo-500 to-violet-500">Domain & Hosting Services</span>
                         </h2>
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -92,8 +92,8 @@ export default function DomainHostingPage() {
                                         <div className="w-14 h-14 rounded-xl bg-linear-to-br from-blue-500 to-indigo-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                                             <span className="material-symbols-outlined text-2xl text-white">{service.icon}</span>
                                         </div>
-                                        <h3 className="text-xl font-bold text-text-main mb-3">{service.title}</h3>
-                                        <p className="text-text-muted text-sm leading-relaxed">{service.description}</p>
+                                        <h3 className="text-xl font-bold text-text-main mb-3 dark:text-white">{service.title}</h3>
+                                        <p className="text-text-muted text-sm leading-relaxed dark:text-gray-300">{service.description}</p>
                                     </div>
                                 </div>
                             ))}
@@ -102,7 +102,7 @@ export default function DomainHostingPage() {
 
                     {/* Strategies Section */}
                     <div className="mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-8 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-8 text-center">
                             Strategies <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 via-indigo-500 to-violet-500">We Follow</span>
                         </h2>
                         <div className="grid md:grid-cols-2 gap-6">
@@ -116,12 +116,12 @@ export default function DomainHostingPage() {
                             ].map((item, index) => (
                                 <div key={index} className="glass-card rounded-xl p-6 hover:-translate-y-1 transition-transform duration-300">
                                     <div className="flex items-start gap-4">
-                                        <div className="w-8 h-8 rounded-full bg-linear-to-br from-blue-500 to-indigo-500 flex items-center justify-center flex-shrink-0">
+                                        <div className="w-8 h-8 rounded-full bg-linear-to-br from-blue-500 to-indigo-500 flex items-center justify-center shrink-0">
                                             <span className="text-white font-bold text-sm">{index + 1}</span>
                                         </div>
                                         <div>
-                                            <h3 className="text-lg font-bold text-text-main mb-2">{item.title}</h3>
-                                            <p className="text-text-muted text-sm leading-relaxed">{item.desc}</p>
+                                            <h3 className="text-lg font-bold text-text-main mb-2 dark:text-white">{item.title}</h3>
+                                            <p className="text-text-muted text-sm leading-relaxed dark:text-gray-300">{item.desc}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -159,10 +159,10 @@ export default function DomainHostingPage() {
 
                     {/* CTA Section */}
                     <div className="text-center glass-card rounded-3xl p-8 md:p-12">
-                        <h2 className="text-2xl md:text-3xl font-bold text-text-main mb-4">
+                        <h2 className="text-2xl md:text-3xl font-bold text-text-main dark:text-white mb-4">
                             Ready to Get Online?
                         </h2>
-                        <p className="text-text-muted mb-8 max-w-2xl mx-auto">
+                        <p className="text-text-muted mb-8 max-w-2xl mx-auto dark:text-gray-300">
                             Partner with Symbosys for all your domain and hosting needs and experience the best reliability, security, and performance. Contact us today to learn more about our services.
                         </p>
                         <button className="px-8 py-4 rounded-full bg-linear-to-r from-blue-600 via-indigo-600 to-blue-600 text-white font-bold shadow-xl shadow-blue-500/30 hover:shadow-2xl hover:shadow-indigo-500/40 hover:scale-105 transition-all duration-300 light-shimmer">

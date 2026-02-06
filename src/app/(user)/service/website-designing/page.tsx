@@ -59,14 +59,14 @@ export default function WebsiteDesigningPage() {
     ];
 
     return (
-        <div className="bg-surface text-text-main font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen">
+        <div className="bg-surface text-text-main font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen dark:text-white transition-colors duration-300">
             {/* Liquid Light Immersive Background Canvas */}
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-[15%] -left-[10%] w-[70vw] h-[70vw] bg-linear-to-br from-violet-400/15 via-blue-400/10 to-cyan-400/15 rounded-full blur-3xl light-orb" />
                 <div className="absolute -bottom-[15%] -right-[10%] w-[60vw] h-[60vw] bg-linear-to-tl from-cyan-400/12 via-violet-400/10 to-blue-400/15 rounded-full blur-3xl light-orb-slow" />
                 <div className="absolute top-[30%] left-[40%] w-[40vw] h-[40vw] bg-linear-to-r from-blue-400/10 via-transparent to-violet-400/10 rounded-full blur-3xl ripple-light" />
                 <div className="absolute inset-0 aurora-bg opacity-30" />
-                <div className="absolute inset-0 bg-white/30 backdrop-blur-xs" />
+                <div className="absolute inset-0 bg-white/30 dark:bg-black/60 backdrop-blur-xl" />
             </div>
 
             <main className="relative z-10 pt-32 pb-20">
@@ -105,10 +105,10 @@ export default function WebsiteDesigningPage() {
                     {/* Introduction with Featured Image */}
                     <div className="grid lg:grid-cols-2 gap-8 mb-16">
                         <div className="glass-card rounded-3xl p-8 md:p-12">
-                            <p className="text-lg text-text-muted leading-relaxed mb-6">
+                            <p className="text-lg text-text-muted dark:text-gray-300 leading-relaxed mb-6">
                                 We have an exceptionally skilled group of designers and developers who utilize current innovation to make your website unique, interactive, and highly responsive. Our system is novel and immaculate from other web designing companies. Our experts are continuously striving to ensure that your aspirations and expectations are met.
                             </p>
-                            <p className="text-lg text-text-muted leading-relaxed">
+                            <p className="text-lg text-text-muted dark:text-gray-300 leading-relaxed">
                                 We put talented and creative minds on your site that assembles your business with your clients. Being a leading Website Designing Company in Ranchi, we not only offer our Website Designing and Development service for different businesses but also take care of its maintenance over a specified time horizon.
                             </p>
                         </div>
@@ -124,13 +124,13 @@ export default function WebsiteDesigningPage() {
 
                     {/* Web Development Categories */}
                     <div className="mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-8 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-8 text-center">
                             Our <span className="text-transparent bg-clip-text bg-linear-to-r from-violet-500 via-blue-500 to-cyan-500">Web Development Categories</span>
                         </h2>
                         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                             {webCategories.map((category, index) => (
                                 <div key={index} className="glass-card rounded-xl p-4 text-center hover:-translate-y-1 transition-transform duration-300">
-                                    <span className="text-text-main font-medium text-sm">{category}</span>
+                                    <span className="text-text-main font-medium text-sm dark:text-white">{category}</span>
                                 </div>
                             ))}
                         </div>
@@ -138,7 +138,7 @@ export default function WebsiteDesigningPage() {
 
                     {/* Services Grid */}
                     <div className="mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-8 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-8 text-center">
                             Our <span className="text-transparent bg-clip-text bg-linear-to-r from-violet-500 via-blue-500 to-cyan-500">Web Development Services</span>
                         </h2>
                         <div className="grid md:grid-cols-3 gap-6">
@@ -149,8 +149,8 @@ export default function WebsiteDesigningPage() {
                                         <div className="w-14 h-14 rounded-xl bg-linear-to-br from-violet-500 to-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                                             <span className="material-symbols-outlined text-2xl text-white">{service.icon}</span>
                                         </div>
-                                        <h3 className="text-xl font-bold text-text-main mb-3">{service.title}</h3>
-                                        <p className="text-text-muted text-sm leading-relaxed">{service.description}</p>
+                                        <h3 className="text-xl font-bold text-text-main mb-3 dark:text-white">{service.title}</h3>
+                                        <p className="text-text-muted text-sm leading-relaxed dark:text-gray-300">{service.description}</p>
                                     </div>
                                 </div>
                             ))}
@@ -159,14 +159,14 @@ export default function WebsiteDesigningPage() {
 
                     {/* Other Web Solutions */}
                     <div className="mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-8 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-8 text-center">
                             Other Useful <span className="text-transparent bg-clip-text bg-linear-to-r from-violet-500 via-blue-500 to-cyan-500">Web Solutions</span> We Integrate
                         </h2>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                             {webSolutions.map((solution, index) => (
                                 <div key={index} className="glass-card rounded-xl p-4 flex items-center gap-3 hover:-translate-y-1 transition-transform duration-300">
                                     <span className="material-symbols-outlined text-violet-500">check_circle</span>
-                                    <span className="text-text-main font-medium text-sm">{solution}</span>
+                                    <span className="text-text-main font-medium text-sm dark:text-white">{solution}</span>
                                 </div>
                             ))}
                         </div>
@@ -197,10 +197,10 @@ export default function WebsiteDesigningPage() {
 
                     {/* CTA Section */}
                     <div className="text-center glass-card rounded-3xl p-8 md:p-12">
-                        <h2 className="text-2xl md:text-3xl font-bold text-text-main mb-4">
+                        <h2 className="text-2xl md:text-3xl font-bold text-text-main dark:text-white mb-4">
                             Ready to Build Your Website?
                         </h2>
-                        <p className="text-text-muted mb-8 max-w-2xl mx-auto">
+                        <p className="text-text-muted mb-8 max-w-2xl mx-auto dark:text-gray-300">
                             We are centered around designing a site that works for your clients and for the development of your business too. Contact us today to get started!
                         </p>
                         <button className="px-8 py-4 rounded-full bg-linear-to-r from-violet-600 via-blue-600 to-violet-600 text-white font-bold shadow-xl shadow-violet-500/30 hover:shadow-2xl hover:shadow-blue-500/40 hover:scale-105 transition-all duration-300 light-shimmer">

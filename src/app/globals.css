@@ -46,9 +46,9 @@
   --color-brand: #4b2bee;
   --color-brand-blue: #3b82f6;
   --color-brand-purple: #a855f7;
-  --color-surface: #f8f9fc;
-  --color-text-main: #121118;
-  --color-text-muted: #686189;
+  --color-surface: var(--brand-surface);
+  --color-text-main: var(--brand-text-main);
+  --color-text-muted: var(--brand-text-muted);
   --color-glass-border: rgba(255, 255, 255, 0.5);
   --color-glass-surface: rgba(255, 255, 255, 0.4);
 
@@ -106,6 +106,9 @@
   --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
+  --brand-surface: #f8f9fc;
+  --brand-text-main: #121118;
+  --brand-text-muted: #686189;
 }
 
 .dark {
@@ -140,6 +143,9 @@
   --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
+  --brand-surface: oklch(0.129 0.042 264.695);
+  --brand-text-main: oklch(0.984 0.003 247.858);
+  --brand-text-muted: oklch(0.704 0.04 256.788);
 }
 
 @layer base {

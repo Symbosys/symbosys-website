@@ -8,14 +8,14 @@ export const metadata = {
 
 export default function MobileAppDevelopmentPage() {
     return (
-        <div className="bg-surface text-text-main font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen">
+        <div className="bg-surface text-text-main font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen dark:text-white transition-colors duration-300">
             {/* Liquid Light Immersive Background Canvas */}
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-[15%] -left-[10%] w-[70vw] h-[70vw] bg-linear-to-br from-cyan-400/15 via-blue-400/10 to-violet-400/15 rounded-full blur-3xl light-orb" />
                 <div className="absolute -bottom-[15%] -right-[10%] w-[60vw] h-[60vw] bg-linear-to-tl from-violet-400/12 via-cyan-400/10 to-blue-400/15 rounded-full blur-3xl light-orb-slow" />
                 <div className="absolute top-[30%] left-[40%] w-[40vw] h-[40vw] bg-linear-to-r from-blue-400/10 via-transparent to-cyan-400/10 rounded-full blur-3xl ripple-light" />
                 <div className="absolute inset-0 aurora-bg opacity-30" />
-                <div className="absolute inset-0 bg-white/30 backdrop-blur-xs" />
+                <div className="absolute inset-0 bg-white/30 dark:bg-black/60 backdrop-blur-xl" />
             </div>
 
             <main className="relative z-10 pt-32 pb-20">
@@ -53,27 +53,27 @@ export default function MobileAppDevelopmentPage() {
                 <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Introduction */}
                     <div className="glass-card rounded-3xl p-8 md:p-12 mb-12">
-                        <p className="text-lg text-text-muted leading-relaxed mb-4">
+                        <p className="text-lg text-text-muted dark:text-gray-300 leading-relaxed mb-4">
                             Our Mobile App Development Services have helped clients in reaching their business objectives and also helped many businesses to kick start their journey.
                         </p>
-                        <p className="text-lg text-text-muted leading-relaxed">
+                        <p className="text-lg text-text-muted dark:text-gray-300 leading-relaxed">
                             Mobile apps are designed and developed by highly skilled professionals with years of experience in making custom apps for different enterprises. We offer high performing interactive and user-friendly mobile apps that can meet the utility ranging from productivity, business mCommerce to gaming, leisure, and social apps.
                         </p>
                     </div>
 
                     {/* Why Mobile App Development */}
                     <div className="mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-8 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-8 text-center">
                             Why Mobile App Development is <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-500 via-blue-500 to-violet-500">Prominent for Business</span>
                         </h2>
                         <div className="glass-card rounded-3xl p-8 md:p-12">
-                            <p className="text-text-muted leading-relaxed mb-6">
+                            <p className="text-text-muted dark:text-gray-300 leading-relaxed mb-6">
                                 Mobile devices such as smartphones and tablets are replacing personal computers in terms of usage and search query. No matter what your business is, mobile has now become the real face of customer engagement.
                             </p>
-                            <p className="text-text-muted leading-relaxed mb-6">
+                            <p className="text-text-muted dark:text-gray-300 leading-relaxed mb-6">
                                 Around 80 percent of mobile users use apps more often they access the internet as they are easy and reliable to explore and navigate. This clearly defines that owners who use only traditional website marketing approach are missing out on a large number of potential customers aside.
                             </p>
-                            <p className="text-text-muted leading-relaxed">
+                            <p className="text-text-muted dark:text-gray-300 leading-relaxed">
                                 To stay on track of this highly competitive race, businesses needed to be shifted in mobile platforms i.e. designing an impactful mobile app to increase customer flows. Symbosys offers app development services for all business types.
                             </p>
                         </div>
@@ -81,7 +81,7 @@ export default function MobileAppDevelopmentPage() {
 
                     {/* Android Development Focus Areas */}
                     <div className="mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-8 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-8 text-center">
                             Our Android Application <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-500 via-blue-500 to-violet-500">Development Focus Areas</span>
                         </h2>
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -96,10 +96,10 @@ export default function MobileAppDevelopmentPage() {
                                 <div key={index} className="group relative">
                                     <div className="absolute -inset-2 bg-linear-to-r from-cyan-500/20 via-blue-500/15 to-violet-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                     <div className="relative glass-card rounded-2xl p-6 flex items-center gap-4 h-full hover:-translate-y-1 transition-transform duration-300">
-                                        <div className="w-12 h-12 rounded-xl bg-linear-to-br from-cyan-500 to-blue-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                                        <div className="w-12 h-12 rounded-xl bg-linear-to-br from-cyan-500 to-blue-500 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                                             <span className="material-symbols-outlined text-xl text-white">{item.icon}</span>
                                         </div>
-                                        <h3 className="text-lg font-bold text-text-main">{item.title}</h3>
+                                        <h3 className="text-lg font-bold text-text-main dark:text-white">{item.title}</h3>
                                     </div>
                                 </div>
                             ))}
@@ -108,7 +108,7 @@ export default function MobileAppDevelopmentPage() {
 
                     {/* Features Section */}
                     <div className="mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-8 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-8 text-center">
                             Features We Provide in Our <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-500 via-blue-500 to-violet-500">App Development Services</span>
                         </h2>
                         <div className="grid md:grid-cols-2 gap-6">
@@ -121,12 +121,12 @@ export default function MobileAppDevelopmentPage() {
                             ].map((item, index) => (
                                 <div key={index} className="glass-card rounded-xl p-6 hover:-translate-y-1 transition-transform duration-300">
                                     <div className="flex items-start gap-4">
-                                        <div className="w-12 h-12 rounded-xl bg-linear-to-br from-cyan-500 to-blue-500 flex items-center justify-center flex-shrink-0">
+                                        <div className="w-12 h-12 rounded-xl bg-linear-to-br from-cyan-500 to-blue-500 flex items-center justify-center shrink-0">
                                             <span className="material-symbols-outlined text-xl text-white">{item.icon}</span>
                                         </div>
                                         <div>
-                                            <h3 className="text-lg font-bold text-text-main mb-2">{item.title}</h3>
-                                            <p className="text-text-muted text-sm leading-relaxed">{item.desc}</p>
+                                            <h3 className="text-lg font-bold text-text-main mb-2 dark:text-white">{item.title}</h3>
+                                            <p className="text-text-muted text-sm leading-relaxed dark:text-gray-300">{item.desc}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -164,10 +164,10 @@ export default function MobileAppDevelopmentPage() {
 
                     {/* CTA Section */}
                     <div className="text-center glass-card rounded-3xl p-8 md:p-12">
-                        <h2 className="text-2xl md:text-3xl font-bold text-text-main mb-4">
+                        <h2 className="text-2xl md:text-3xl font-bold text-text-main dark:text-white mb-4">
                             Ready to Build Your Mobile App?
                         </h2>
-                        <p className="text-text-muted mb-8 max-w-2xl mx-auto">
+                        <p className="text-text-muted mb-8 max-w-2xl mx-auto dark:text-gray-300">
                             Not only do we offer customized mobile app development services for every kind of business across various mobile platforms, but also provide complete support and maintenance solutions to ensure your app remains up to date.
                         </p>
                         <button className="px-8 py-4 rounded-full bg-linear-to-r from-cyan-600 via-blue-600 to-cyan-600 text-white font-bold shadow-xl shadow-cyan-500/30 hover:shadow-2xl hover:shadow-blue-500/40 hover:scale-105 transition-all duration-300 light-shimmer">

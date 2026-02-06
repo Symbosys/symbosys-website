@@ -6,14 +6,14 @@ export const metadata = {
 
 export default function BusinessConsultancyPage() {
     return (
-        <div className="bg-surface text-text-main font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen">
+        <div className="bg-surface text-text-main font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen dark:text-white transition-colors duration-300">
             {/* Liquid Light Immersive Background Canvas */}
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-[15%] -left-[10%] w-[70vw] h-[70vw] bg-linear-to-br from-slate-400/15 via-gray-400/10 to-zinc-400/15 rounded-full blur-3xl light-orb" />
                 <div className="absolute -bottom-[15%] -right-[10%] w-[60vw] h-[60vw] bg-linear-to-tl from-zinc-400/12 via-slate-400/10 to-gray-400/15 rounded-full blur-3xl light-orb-slow" />
                 <div className="absolute top-[30%] left-[40%] w-[40vw] h-[40vw] bg-linear-to-r from-gray-400/10 via-transparent to-slate-400/10 rounded-full blur-3xl ripple-light" />
                 <div className="absolute inset-0 aurora-bg opacity-30" />
-                <div className="absolute inset-0 bg-white/30 backdrop-blur-xs" />
+                <div className="absolute inset-0 bg-white/30 dark:bg-black/60 backdrop-blur-xl" />
             </div>
 
             <main className="relative z-10 pt-32 pb-20">
@@ -43,14 +43,14 @@ export default function BusinessConsultancyPage() {
                 <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Introduction */}
                     <div className="glass-card rounded-3xl p-8 md:p-12 mb-12">
-                        <p className="text-lg text-text-muted leading-relaxed">
+                        <p className="text-lg text-text-muted dark:text-gray-300 leading-relaxed">
                             We are committed to ensuring that your trademarks are legally safeguarded and your business meets international standards through ISO certifications. Our comprehensive business consultancy services cover everything from trademark registration to strategic business guidance, helping you navigate complex regulatory requirements with ease.
                         </p>
                     </div>
 
                     {/* Services Grid */}
                     <div className="mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-8 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-8 text-center">
                             Our <span className="text-transparent bg-clip-text bg-linear-to-r from-slate-600 via-gray-600 to-zinc-600">Consultancy Services</span>
                         </h2>
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -68,8 +68,8 @@ export default function BusinessConsultancyPage() {
                                         <div className="w-14 h-14 rounded-xl bg-linear-to-br from-slate-600 to-gray-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                                             <span className="material-symbols-outlined text-2xl text-white">{service.icon}</span>
                                         </div>
-                                        <h3 className="text-xl font-bold text-text-main mb-3">{service.title}</h3>
-                                        <p className="text-text-muted text-sm leading-relaxed">{service.desc}</p>
+                                        <h3 className="text-xl font-bold text-text-main mb-3 dark:text-white">{service.title}</h3>
+                                        <p className="text-text-muted text-sm leading-relaxed dark:text-gray-300">{service.desc}</p>
                                     </div>
                                 </div>
                             ))}
@@ -78,7 +78,7 @@ export default function BusinessConsultancyPage() {
 
                     {/* Our Approach */}
                     <div className="mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-8 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-8 text-center">
                             Our Approach to <span className="text-transparent bg-clip-text bg-linear-to-r from-slate-600 via-gray-600 to-zinc-600">Success</span>
                         </h2>
                         <div className="grid md:grid-cols-3 gap-6">
@@ -91,8 +91,8 @@ export default function BusinessConsultancyPage() {
                                     <div className="w-16 h-16 rounded-full bg-linear-to-br from-slate-600 to-gray-600 flex items-center justify-center mx-auto mb-4">
                                         <span className="material-symbols-outlined text-3xl text-white">{item.icon}</span>
                                     </div>
-                                    <h3 className="text-lg font-bold text-text-main mb-2">{item.title}</h3>
-                                    <p className="text-text-muted text-sm leading-relaxed">{item.desc}</p>
+                                    <h3 className="text-lg font-bold text-text-main mb-2 dark:text-white">{item.title}</h3>
+                                    <p className="text-text-muted text-sm leading-relaxed dark:text-gray-300">{item.desc}</p>
                                 </div>
                             ))}
                         </div>
@@ -128,10 +128,10 @@ export default function BusinessConsultancyPage() {
 
                     {/* CTA Section */}
                     <div className="text-center glass-card rounded-3xl p-8 md:p-12">
-                        <h2 className="text-2xl md:text-3xl font-bold text-text-main mb-4">
+                        <h2 className="text-2xl md:text-3xl font-bold text-text-main dark:text-white mb-4">
                             Get Started with Symbosys Today
                         </h2>
-                        <p className="text-text-muted mb-8 max-w-2xl mx-auto">
+                        <p className="text-text-muted mb-8 max-w-2xl mx-auto dark:text-gray-300">
                             Whether you're looking for trademark protection, ISO certification, or comprehensive business consultancy, Symbosys is your trusted partner. We simplify complex processes and help your business achieve compliance effortlessly.
                         </p>
                         <button className="px-8 py-4 rounded-full bg-linear-to-r from-slate-700 via-gray-700 to-slate-700 text-white font-bold shadow-xl shadow-slate-500/30 hover:shadow-2xl hover:shadow-gray-500/40 hover:scale-105 transition-all duration-300 light-shimmer">

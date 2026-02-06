@@ -6,14 +6,14 @@ export const metadata = {
 
 export default function TrademarkISOPage() {
     return (
-        <div className="bg-surface text-text-main font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen">
+        <div className="bg-surface text-text-main transition-colors duration-300 font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen dark:text-white">
             {/* Liquid Light Immersive Background Canvas */}
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-[15%] -left-[10%] w-[70vw] h-[70vw] bg-linear-to-br from-purple-400/15 via-indigo-400/10 to-blue-400/15 rounded-full blur-3xl light-orb" />
                 <div className="absolute -bottom-[15%] -right-[10%] w-[60vw] h-[60vw] bg-linear-to-tl from-blue-400/12 via-purple-400/10 to-indigo-400/15 rounded-full blur-3xl light-orb-slow" />
                 <div className="absolute top-[30%] left-[40%] w-[40vw] h-[40vw] bg-linear-to-r from-indigo-400/10 via-transparent to-purple-400/10 rounded-full blur-3xl ripple-light" />
                 <div className="absolute inset-0 aurora-bg opacity-30" />
-                <div className="absolute inset-0 bg-white/30 backdrop-blur-xs" />
+                <div className="absolute inset-0 bg-white/30 dark:bg-black/60 backdrop-blur-xl" />
             </div>
 
             <main className="relative z-10 pt-32 pb-20">
@@ -43,14 +43,14 @@ export default function TrademarkISOPage() {
                 <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Introduction */}
                     <div className="glass-card rounded-3xl p-8 md:p-12 mb-12">
-                        <p className="text-lg text-text-muted leading-relaxed">
+                        <p className="text-lg text-text-muted dark:text-gray-300 leading-relaxed">
                             We are committed to ensuring that your trademarks are legally safeguarded and your business meets international standards through ISO certifications. Trademark registration is a critical step in securing your brand's unique identity, and we simplify the entire process.
                         </p>
                     </div>
 
                     {/* Trademark Registration Section */}
                     <div className="mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-8 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-8 text-center">
                             Types of <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-500 via-indigo-500 to-blue-500">Trademark Registration</span>
                         </h2>
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -68,8 +68,8 @@ export default function TrademarkISOPage() {
                                         <div className="w-14 h-14 rounded-xl bg-linear-to-br from-purple-500 to-indigo-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                                             <span className="material-symbols-outlined text-2xl text-white">{item.icon}</span>
                                         </div>
-                                        <h3 className="text-xl font-bold text-text-main mb-3">{item.title}</h3>
-                                        <p className="text-text-muted text-sm leading-relaxed">{item.desc}</p>
+                                        <h3 className="text-xl font-bold text-text-main mb-3 dark:text-white">{item.title}</h3>
+                                        <p className="text-text-muted text-sm leading-relaxed dark:text-gray-300">{item.desc}</p>
                                     </div>
                                 </div>
                             ))}
@@ -78,7 +78,7 @@ export default function TrademarkISOPage() {
 
                     {/* ISO Certification Section */}
                     <div className="mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-8 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-8 text-center">
                             Types of <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-500 via-indigo-500 to-blue-500">ISO Certification</span>
                         </h2>
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -96,9 +96,9 @@ export default function TrademarkISOPage() {
                                         <div className="w-14 h-14 rounded-xl bg-linear-to-br from-indigo-500 to-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                                             <span className="material-symbols-outlined text-2xl text-white">{item.icon}</span>
                                         </div>
-                                        <h3 className="text-xl font-bold text-text-main mb-1">{item.title}</h3>
+                                        <h3 className="text-xl font-bold text-text-main mb-1 dark:text-white">{item.title}</h3>
                                         <span className="text-xs font-semibold text-indigo-600 mb-3 block">{item.subtitle}</span>
-                                        <p className="text-text-muted text-sm leading-relaxed">{item.desc}</p>
+                                        <p className="text-text-muted text-sm leading-relaxed dark:text-gray-300">{item.desc}</p>
                                     </div>
                                 </div>
                             ))}
@@ -107,7 +107,7 @@ export default function TrademarkISOPage() {
 
                     {/* Our Approach */}
                     <div className="mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-8 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-8 text-center">
                             Our Approach to <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-500 via-indigo-500 to-blue-500">Success</span>
                         </h2>
                         <div className="grid md:grid-cols-3 gap-6">
@@ -120,8 +120,8 @@ export default function TrademarkISOPage() {
                                     <div className="w-16 h-16 rounded-full bg-linear-to-br from-purple-500 to-indigo-500 flex items-center justify-center mx-auto mb-4">
                                         <span className="material-symbols-outlined text-3xl text-white">{item.icon}</span>
                                     </div>
-                                    <h3 className="text-lg font-bold text-text-main mb-2">{item.title}</h3>
-                                    <p className="text-text-muted text-sm leading-relaxed">{item.desc}</p>
+                                    <h3 className="text-lg font-bold text-text-main mb-2 dark:text-white">{item.title}</h3>
+                                    <p className="text-text-muted text-sm leading-relaxed dark:text-gray-300">{item.desc}</p>
                                 </div>
                             ))}
                         </div>
@@ -166,10 +166,10 @@ export default function TrademarkISOPage() {
 
                     {/* CTA Section */}
                     <div className="text-center glass-card rounded-3xl p-8 md:p-12">
-                        <h2 className="text-2xl md:text-3xl font-bold text-text-main mb-4">
+                        <h2 className="text-2xl md:text-3xl font-bold text-text-main dark:text-white mb-4">
                             Get Started with Symbosys Today
                         </h2>
-                        <p className="text-text-muted mb-8 max-w-2xl mx-auto">
+                        <p className="text-text-muted mb-8 max-w-2xl mx-auto dark:text-gray-300">
                             Whether you're looking to apply for trademark protection or seek ISO certification to enhance your business's credibility, Symbosys is your trusted partner. Contact us today to apply for a trademark online and elevate your business.
                         </p>
                         <button className="px-8 py-4 rounded-full bg-linear-to-r from-purple-600 via-indigo-600 to-purple-600 text-white font-bold shadow-xl shadow-purple-500/30 hover:shadow-2xl hover:shadow-indigo-500/40 hover:scale-105 transition-all duration-300 light-shimmer">

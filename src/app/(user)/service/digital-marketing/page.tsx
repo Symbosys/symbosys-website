@@ -17,14 +17,14 @@ export default function DigitalMarketingPage() {
     ];
 
     return (
-        <div className="bg-surface text-text-main font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen">
+        <div className="bg-surface text-text-main font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen dark:text-white transition-colors duration-300">
             {/* Liquid Light Immersive Background Canvas */}
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-[15%] -left-[10%] w-[70vw] h-[70vw] bg-linear-to-br from-orange-400/15 via-red-400/10 to-pink-400/15 rounded-full blur-3xl light-orb" />
                 <div className="absolute -bottom-[15%] -right-[10%] w-[60vw] h-[60vw] bg-linear-to-tl from-pink-400/12 via-orange-400/10 to-red-400/15 rounded-full blur-3xl light-orb-slow" />
                 <div className="absolute top-[30%] left-[40%] w-[40vw] h-[40vw] bg-linear-to-r from-red-400/10 via-transparent to-orange-400/10 rounded-full blur-3xl ripple-light" />
                 <div className="absolute inset-0 aurora-bg opacity-30" />
-                <div className="absolute inset-0 bg-white/30 backdrop-blur-xs" />
+                <div className="absolute inset-0 bg-white/30 dark:bg-black/60 backdrop-blur-xl" />
             </div>
 
             <main className="relative z-10 pt-32 pb-20">
@@ -62,30 +62,30 @@ export default function DigitalMarketingPage() {
                 <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Introduction */}
                     <div className="glass-card rounded-3xl p-8 md:p-12 mb-16">
-                        <p className="text-lg text-text-muted leading-relaxed mb-6">
+                        <p className="text-lg text-text-muted dark:text-gray-300 leading-relaxed mb-6">
                             Are you seeking to amplify your online presence and expand your reach to potential customers in Ranchi, Jharkhand? Look no further than the dynamic realm of digital and social media marketing! In today's rapidly evolving world, establishing a robust online presence is indispensable for businesses striving to maintain competitiveness.
                         </p>
-                        <p className="text-lg text-text-muted leading-relaxed">
+                        <p className="text-lg text-text-muted dark:text-gray-300 leading-relaxed">
                             From the intricacies of SEO to the efficacy of paid promotions, we delve into the strategies of digital marketing that can propel your business growth in Ranchi. Let's embark on a journey to unravel the myriad possibilities that lie ahead!
                         </p>
                     </div>
 
                     {/* Digital Marketing Section */}
                     <div className="glass-card rounded-3xl p-8 md:p-12 mb-16">
-                        <h2 className="text-2xl md:text-3xl font-bold text-text-main mb-6 text-center">
+                        <h2 className="text-2xl md:text-3xl font-bold text-text-main mb-6 text-center dark:text-white">
                             <span className="text-transparent bg-clip-text bg-linear-to-r from-orange-500 via-red-500 to-pink-500">Digital Marketing</span> - The Cornerstone of Success
                         </h2>
-                        <p className="text-lg text-text-muted leading-relaxed text-center max-w-4xl mx-auto mb-6">
+                        <p className="text-lg text-text-muted dark:text-gray-300 leading-relaxed text-center max-w-4xl mx-auto mb-6">
                             Digital marketing serves as the cornerstone for unlocking success in the digital era. With a strategic approach, businesses can forge connections with their target audience and drive conversions to unprecedented heights. From the intricacies of search engine optimization (SEO) to the dynamics of pay-per-click (PPC) advertising, there exists a plethora of avenues to elevate your brand's visibility online.
                         </p>
-                        <p className="text-lg text-text-muted leading-relaxed text-center max-w-4xl mx-auto">
+                        <p className="text-lg text-text-muted dark:text-gray-300 leading-relaxed text-center max-w-4xl mx-auto">
                             In Ranchi, Jharkhand, harnessing the potential of digital marketing can catapult your business to unprecedented heights. By optimizing your website to align with search engine algorithms, you can augment visibility and attract a surge of organic traffic. Engaging in meticulously crafted paid advertising endeavours enables you to extend your reach to a broader audience and effectively generate leads.
                         </p>
                     </div>
 
                     {/* Services Grid */}
                     <div className="mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-8 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-8 text-center">
                             Our <span className="text-transparent bg-clip-text bg-linear-to-r from-orange-500 via-red-500 to-pink-500">Marketing Services</span>
                         </h2>
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -96,8 +96,8 @@ export default function DigitalMarketingPage() {
                                         <div className="w-14 h-14 rounded-xl bg-linear-to-br from-orange-500 to-red-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                                             <span className="material-symbols-outlined text-2xl text-white">{service.icon}</span>
                                         </div>
-                                        <h3 className="text-xl font-bold text-text-main mb-3">{service.title}</h3>
-                                        <p className="text-text-muted text-sm leading-relaxed">{service.desc}</p>
+                                        <h3 className="text-xl font-bold text-text-main mb-3 dark:text-white">{service.title}</h3>
+                                        <p className="text-text-muted text-sm leading-relaxed dark:text-gray-300">{service.desc}</p>
                                     </div>
                                 </div>
                             ))}
@@ -134,10 +134,10 @@ export default function DigitalMarketingPage() {
 
                     {/* CTA Section */}
                     <div className="text-center glass-card rounded-3xl p-8 md:p-12">
-                        <h2 className="text-2xl md:text-3xl font-bold text-text-main mb-4">
+                        <h2 className="text-2xl md:text-3xl font-bold text-text-main dark:text-white mb-4">
                             Ready to Grow Your Business?
                         </h2>
-                        <p className="text-text-muted mb-8 max-w-2xl mx-auto">
+                        <p className="text-text-muted mb-8 max-w-2xl mx-auto dark:text-gray-300">
                             Let Symbosys help you harness the power of digital marketing to catapult your business to unprecedented heights. Contact us today for a free consultation.
                         </p>
                         <button className="px-8 py-4 rounded-full bg-linear-to-r from-orange-600 via-red-600 to-orange-600 text-white font-bold shadow-xl shadow-orange-500/30 hover:shadow-2xl hover:shadow-red-500/40 hover:scale-105 transition-all duration-300 light-shimmer">
