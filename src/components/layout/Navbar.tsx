@@ -134,7 +134,7 @@ export function Navbar() {
                     {/* Theme Toggle Button */}
                     <button
                         onClick={toggleTheme}
-                        className="p-2.5 rounded-full bg-linear-to-br from-brand/10 to-brand-blue/10 dark:from-brand/20 dark:to-brand-blue/20 hover:from-brand/20 hover:to-brand-blue/20 dark:hover:from-brand/30 dark:hover:to-brand-blue/30 text-brand transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-brand/20 group"
+                        className="size-10 rounded-xl flex items-center justify-center bg-linear-to-br from-brand/10 to-brand-blue/10 dark:from-brand/20 dark:to-brand-blue/20 hover:from-brand/20 hover:to-brand-blue/20 dark:hover:from-brand/30 dark:hover:to-brand-blue/30 text-brand transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-brand/20 group border border-brand/10 dark:border-white/10"
                         aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
                     >
                         <span className="material-symbols-outlined text-xl block group-hover:rotate-180 transition-transform duration-500">
