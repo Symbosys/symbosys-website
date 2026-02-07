@@ -1,5 +1,4 @@
 import { ProductsShowcase } from "@/components/user/products";
-import { ContactCTA } from "@/components/user/home";
 
 export const metadata = {
     title: "Our Products - Symbosys Technologies",
@@ -24,8 +23,6 @@ export default function ProductsPage() {
 
             <main className="relative z-10 pt-10">
                 <ProductsShowcase />
-
-                {/* <ContactCTA /> */}
             </main>
         </div>
     );

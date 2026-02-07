@@ -13,7 +13,7 @@ import {
 import { FooterBackgroundGradient } from "@/components/layout/footer/hover-footer";
 import { TextHoverEffect } from "@/components/layout/footer/hover-footer";
 
-export function Footer() {
+function HoverFooter() {
     // Footer link data
     const footerLinks = [
         {
@@ -160,7 +160,7 @@ export function Footer() {
             </div>
 
             {/* Text hover effect */}
-            <div className="lg:flex hidden h-120 -mt-30 -mb-30 -mr-30 p-15 -ml-30">
+            <div className="lg:flex hidden h-120 -mt-52 -mb-36">
                 <TextHoverEffect text="Symbosys" className="z-50" />
             </div>
 
@@ -168,3 +168,5 @@ export function Footer() {
         </footer>
     );
 }
+
+export default HoverFooter;
