@@ -6,7 +6,6 @@ type Theme = "light" | "dark";
 
 interface ThemeContextType {
     theme: Theme;
-    toggleTheme: () => void;
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
@@ -17,37 +16,32 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
     useEffect(() => {
         setMounted(true);
-        // Check for saved theme preference or system preference
-        const savedTheme = localStorage.getItem("theme") as Theme | null;
-        const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-        if (savedTheme) {
-            setTheme(savedTheme);
-            document.documentElement.classList.toggle("dark", savedTheme === "dark");
-            document.documentElement.classList.toggle("light", savedTheme === "light");
-        } else if (systemPrefersDark) {
-            setTheme("dark");
-            document.documentElement.classList.add("dark");
-            document.documentElement.classList.remove("light");
-        }
+        const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+        const handleChange = () => {
+            const newTheme = mediaQuery.matches ? "dark" : "light";
+            setTheme(newTheme);
+            if (newTheme === "dark") {
+                document.documentElement.classList.add("dark");
+                document.documentElement.classList.remove("light");
+            } else {
+                document.documentElement.classList.add("light");
+                document.documentElement.classList.remove("dark");
+            }
+        };
+
+        // Initial check
+        handleChange();
+
+        // Listen for changes
+        mediaQuery.addEventListener("change", handleChange);
+
+        return () => mediaQuery.removeEventListener("change", handleChange);
     }, []);
 
-    const toggleTheme = () => {
-        const newTheme = theme === "light" ? "dark" : "light";
-        setTheme(newTheme);
-        localStorage.setItem("theme", newTheme);
-
-        if (newTheme === "dark") {
-            document.documentElement.classList.add("dark");
-            document.documentElement.classList.remove("light");
-        } else {
-            document.documentElement.classList.add("light");
-            document.documentElement.classList.remove("dark");
-        }
-    };
-
     return (
-        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+        <ThemeContext.Provider value={{ theme }}>
             {children}
         </ThemeContext.Provider>
     );
