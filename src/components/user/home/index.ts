@@ -14,4 +14,6 @@ export { WhyChooseSymbosys } from "./WhyChooseSymbosys";
 export { BuildProjectTogether } from "./BuildProjectTogether";
 export { GetInTouch } from "./GetInTouch";
 export { ContactCTA } from "./ContactCTA";
+export { TechStackSection } from "./TechStackSection";
 export { Hero } from "./Hero";
+

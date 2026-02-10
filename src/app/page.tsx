@@ -16,6 +16,7 @@ import {
   GetInTouch,
   ContactCTA,
   Hero,
+  TechStackSection,
 } from "@/components/user/home";
 
 
@@ -51,7 +52,10 @@ export default function Home() {
         {/* 3. Services Icons Marquee */}
         <ServicesIconsMarquee />
 
-        {/* 4. Symbosys Technologies Section */}
+        {/* 4. Tech Stack Section */}
+        <TechStackSection />
+
+        {/* 5. Symbosys Technologies Section */}
         <SymbosysTechnologies />
 
         {/* 5. Expert Software Section */}
