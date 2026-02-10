@@ -5,7 +5,7 @@ export function JoinCultureCTA() {
         <section className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32">
             <div className="relative overflow-hidden rounded-[2rem] lg:rounded-[3rem]">
                 {/* Liquid light gradient background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-brand via-brand-purple to-brand-blue opacity-90"></div>
+                <div className="absolute inset-0 bg-linear-to-br from-brand via-brand-purple to-brand-blue opacity-90"></div>
 
                 {/* Animated liquid orbs */}
                 <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -54,7 +54,7 @@ export function JoinCultureCTA() {
                             className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-white text-brand font-bold text-lg shadow-xl shadow-black/10 hover:shadow-2xl hover:shadow-black/20 hover:scale-105 transition-all duration-500 overflow-hidden"
                         >
                             {/* Hover shimmer */}
-                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-brand/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                            <div className="absolute inset-0 bg-linear-to-r from-transparent via-brand/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                             <span className="relative z-10">Explore Careers</span>
                             <span className="relative z-10 material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform duration-300">
                                 arrow_forward

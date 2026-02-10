@@ -64,7 +64,7 @@ export function CulturePillars() {
                 </div>
                 <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white mb-6 leading-tight">
                     Built on{" "}
-                    <span className="bg-gradient-to-r from-brand via-brand-purple to-brand-blue bg-clip-text text-transparent">
+                    <span className="bg-linear-to-r from-brand via-brand-purple to-brand-blue bg-clip-text text-transparent">
                         Strong Foundations
                     </span>
                 </h2>
@@ -82,15 +82,15 @@ export function CulturePillars() {
                     >
                         {/* Liquid light hover glow */}
                         <div
-                            className={`absolute -top-20 -right-20 w-40 h-40 rounded-full bg-gradient-to-br ${pillar.gradient} blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700`}
+                            className={`absolute -top-20 -right-20 w-40 h-40 rounded-full bg-linear-to-br ${pillar.gradient} blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700`}
                         ></div>
                         <div
-                            className={`absolute -bottom-20 -left-20 w-32 h-32 rounded-full bg-gradient-to-tr ${pillar.gradient} blur-3xl opacity-0 group-hover:opacity-60 transition-opacity duration-700`}
+                            className={`absolute -bottom-20 -left-20 w-32 h-32 rounded-full bg-linear-to-tr ${pillar.gradient} blur-3xl opacity-0 group-hover:opacity-60 transition-opacity duration-700`}
                         ></div>
 
                         {/* Icon */}
                         <div
-                            className={`relative size-16 rounded-2xl bg-gradient-to-br ${pillar.gradient} dark:from-brand/15 dark:to-brand-purple/10 flex items-center justify-center mb-6 group-hover:bg-gradient-to-br group-hover:${pillar.hoverGradient} transition-all duration-500 shadow-sm group-hover:shadow-lg group-hover:shadow-brand/10`}
+                            className={`relative size-16 rounded-2xl bg-linear-to-br ${pillar.gradient} dark:from-brand/15 dark:to-brand-purple/10 flex items-center justify-center mb-6 group-hover:bg-linear-to-br group-hover:${pillar.hoverGradient} transition-all duration-500 shadow-sm group-hover:shadow-lg group-hover:shadow-brand/10`}
                         >
                             <span className="material-symbols-outlined text-brand group-hover:text-white transition-colors duration-500 text-3xl">
                                 {pillar.icon}
@@ -106,7 +106,7 @@ export function CulturePillars() {
                         </p>
 
                         {/* Bottom accent line */}
-                        <div className="absolute bottom-0 left-8 right-8 h-[2px] bg-gradient-to-r from-transparent via-brand/0 to-transparent group-hover:via-brand/40 transition-all duration-700"></div>
+                        <div className="absolute bottom-0 left-8 right-8 h-[2px] bg-linear-to-r from-transparent via-brand/0 to-transparent group-hover:via-brand/40 transition-all duration-700"></div>
                     </div>
                 ))}
             </div>

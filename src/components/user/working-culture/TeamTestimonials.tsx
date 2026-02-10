@@ -41,7 +41,7 @@ export function TeamTestimonials() {
                 </div>
                 <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white mb-6 leading-tight">
                     What Our{" "}
-                    <span className="bg-gradient-to-r from-brand via-brand-purple to-brand-blue bg-clip-text text-transparent">
+                    <span className="bg-linear-to-r from-brand via-brand-purple to-brand-blue bg-clip-text text-transparent">
                         Team Says
                     </span>
                 </h2>
@@ -76,9 +76,9 @@ export function TeamTestimonials() {
                         {/* Author info */}
                         <div className="relative flex items-center gap-4 pt-6 border-t border-brand/10 dark:border-white/5">
                             {/* Avatar with gradient ring */}
-                            <div className={`relative size-12 rounded-full bg-gradient-to-br ${testimonial.gradient} p-[2px] shadow-lg shadow-brand/10`}>
+                            <div className={`relative size-12 rounded-full bg-linear-to-br ${testimonial.gradient} p-[2px] shadow-lg shadow-brand/10`}>
                                 <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center">
-                                    <span className="text-sm font-bold bg-gradient-to-br from-brand to-brand-purple bg-clip-text text-transparent">
+                                    <span className="text-sm font-bold bg-linear-to-br from-brand to-brand-purple bg-clip-text text-transparent">
                                         {testimonial.initials}
                                     </span>
                                 </div>

@@ -13,9 +13,9 @@ function MemberCard({ member }: { member: TeamMember }) {
             <div className="absolute -top-12 -right-12 w-28 h-28 rounded-full bg-brand/5 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
             {/* Avatar */}
-            <div className={`relative mx-auto size-20 rounded-2xl bg-gradient-to-br ${member.gradient} p-[2px] mb-5 shadow-lg shadow-brand/5 group-hover:shadow-xl group-hover:shadow-brand/15 group-hover:scale-105 transition-all duration-500`}>
+            <div className={`relative mx-auto size-20 rounded-2xl bg-linear-to-br ${member.gradient} p-[2px] mb-5 shadow-lg shadow-brand/5 group-hover:shadow-xl group-hover:shadow-brand/15 group-hover:scale-105 transition-all duration-500`}>
                 <div className="w-full h-full rounded-[calc(1rem-2px)] bg-white dark:bg-gray-900 flex items-center justify-center">
-                    <span className={`text-2xl font-bold bg-gradient-to-br ${member.gradient} bg-clip-text text-transparent select-none`}>
+                    <span className={`text-2xl font-bold bg-linear-to-br ${member.gradient} bg-clip-text text-transparent select-none`}>
                         {member.initials}
                     </span>
                 </div>
@@ -31,7 +31,7 @@ function MemberCard({ member }: { member: TeamMember }) {
             </span>
 
             {/* Bottom accent line */}
-            <div className="absolute bottom-0 left-6 right-6 h-[2px] bg-gradient-to-r from-transparent via-brand/0 to-transparent group-hover:via-brand/30 transition-all duration-700"></div>
+            <div className="absolute bottom-0 left-6 right-6 h-[2px] bg-linear-to-r from-transparent via-brand/0 to-transparent group-hover:via-brand/30 transition-all duration-700"></div>
         </div>
     );
 }
@@ -97,7 +97,7 @@ export function TeamGrid() {
     return (
         <section className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32">
             {/* Background accent */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] h-[70vw] max-w-[900px] max-h-[900px] rounded-full bg-gradient-to-br from-brand/3 via-brand-purple/2 to-brand-blue/3 blur-3xl pointer-events-none"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] h-[70vw] max-w-[900px] max-h-[900px] rounded-full bg-linear-to-br from-brand/3 via-brand-purple/2 to-brand-blue/3 blur-3xl pointer-events-none"></div>
 
             {/* Section Header */}
             <div className="relative text-center mb-16">
@@ -111,7 +111,7 @@ export function TeamGrid() {
                 </div>
                 <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white mb-6 leading-tight">
                     The People Who{" "}
-                    <span className="bg-gradient-to-r from-brand-purple via-brand to-brand-blue bg-clip-text text-transparent">
+                    <span className="bg-linear-to-r from-brand-purple via-brand to-brand-blue bg-clip-text text-transparent">
                         Make It Happen
                     </span>
                 </h2>
@@ -126,7 +126,7 @@ export function TeamGrid() {
                     <div key={deptIndex}>
                         {/* Department Header */}
                         <div className="flex items-center gap-4 mb-8">
-                            <div className="size-12 rounded-xl bg-gradient-to-br from-brand/10 to-brand-purple/5 dark:from-brand/15 dark:to-brand-purple/10 flex items-center justify-center shadow-sm">
+                            <div className="size-12 rounded-xl bg-linear-to-br from-brand/10 to-brand-purple/5 dark:from-brand/15 dark:to-brand-purple/10 flex items-center justify-center shadow-sm">
                                 <span className="material-symbols-outlined text-brand text-2xl">
                                     {dept.icon}
                                 </span>
@@ -139,7 +139,7 @@ export function TeamGrid() {
                                     {dept.members.length} team member{dept.members.length > 1 ? "s" : ""}
                                 </p>
                             </div>
-                            <div className="flex-1 h-[1px] bg-gradient-to-r from-brand/10 to-transparent ml-4"></div>
+                            <div className="flex-1 h-px bg-linear-to-r from-brand/10 to-transparent ml-4"></div>
                         </div>
 
                         {/* Members Grid */}

@@ -22,7 +22,7 @@ function LeaderCard({ name, role, title, bio, initials, gradient, icon, imageSrc
             <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start gap-8">
                 {/* Avatar */}
                 <div className="shrink-0">
-                    <div className={`relative size-36 lg:size-44 rounded-3xl bg-gradient-to-br ${gradient} p-[3px] shadow-xl shadow-brand/10 group-hover:shadow-2xl group-hover:shadow-brand/20 transition-all duration-500`}>
+                    <div className={`relative size-36 lg:size-44 rounded-3xl bg-linear-to-br ${gradient} p-[3px] shadow-xl shadow-brand/10 group-hover:shadow-2xl group-hover:shadow-brand/20 transition-all duration-500`}>
                         <div className="w-full h-full rounded-[calc(1.5rem-3px)] bg-white dark:bg-gray-900 flex items-center justify-center overflow-hidden">
                             {imageSrc ? (
                                 <Image
@@ -32,13 +32,13 @@ function LeaderCard({ name, role, title, bio, initials, gradient, icon, imageSrc
                                     className="object-cover rounded-[calc(1.5rem-3px)]"
                                 />
                             ) : (
-                                <span className={`text-5xl lg:text-6xl font-bold bg-gradient-to-br ${gradient} bg-clip-text text-transparent select-none`}>
+                                <span className={`text-5xl lg:text-6xl font-bold bg-linear-to-br ${gradient} bg-clip-text text-transparent select-none`}>
                                     {initials}
                                 </span>
                             )}
                         </div>
                         {/* Role badge */}
-                        <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-gradient-to-r from-brand to-brand-purple text-white text-xs font-bold shadow-lg shadow-brand/20 whitespace-nowrap">
+                        <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-linear-to-r from-brand to-brand-purple text-white text-xs font-bold shadow-lg shadow-brand/20 whitespace-nowrap">
                             {title}
                         </div>
                     </div>
@@ -72,7 +72,7 @@ function LeaderCard({ name, role, title, bio, initials, gradient, icon, imageSrc
             </div>
 
             {/* Bottom accent */}
-            <div className="absolute bottom-0 left-10 right-10 h-[2px] bg-gradient-to-r from-transparent via-brand/0 to-transparent group-hover:via-brand/30 transition-all duration-700"></div>
+            <div className="absolute bottom-0 left-10 right-10 h-[2px] bg-linear-to-r from-transparent via-brand/0 to-transparent group-hover:via-brand/30 transition-all duration-700"></div>
         </div>
     );
 }

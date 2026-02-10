@@ -30,7 +30,7 @@ export function TeamCulture() {
         <section className="relative w-full mb-32 overflow-hidden">
             {/* Full-width gradient band */}
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-brand/[0.02] to-transparent dark:via-brand/[0.05]"></div>
+                <div className="absolute inset-0 bg-linear-to-b from-transparent via-brand/2 to-transparent dark:via-brand/5"></div>
             </div>
 
             <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -46,7 +46,7 @@ export function TeamCulture() {
                     </div>
                     <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white mb-6 leading-tight">
                         Numbers That{" "}
-                        <span className="bg-gradient-to-r from-brand-blue via-brand to-brand-purple bg-clip-text text-transparent">
+                        <span className="bg-linear-to-r from-brand-blue via-brand to-brand-purple bg-clip-text text-transparent">
                             Speak Volumes
                         </span>
                     </h2>
@@ -66,14 +66,14 @@ export function TeamCulture() {
                             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full bg-brand/8 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
                             {/* Icon */}
-                            <div className="relative mx-auto size-14 rounded-2xl bg-gradient-to-br from-brand/10 to-brand-purple/5 dark:from-brand/15 dark:to-brand-purple/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500 shadow-sm">
+                            <div className="relative mx-auto size-14 rounded-2xl bg-linear-to-br from-brand/10 to-brand-purple/5 dark:from-brand/15 dark:to-brand-purple/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500 shadow-sm">
                                 <span className="material-symbols-outlined text-brand text-3xl">
                                     {item.icon}
                                 </span>
                             </div>
 
                             {/* Stat */}
-                            <div className="relative text-3xl md:text-4xl font-bold bg-gradient-to-br from-brand to-brand-purple bg-clip-text text-transparent mb-2">
+                            <div className="relative text-3xl md:text-4xl font-bold bg-linear-to-br from-brand to-brand-purple bg-clip-text text-transparent mb-2">
                                 {item.stat}
                             </div>
                             <h3 className="relative text-sm font-bold text-text-main dark:text-white mb-3 uppercase tracking-wide">
@@ -84,7 +84,7 @@ export function TeamCulture() {
                             </p>
 
                             {/* Bottom accent */}
-                            <div className="absolute bottom-0 left-6 right-6 h-[2px] bg-gradient-to-r from-transparent via-brand/0 to-transparent group-hover:via-brand/30 transition-all duration-700"></div>
+                            <div className="absolute bottom-0 left-6 right-6 h-[2px] bg-linear-to-r from-transparent via-brand/0 to-transparent group-hover:via-brand/30 transition-all duration-700"></div>
                         </div>
                     ))}
                 </div>

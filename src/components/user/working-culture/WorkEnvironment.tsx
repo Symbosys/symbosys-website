@@ -34,9 +34,9 @@ export function WorkEnvironment() {
         <section className="relative w-full mb-32 overflow-hidden">
             {/* Full-width liquid light background band */}
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-brand/[0.03] to-transparent dark:via-brand/[0.06]"></div>
-                <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[40vw] h-[40vw] max-w-[500px] max-h-[500px] rounded-full bg-gradient-to-br from-brand/5 to-brand-purple/3 blur-3xl"></div>
-                <div className="absolute top-1/3 right-1/4 w-[30vw] h-[30vw] max-w-[400px] max-h-[400px] rounded-full bg-gradient-to-tl from-brand-blue/5 to-brand/3 blur-3xl"></div>
+                <div className="absolute inset-0 bg-linear-to-b from-transparent via-brand/3 to-transparent dark:via-brand/6"></div>
+                <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[40vw] h-[40vw] max-w-[500px] max-h-[500px] rounded-full bg-linear-to-br from-brand/5 to-brand-purple/3 blur-3xl"></div>
+                <div className="absolute top-1/3 right-1/4 w-[30vw] h-[30vw] max-w-[400px] max-h-[400px] rounded-full bg-linear-to-tl from-brand-blue/5 to-brand/3 blur-3xl"></div>
             </div>
 
             <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
@@ -52,7 +52,7 @@ export function WorkEnvironment() {
                     </div>
                     <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white mb-6 leading-tight">
                         Designed for{" "}
-                        <span className="bg-gradient-to-r from-brand via-brand-purple to-brand-blue bg-clip-text text-transparent">
+                        <span className="bg-linear-to-r from-brand via-brand-purple to-brand-blue bg-clip-text text-transparent">
                             Excellence
                         </span>
                     </h2>
@@ -69,12 +69,12 @@ export function WorkEnvironment() {
                             className="relative glass-card rounded-3xl p-8 lg:p-10 group hover:-translate-y-1 transition-all duration-500 overflow-hidden"
                         >
                             {/* Background liquid shimmer */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-brand/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-3xl"></div>
+                            <div className="absolute inset-0 bg-linear-to-br from-brand/3 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-3xl"></div>
                             <div className="absolute -top-12 -right-12 w-24 h-24 rounded-full bg-brand/5 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
                             <div className="relative z-10 flex flex-col sm:flex-row items-start gap-6">
                                 {/* Icon container with liquid border */}
-                                <div className="shrink-0 size-16 rounded-2xl bg-gradient-to-br from-brand/10 to-brand-purple/5 dark:from-brand/15 dark:to-brand-purple/10 flex items-center justify-center group-hover:from-brand group-hover:to-brand-purple transition-all duration-500 shadow-sm group-hover:shadow-lg group-hover:shadow-brand/10">
+                                <div className="shrink-0 size-16 rounded-2xl bg-linear-to-br from-brand/10 to-brand-purple/5 dark:from-brand/15 dark:to-brand-purple/10 flex items-center justify-center group-hover:from-brand group-hover:to-brand-purple transition-all duration-500 shadow-sm group-hover:shadow-lg group-hover:shadow-brand/10">
                                     <span className="material-symbols-outlined text-brand group-hover:text-white transition-colors duration-500 text-3xl">
                                         {env.icon}
                                     </span>
@@ -95,7 +95,7 @@ export function WorkEnvironment() {
                             </div>
 
                             {/* Corner liquid accent */}
-                            <div className="absolute bottom-0 right-0 w-20 h-20 bg-gradient-to-tl from-brand/[0.04] to-transparent rounded-tl-[40px] pointer-events-none"></div>
+                            <div className="absolute bottom-0 right-0 w-20 h-20 bg-linear-to-tl from-brand/4 to-transparent rounded-tl-[40px] pointer-events-none"></div>
                         </div>
                     ))}
                 </div>

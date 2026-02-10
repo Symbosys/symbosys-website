@@ -57,7 +57,7 @@ export function LifeAtSymbosys() {
     return (
         <section className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32">
             {/* Liquid background accent */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] h-[60vw] max-w-[800px] max-h-[800px] rounded-full bg-gradient-to-br from-brand/5 via-brand-purple/3 to-brand-blue/5 blur-3xl pointer-events-none"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] h-[60vw] max-w-[800px] max-h-[800px] rounded-full bg-linear-to-br from-brand/5 via-brand-purple/3 to-brand-blue/5 blur-3xl pointer-events-none"></div>
 
             {/* Section Header */}
             <div className="relative text-center mb-16">
@@ -71,7 +71,7 @@ export function LifeAtSymbosys() {
                 </div>
                 <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white mb-6 leading-tight">
                     A Day in Our{" "}
-                    <span className="bg-gradient-to-r from-brand-purple via-brand to-brand-blue bg-clip-text text-transparent">
+                    <span className="bg-linear-to-r from-brand-purple via-brand to-brand-blue bg-clip-text text-transparent">
                         Universe
                     </span>
                 </h2>
@@ -99,14 +99,14 @@ export function LifeAtSymbosys() {
                             ) : (
                                 /* Fallback Gradient Placeholder - mimics an image slot */
                                 <div className={`w-full h-full bg-surface dark:bg-gray-900`}>
-                                    <div className={`absolute inset-0 bg-gradient-to-br ${moment.gradient} opacity-60`}></div>
+                                    <div className={`absolute inset-0 bg-linear-to-br ${moment.gradient} opacity-60`}></div>
                                     {/* Abstract Pattern Overlay */}
-                                    <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                                    <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] bg-size-[16px_16px]"></div>
                                 </div>
                             )}
 
                             {/* Gradient Overlay for Text Readability */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+                            <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
                         </div>
 
                         {/* 2. Content Layer */}
@@ -130,7 +130,7 @@ export function LifeAtSymbosys() {
 
                         {/* Interactive Shine Effect */}
                         <div className="absolute inset-0 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-700">
-                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -skew-x-12 translate-x-[-100%] group-hover:animate-shine"></div>
+                            <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/5 to-transparent -skew-x-12 -translate-x-full group-hover:animate-shine"></div>
                         </div>
                     </div>
                 ))}

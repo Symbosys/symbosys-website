@@ -48,7 +48,7 @@ export function GrowthJourney() {
                 </div>
                 <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white mb-6 leading-tight">
                     Your Journey of{" "}
-                    <span className="bg-gradient-to-r from-brand-blue via-brand to-brand-purple bg-clip-text text-transparent">
+                    <span className="bg-linear-to-r from-brand-blue via-brand to-brand-purple bg-clip-text text-transparent">
                         Growth
                     </span>
                 </h2>
@@ -61,9 +61,9 @@ export function GrowthJourney() {
             <div className="relative">
                 {/* Vertical liquid line - desktop */}
                 <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-[2px] -translate-x-1/2">
-                    <div className="w-full h-full bg-gradient-to-b from-brand/30 via-brand-purple/30 to-brand-blue/30 rounded-full"></div>
+                    <div className="w-full h-full bg-linear-to-b from-brand/30 via-brand-purple/30 to-brand-blue/30 rounded-full"></div>
                     {/* Animated liquid glow on the line */}
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1 h-24 bg-gradient-to-b from-brand/60 to-transparent rounded-full animate-liquid-float"></div>
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1 h-24 bg-linear-to-b from-brand/60 to-transparent rounded-full animate-liquid-float"></div>
                 </div>
 
                 <div className="space-y-8 lg:space-y-0">
@@ -81,7 +81,7 @@ export function GrowthJourney() {
 
                                     <div className="relative z-10 flex items-start gap-5">
                                         {/* Step number */}
-                                        <div className="shrink-0 text-5xl font-bold bg-gradient-to-br from-brand/20 to-brand-purple/10 bg-clip-text text-transparent select-none">
+                                        <div className="shrink-0 text-5xl font-bold bg-linear-to-br from-brand/20 to-brand-purple/10 bg-clip-text text-transparent select-none">
                                             {step.step}
                                         </div>
                                         <div>
@@ -98,7 +98,7 @@ export function GrowthJourney() {
 
                             {/* Center Node */}
                             <div className="hidden lg:flex shrink-0 w-[10%] justify-center relative z-10">
-                                <div className="size-14 rounded-2xl bg-gradient-to-br from-brand/10 to-brand-purple/10 dark:from-brand/15 dark:to-brand-purple/15 border border-brand/20 dark:border-brand/30 flex items-center justify-center shadow-lg shadow-brand/5 hover:scale-110 transition-transform duration-500">
+                                <div className="size-14 rounded-2xl bg-linear-to-br from-brand/10 to-brand-purple/10 dark:from-brand/15 dark:to-brand-purple/15 border border-brand/20 dark:border-brand/30 flex items-center justify-center shadow-lg shadow-brand/5 hover:scale-110 transition-transform duration-500">
                                     <span className="material-symbols-outlined text-brand text-2xl">
                                         {step.icon}
                                     </span>

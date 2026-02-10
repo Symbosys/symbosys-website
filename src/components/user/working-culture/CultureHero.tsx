@@ -4,11 +4,11 @@ export function CultureHero({ children }: { children?: React.ReactNode }) {
             {/* Liquid Light Background Effects */}
             <div className="absolute inset-0 pointer-events-none">
                 {/* Primary liquid orb - large, slow float */}
-                <div className="absolute top-[10%] left-[15%] w-[45vw] h-[45vw] max-w-[600px] max-h-[600px] rounded-full bg-gradient-to-br from-brand/20 via-brand-purple/15 to-brand-blue/10 blur-3xl animate-liquid-float opacity-70 dark:opacity-50"></div>
+                <div className="absolute top-[10%] left-[15%] w-[45vw] h-[45vw] max-w-[600px] max-h-[600px] rounded-full bg-linear-to-br from-brand/20 via-brand-purple/15 to-brand-blue/10 blur-3xl animate-liquid-float opacity-70 dark:opacity-50"></div>
                 {/* Secondary liquid orb */}
-                <div className="absolute bottom-[5%] right-[10%] w-[35vw] h-[35vw] max-w-[500px] max-h-[500px] rounded-full bg-gradient-to-tl from-brand-blue/20 via-brand/10 to-brand-purple/15 blur-3xl animate-float-delayed opacity-60 dark:opacity-40"></div>
+                <div className="absolute bottom-[5%] right-[10%] w-[35vw] h-[35vw] max-w-[500px] max-h-[500px] rounded-full bg-linear-to-tl from-brand-blue/20 via-brand/10 to-brand-purple/15 blur-3xl animate-float-delayed opacity-60 dark:opacity-40"></div>
                 {/* Tertiary accent orb */}
-                <div className="absolute top-[50%] right-[25%] w-[20vw] h-[20vw] max-w-[300px] max-h-[300px] rounded-full bg-gradient-to-r from-brand-purple/15 to-brand/10 blur-3xl animate-float opacity-50 dark:opacity-30"></div>
+                <div className="absolute top-[50%] right-[25%] w-[20vw] h-[20vw] max-w-[300px] max-h-[300px] rounded-full bg-linear-to-r from-brand-purple/15 to-brand/10 blur-3xl animate-float opacity-50 dark:opacity-30"></div>
                 {/* Tiny sparkle orbs */}
                 <div className="absolute top-[20%] right-[40%] w-3 h-3 rounded-full bg-brand/40 blur-sm animate-float"></div>
                 <div className="absolute top-[60%] left-[20%] w-2 h-2 rounded-full bg-brand-purple/50 blur-sm animate-float-delayed"></div>
@@ -31,12 +31,12 @@ export function CultureHero({ children }: { children?: React.ReactNode }) {
                     {/* Main headline with liquid gradient text */}
                     <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-8 animate-fade-in">
                         <span className="text-text-main dark:text-white">Where </span>
-                        <span className="bg-gradient-to-r from-brand via-brand-purple to-brand-blue bg-clip-text text-transparent">
+                        <span className="bg-linear-to-r from-brand via-brand-purple to-brand-blue bg-clip-text text-transparent">
                             Innovation
                         </span>
                         <br className="hidden sm:block" />
                         <span className="text-text-main dark:text-white"> Meets </span>
-                        <span className="bg-gradient-to-r from-brand-purple via-brand to-brand-blue bg-clip-text text-transparent">
+                        <span className="bg-linear-to-r from-brand-purple via-brand to-brand-blue bg-clip-text text-transparent">
                             Inspiration
                         </span>
                     </h1>
@@ -59,7 +59,7 @@ export function CultureHero({ children }: { children?: React.ReactNode }) {
                                 key={i}
                                 className="glass-card rounded-2xl px-6 py-4 flex items-center gap-4 group hover:scale-105 transition-all duration-500 cursor-default"
                             >
-                                <div className="size-11 rounded-xl bg-gradient-to-br from-brand/10 to-brand-purple/10 dark:from-brand/20 dark:to-brand-purple/20 flex items-center justify-center group-hover:from-brand group-hover:to-brand-purple transition-all duration-500">
+                                <div className="size-11 rounded-xl bg-linear-to-br from-brand/10 to-brand-purple/10 dark:from-brand/20 dark:to-brand-purple/20 flex items-center justify-center group-hover:from-brand group-hover:to-brand-purple transition-all duration-500">
                                     <span className="material-symbols-outlined text-brand group-hover:text-white transition-colors duration-500 text-2xl">
                                         {stat.icon}
                                     </span>
