@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function SymbosysTechnologies() {
     return (
@@ -53,12 +54,13 @@ export function SymbosysTechnologies() {
                         SYMBOSYS — where dreams take a digital form.
                     </p>
 
-                    <button className="group h-14 px-8 rounded-full bg-brand text-white font-bold text-lg shadow-xl shadow-brand/30 hover:shadow-2xl hover:shadow-brand/40 hover:-translate-y-1 transition-all duration-300 flex items-center gap-3">
-                        Read More
-                        <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
-                            arrow_forward
-                        </span>
-                    </button>
+                    <Link href="/about" className="cursor-pointer">
+                        <button className="group h-14 px-8 rounded-full bg-brand text-white font-bold text-lg shadow-xl shadow-brand/30 hover:shadow-2xl hover:shadow-brand/40 hover:-translate-y-1 transition-all duration-300 flex items-center gap-3 cursor-pointer">
+                            Read More
+                            <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
+                                arrow_forward
+                            </span>
+                        </button></Link>
                 </div>
             </div>
         </section>

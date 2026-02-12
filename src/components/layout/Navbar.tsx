@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { useTheme } from "@/components/ThemeProvider";
@@ -73,14 +74,26 @@ export function Navbar() {
             {/* Main Navbar Bar */}
             <div className="bg-white/70 dark:bg-gray-900/80 backdrop-blur-xl border border-white/40 dark:border-gray-700/50 rounded-full px-6 py-3 flex items-center justify-between shadow-xl dark:shadow-2xl dark:shadow-brand/5 relative z-50 transition-colors duration-300">
                 <Link href="/" className="flex items-center gap-3 group">
-                    <div className="size-10 bg-linear-to-br from-brand to-brand-blue rounded-full flex items-center justify-center text-white shadow-lg shadow-brand/20 group-hover:scale-110 transition-transform duration-500">
-                        <span className="material-symbols-outlined text-2xl">
-                            all_inclusive
-                        </span>
+                    <div className="relative h-14 w-auto group-hover:scale-105 transition-transform duration-500">
+                        <Image
+                            src="/company/newlog.webp"
+                            alt="Symbosys Logo"
+                            width={0}
+                            height={0}
+                            sizes="100vw"
+                            className="w-auto h-full dark:hidden"
+                            priority
+                        />
+                        <Image
+                            src="/company/newlog-dark.webp"
+                            alt="Symbosys Logo"
+                            width={0}
+                            height={0}
+                            sizes="100vw"
+                            className="w-auto h-full hidden dark:block"
+                            priority
+                        />
                     </div>
-                    <span className="text-xl font-bold tracking-tight text-text-main dark:text-white">
-                        Symbosys
-                    </span>
                 </Link>
 
                 {/* Desktop Navigation */}

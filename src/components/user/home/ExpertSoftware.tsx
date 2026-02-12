@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function ExpertSoftware() {
     const offerings = [
@@ -62,12 +63,13 @@ export function ExpertSoftware() {
                         commitment to your success.
                     </p>
 
-                    <button className="group h-14 px-8 rounded-full bg-linear-to-r from-brand-purple to-brand-blue text-white font-bold text-lg shadow-xl shadow-brand-purple/30 hover:shadow-2xl hover:shadow-brand-purple/40 hover:-translate-y-1 transition-all duration-300 flex items-center gap-3">
-                        Read More
-                        <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
-                            arrow_forward
-                        </span>
-                    </button>
+                    <Link href="/service/software-development" className="cursor-pointer">
+                        <button className="group h-14 px-8 rounded-full bg-linear-to-r from-brand-purple to-brand-blue text-white font-bold text-lg shadow-xl shadow-brand-purple/30 hover:shadow-2xl hover:shadow-brand-purple/40 hover:-translate-y-1 transition-all duration-300 flex items-center gap-3 cursor-pointer">
+                            Read More
+                            <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
+                                arrow_forward
+                            </span>
+                        </button></Link>
                 </div>
 
                 {/* Right: Image */}

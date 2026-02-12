@@ -160,8 +160,8 @@ function HoverFooter() {
             </div>
 
             {/* Text hover effect */}
-            <div className="lg:flex hidden h-120 -mt-52 -mb-36">
-                <TextHoverEffect text="Symbosys" className="z-50" />
+            <div className="lg:flex hidden h-120 -mt-40 -mb-20">
+                <TextHoverEffect text="sdf" className="z-50" />
             </div>
 
             <FooterBackgroundGradient />

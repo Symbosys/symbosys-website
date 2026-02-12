@@ -1,40 +1,41 @@
 "use client";
-import React from "react";
+
+import { FooterBackgroundGradient, TextHoverEffect } from "@/components/layout/footer/hover-footer";
 import {
-    Mail,
-    Phone,
-    MapPin,
     Facebook,
     Instagram,
+    Linkedin,
+    Mail,
+    MapPin,
+    Phone,
     Twitter,
-    Dribbble,
-    Globe,
+    Youtube,
 } from "lucide-react";
-import { FooterBackgroundGradient } from "@/components/layout/footer/hover-footer";
-import { TextHoverEffect } from "@/components/layout/footer/hover-footer";
+import Image from "next/image";
+import Link from "next/link";
 
 export function Footer() {
     // Footer link data
+    // Footer link data
     const footerLinks = [
         {
-            title: "About Us",
+            title: "Company",
             links: [
-                { label: "Company History", href: "#" },
-                { label: "Meet the Team", href: "#" },
-                { label: "Employee Handbook", href: "#" },
-                { label: "Careers", href: "#" },
+                { label: "About Us", href: "/about" },
+                { label: "Our Products", href: "/products" },
+                { label: "Our Teams", href: "/our-teams" },
+                { label: "Careers", href: "/careers" },
+                { label: "Working Culture", href: "/working-culture" },
             ],
         },
         {
             title: "Helpful Links",
             links: [
-                { label: "FAQs", href: "#" },
-                { label: "Support", href: "#" },
-                {
-                    label: "Live Chat",
-                    href: "#",
-                    pulse: true,
-                },
+                { label: "Terms & Conditions", href: "/terms-conditions" },
+                { label: "Privacy Policy", href: "/privacy-policy" },
+                { label: "FAQs", href: "/faqs" },
+                { label: "Support", href: "/support" },
+                { label: "Contact", href: "/contact" },
             ],
         },
     ];
@@ -43,27 +44,27 @@ export function Footer() {
     const contactInfo = [
         {
             icon: <Mail size={18} className="text-[#3ca2fa]" />,
-            text: "hello@nurui.com",
-            href: "mailto:hello@nurui.com",
+            text: "support@symbosys.com",
+            href: "mailto:support@symbosys.com",
         },
         {
             icon: <Phone size={18} className="text-[#3ca2fa]" />,
-            text: "+91 86373 73116",
-            href: "tel:+918637373116",
+            text: "+91 9122010150",
+            href: "tel:+919122010150",
         },
         {
-            icon: <MapPin size={18} className="text-[#3ca2fa]" />,
-            text: "Sylhet, Bangladesh",
+            icon: <MapPin size={22} className="text-[#3ca2fa] shrink-0" />,
+            text: "F/192, Harmu Housing Colony, Delatoli, Ranchi, Jharkhand 834002",
         },
     ];
 
     // Social media icons
     const socialLinks = [
-        { icon: <Facebook size={20} />, label: "Facebook", href: "#" },
-        { icon: <Instagram size={20} />, label: "Instagram", href: "#" },
-        { icon: <Twitter size={20} />, label: "Twitter", href: "#" },
-        { icon: <Dribbble size={20} />, label: "Dribbble", href: "#" },
-        { icon: <Globe size={20} />, label: "Globe", href: "#" },
+        { icon: <Facebook size={20} />, label: "Facebook", href: "https://www.facebook.com/symbosystech/" },
+        { icon: <Twitter size={20} />, label: "Twitter", href: "https://x.com/SymbosysTech" },
+        { icon: <Instagram size={20} />, label: "Instagram", href: "https://www.instagram.com/symbosys/" },
+        { icon: <Youtube size={20} />, label: "Youtube", href: "https://www.youtube.com/@Symbosys" },
+        { icon: <Linkedin size={20} />, label: "LinkedIn", href: "https://in.linkedin.com/company/symbosys" },
     ];
 
     return (
@@ -72,14 +73,26 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 lg:gap-16 pb-12">
                     {/* Brand section */}
                     <div className="flex flex-col space-y-4">
-                        <div className="flex items-center space-x-2">
-                            <span className="text-[#3ca2fa] text-3xl font-extrabold">
-                                &hearts;
-                            </span>
-                            <span className="text-white text-3xl font-bold">Nur/ui</span>
+                        <div className="relative h-14 w-auto transition-transform duration-500 hover:scale-105">
+                            <Image
+                                src="/company/newlog.webp"
+                                alt="Symbosys Logo"
+                                width={0}
+                                height={0}
+                                sizes="100vw"
+                                className="w-auto h-full dark:hidden"
+                            />
+                            <Image
+                                src="/company/newlog-dark.webp"
+                                alt="Symbosys Logo"
+                                width={0}
+                                height={0}
+                                sizes="100vw"
+                                className="w-auto h-full hidden dark:block"
+                            />
                         </div>
                         <p className="text-sm leading-relaxed">
-                            Nur UI is a modern React and Next.js based UI component library.
+                            Innovating Beyond Imagination. We transform ideas into reality through cutting-edge technology and digital excellence.
                         </p>
                     </div>
 
@@ -92,15 +105,12 @@ export function Footer() {
                             <ul className="space-y-3">
                                 {section.links.map((link) => (
                                     <li key={link.label} className="relative">
-                                        <a
+                                        <Link
                                             href={link.href}
                                             className="hover:text-[#3ca2fa] transition-colors"
                                         >
                                             {link.label}
-                                        </a>
-                                        {link.pulse && (
-                                            <span className="absolute top-0 right-[-10px] w-2 h-2 rounded-full bg-[#3ca2fa] animate-pulse"></span>
-                                        )}
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
@@ -144,6 +154,7 @@ export function Footer() {
                             <a
                                 key={label}
                                 href={href}
+                                target="_blank"
                                 aria-label={label}
                                 className="hover:text-[#3ca2fa] transition-colors"
                             >
@@ -160,7 +171,7 @@ export function Footer() {
             </div>
 
             {/* Text hover effect */}
-            <div className="lg:flex hidden h-120 -mt-30 -mb-30 -mr-30 p-15 -ml-30">
+            <div className="lg:flex hidden h-120 -mt-30 -mb-30 p-40">
                 <TextHoverEffect text="Symbosys" className="z-50" />
             </div>
 
