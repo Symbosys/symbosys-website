@@ -1,9 +1,7 @@
 import {
     CultureHero,
     OurPhilosophy,
-    CulturePillars,
     LifeAtSymbosys,
-    GrowthJourney,
     WorkEnvironment,
     TeamTestimonials,
     JoinCultureCTA,
@@ -32,23 +30,16 @@ export default function WorkingCulturePage() {
             </div>
 
             <main className="relative z-10">
-                {/* 1. Hero Section */}
                 {/* 1. Hero Section + Our Philosophy */}
                 <CultureHero>
                     <OurPhilosophy />
                 </CultureHero>
-
-                {/* 3. Culture Pillars */}
-                <CulturePillars />
 
                 {/* 4. Life at Symbosys - Bento Grid */}
                 <LifeAtSymbosys />
 
                 {/* 5. Work Environment */}
                 <WorkEnvironment />
-
-                {/* 6. Growth Journey Timeline */}
-                <GrowthJourney />
 
                 {/* 7. Team Testimonials */}
                 <TeamTestimonials />

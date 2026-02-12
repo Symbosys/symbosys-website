@@ -27,7 +27,7 @@ export function ContactFormSection() {
                                     Harmu, Ranchi, Jharkhand, India
                                 </p>
                                 <a
-                                    href="https://maps.google.com/?q=Harmu,Ranchi"
+                                    href="https://www.google.com/maps/dir//Symbosys+-+Software+Company+in+Ranchi"
                                     target="_blank"
                                     className="text-brand font-semibold text-sm mt-2 inline-flex items-center gap-1 hover:gap-2 transition-all"
                                 >

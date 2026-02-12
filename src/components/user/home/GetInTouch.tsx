@@ -4,7 +4,7 @@ export function GetInTouch() {
             title: "Address",
             value: "Harmu, Ranchi",
             icon: "location_on",
-            action: "https://maps.google.com/?q=Harmu,Ranchi",
+            action: "https://www.google.com/maps/dir//Symbosys+-+Software+Company+in+Ranchi",
         },
         {
             title: "Call Us",
