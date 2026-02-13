@@ -42,9 +42,6 @@ export default function OurTeamPage() {
 
                 {/* 5. Join Team CTA */}
                 <JoinTeamCTA />
-
-                {/* 6. Contact CTA (shared) */}
-                <ContactCTA />
             </main>
         </div>
     );

@@ -1,33 +1,30 @@
+import Image from "next/image";
 
 export function TeamGrid() {
     const team = [
         {
-            name: "Rahul Verma",
+            name: "Amit kumar",
             role: "Lead Full-Stack Developer",
-            image: null, // Placeholder
+            image: "/team/amit.jpeg",
             color: "from-blue-500 to-cyan-500",
-            socials: { linkedin: "#", twitter: "#" }
         },
         {
-            name: "Priya Tiwari",
-            role: "Senior UI/UX Designer",
-            image: null,
+            name: "Naina khan",
+            role: "Full-Stack Developer",
+            image: "/team/naina.jpg",
             color: "from-purple-500 to-pink-500",
-            socials: { linkedin: "#", dribbble: "#" }
         },
         {
-            name: "Ankit Sharma",
-            role: "Backend Architect",
-            image: null,
+            name: "Md Saif",
+            role: "Full-Stack Developer",
+            image: "/team/saif.jpeg",
             color: "from-emerald-500 to-teal-500",
-            socials: { linkedin: "#", github: "#" }
         },
         {
-            name: "Sneha Gupta",
-            role: "Product Manager",
+            name: "Puja kashyap",
+            role: "HR Manager",
             image: null,
             color: "from-orange-500 to-red-500",
-            socials: { linkedin: "#", twitter: "#" }
         }
     ];
 
@@ -66,13 +63,16 @@ export function TeamGrid() {
                                     <p className="text-xs font-bold uppercase tracking-widest">Image</p>
                                 </div>
                             </div>
-                            {/* Image Component would go here:
-                            <Image 
-                                src={member.image} 
-                                alt={member.name}
-                                fill
-                                className="object-cover"
-                            /> */}
+
+                            {/* Member Image */}
+                            {member.image && (
+                                <Image
+                                    src={member.image}
+                                    alt={member.name}
+                                    fill
+                                    className="object-cover"
+                                />
+                            )}
                         </div>
 
                         {/* 2. Gradient Overlay (Always visible but stronger at bottom) */}
@@ -87,20 +87,11 @@ export function TeamGrid() {
                                     {member.name}
                                 </h3>
                                 <div className="h-0.5 w-12 bg-white/30 mb-3 group-hover:w-full group-hover:bg-brand transition-all duration-500"></div>
-                                <p className="text-brand-purple font-bold text-sm uppercase tracking-wider mb-4 opacity-90">
+                                <p className="text-brand-blue font-black text-[11px] uppercase tracking-widest mb-4">
                                     {member.role}
                                 </p>
                             </div>
 
-                            {/* Hidden Actions / Socials */}
-                            <div className="flex items-center gap-4 opacity-0 transform translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">
-                                <button className="size-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center hover:bg-brand hover:text-white transition-colors text-white">
-                                    <span className="material-symbols-outlined text-sm">mail</span>
-                                </button>
-                                <button className="size-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center hover:bg-[#0077b5] hover:text-white transition-colors text-white">
-                                    <span className="material-symbols-outlined text-sm">link</span>
-                                </button>
-                            </div>
                         </div>
 
                         {/* Hover Shine Effect */}
