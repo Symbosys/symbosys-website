@@ -1,22 +1,21 @@
 import {
-  StatsSection,
+  BoostBusiness,
+  BuildProjectTogether,
+  BusinessBenefits,
+  ContactCTA,
+  ExpertSoftware,
+  GetInTouch,
+  Hero,
+  IndustriesSection,
+  RecentProjects,
   ServicesFixedMarquee,
   ServicesIconsMarquee,
   SymbosysTechnologies,
-  ExpertSoftware,
   TeamAndSpecializations,
-  IndustriesSection,
-  WorkProcessSection,
-  WhyChooseUs,
-  BoostBusiness,
-  RecentProjects,
-  BusinessBenefits,
-  WhyChooseSymbosys,
-  BuildProjectTogether,
-  GetInTouch,
-  ContactCTA,
-  Hero,
   TechStackSection,
+  WhyChooseSymbosys,
+  WhyChooseUs,
+  WorkProcessSection,
 } from "@/components/user/home";
 
 
@@ -43,8 +42,7 @@ export default function Home() {
         {/* Hero Section */}
         <Hero />
 
-        {/* 1. Stats Section */}
-        <StatsSection />
+
 
         {/* 2. Services Fixed Left Marquee */}
         <ServicesFixedMarquee />

@@ -12,3 +12,119 @@ generator client {
 datasource db {
   provider = "postgresql"
 }
+
+model Enquiry {
+  id      Int     @id @default(autoincrement())
+  name    String
+  email   String
+  phone   String
+  subject String
+  message String  @db.VarChar(500)
+  isRead  Boolean @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Team {
+  id           Int        @id @default(autoincrement())
+  name         String
+  image        Json
+  departmentId Int
+  department   Department @relation(fields: [departmentId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// Job Board Schema
+enum JobType {
+  FULL_TIME
+  PART_TIME
+  CONTRACT
+  FREELANCE
+  INTERNSHIP
+  REMOTE
+}
+
+enum JobStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+  CLOSED
+}
+
+enum ApplicationStatus {
+  NEW
+  REVIEWING
+  SHORTLISTED
+  INTERVIEW
+  OFFER
+  HIRED
+  REJECTED
+}
+
+model Department {
+  id   Int    @id @default(autoincrement())
+  name String @unique
+  slug String @unique
+
+  jobs Job[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  teams Team[]
+}
+
+model Job {
+  id           Int     @id @default(autoincrement())
+  title        String
+  slug         String  @unique
+  description  String  @db.Text
+  requirements String  @db.Text
+  salaryRange  String?
+  location     String
+
+  departmentId Int
+  department   Department @relation(fields: [departmentId], references: [id])
+
+  type     JobType
+  status   JobStatus @default(DRAFT)
+  featured Boolean   @default(false)
+
+  applications Application[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Application {
+  id          Int               @id @default(autoincrement())
+  jobId       Int
+  applicantId Int
+  status      ApplicationStatus @default(NEW)
+  coverLetter String?           @db.Text
+
+  job       Job       @relation(fields: [jobId], references: [id])
+  applicant Applicant @relation(fields: [applicantId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Applicant {
+  id        Int     @id @default(autoincrement())
+  firstName String
+  lastName  String
+  email     String  @unique
+  phone     String?
+  linkedin  String?
+  portfolio String?
+  resumeUrl String
+
+  applications Application[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
