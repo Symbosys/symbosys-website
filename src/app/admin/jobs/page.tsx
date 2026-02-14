@@ -186,7 +186,7 @@ export default async function JobsPage({ searchParams }: PageProps) {
 
                 {/* Pagination */}
                 <div className="px-6 py-4 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between bg-gray-50/30 dark:bg-gray-900/40">
-                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest font-black">
+                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">
                         Displaying {jobs.length} of {pagination?.total || 0} Openings
                     </p>
                     <div className="flex gap-2">
