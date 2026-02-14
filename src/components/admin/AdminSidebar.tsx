@@ -1,8 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
+import { logout } from "@/actions/admin";
+import { LogOut, Loader2 } from "lucide-react";
+import { toast } from "sonner";
 
 const MENU_ITEMS = [
     { name: "Dashboard", icon: "dashboard", href: "/admin" },
@@ -14,9 +17,29 @@ const MENU_ITEMS = [
     { name: "Setting", icon: "settings", href: "/admin/setting" },
 ];
 
+import { useSession } from "next-auth/react";
+
 export function AdminSidebar() {
+    const { data: session } = useSession();
+    const user = session?.user;
     const pathname = usePathname();
+    const router = useRouter();
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isLoggingOut, setIsLoggingOut] = useState(false);
+
+    const handleLogout = async () => {
+        setIsLoggingOut(true);
+        try {
+            await logout();
+            toast.success("Successfully signed out");
+            router.push("/auth/login");
+            router.refresh();
+        } catch (error) {
+            toast.error("Logout failed");
+        } finally {
+            setIsLoggingOut(false);
+        }
+    };
 
     return (
         <>
@@ -61,8 +84,8 @@ export function AdminSidebar() {
                                     href={item.href}
                                     onClick={() => setIsMobileMenuOpen(false)}
                                     className={`relative flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-300 group ${isActive
-                                            ? "bg-brand/10 text-brand font-semibold"
-                                            : "text-text-muted dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-text-main dark:hover:text-white"
+                                        ? "bg-brand/10 text-brand font-semibold"
+                                        : "text-text-muted dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-text-main dark:hover:text-white"
                                         }`}
                                 >
                                     {isActive && (
@@ -81,20 +104,35 @@ export function AdminSidebar() {
                     </nav>
 
                     {/* User Profile / Footer */}
-                    <div className="p-4 border-t border-gray-100 dark:border-gray-800">
-                        <div className="flex items-center gap-3 p-3 rounded-xl bg-gray-50 dark:bg-white/5">
-                            <div className="size-10 rounded-full bg-brand/20 flex items-center justify-center text-brand font-bold">
-                                A
+                    <div className="p-4 border-t border-gray-100 dark:border-gray-800 space-y-2">
+                        <div className="flex items-center gap-3 p-3 rounded-xl bg-gray-50 dark:bg-white/5 border border-transparent">
+                            <div className="size-10 rounded-full bg-brand/10 flex items-center justify-center text-brand font-black text-sm">
+                                {user?.name?.[0]?.toUpperCase() || "A"}
                             </div>
                             <div className="flex-1 min-w-0">
-                                <p className="text-sm font-medium text-text-main dark:text-white truncate">
-                                    Admin User
+                                <p className="text-xs font-black text-gray-900 dark:text-white truncate uppercase tracking-tighter leading-tight">
+                                    {user?.name || "Administrator"}
                                 </p>
-                                <p className="text-xs text-text-muted dark:text-gray-400 truncate">
-                                    admin@symbosys.com
+                                <p className="text-[10px] text-gray-500 dark:text-gray-400 truncate font-medium mt-0.5">
+                                    {user?.email || "admin@symbosys.com"}
                                 </p>
                             </div>
                         </div>
+
+                        <button
+                            onClick={handleLogout}
+                            disabled={isLoggingOut}
+                            className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-xs font-bold text-red-500 hover:bg-red-50 dark:hover:bg-red-500/10 border border-transparent hover:border-red-100 dark:hover:border-red-500/20 transition-all duration-300 group cursor-pointer"
+                        >
+                            {isLoggingOut ? (
+                                <Loader2 className="size-4 animate-spin" />
+                            ) : (
+                                <>
+                                    <LogOut className="size-4 group-hover:-translate-x-0.5 transition-transform " />
+                                    Sign Out
+                                </>
+                            )}
+                        </button>
                     </div>
                 </div>
             </aside>

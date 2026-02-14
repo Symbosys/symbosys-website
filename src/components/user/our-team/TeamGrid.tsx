@@ -1,32 +1,19 @@
+import { getAllTeamMembers } from "@/actions/team";
 import Image from "next/image";
 
-export function TeamGrid() {
-    const team = [
-        {
-            name: "Amit kumar",
-            role: "Lead Full-Stack Developer",
-            image: "/team/amit.jpeg",
-            color: "from-blue-500 to-cyan-500",
-        },
-        {
-            name: "Naina khan",
-            role: "Full-Stack Developer",
-            image: "/team/naina.jpg",
-            color: "from-purple-500 to-pink-500",
-        },
-        {
-            name: "Md Saif",
-            role: "Full-Stack Developer",
-            image: "/team/saif.jpeg",
-            color: "from-emerald-500 to-teal-500",
-        },
-        {
-            name: "Puja kashyap",
-            role: "HR Manager",
-            image: null,
-            color: "from-orange-500 to-red-500",
-        }
-    ];
+const colors = [
+    "from-blue-500 to-cyan-500",
+    "from-purple-500 to-pink-500",
+    "from-emerald-500 to-teal-500",
+    "from-orange-500 to-red-500",
+    "from-blue-500 to-cyan-500",
+    "from-purple-500 to-pink-500",
+    "from-emerald-500 to-teal-500",
+    "from-orange-500 to-red-500",
+]
+
+export async function TeamGrid() {
+    const { data: team } = await getAllTeamMembers()
 
     return (
         <section className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32">
@@ -48,7 +35,7 @@ export function TeamGrid() {
 
             {/* Team Grid */}
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                {team.map((member, index) => (
+                {team?.map((member, index) => (
                     <div
                         key={index}
                         className="group relative h-[450px] rounded-[2rem] overflow-hidden bg-surface dark:bg-gray-900 shadow-xl shadow-brand/5 border border-white/10"
@@ -57,7 +44,7 @@ export function TeamGrid() {
                         <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-110">
                             {/* Placeholder Gradient if no image */}
                             <div className={`w-full h-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center`}>
-                                <div className={`absolute inset-0 bg-linear-to-br ${member.color} opacity-10 group-hover:opacity-20 transition-opacity duration-500`}></div>
+                                <div className={`absolute inset-0 bg-linear-to-br ${colors[index % colors.length]} opacity-10 group-hover:opacity-20 transition-opacity duration-500`}></div>
                                 <div className="text-center opacity-30 group-hover:opacity-0 transition-opacity duration-300">
                                     <span className="material-symbols-outlined text-6xl mb-2">person</span>
                                     <p className="text-xs font-bold uppercase tracking-widest">Image</p>
@@ -67,7 +54,7 @@ export function TeamGrid() {
                             {/* Member Image */}
                             {member.image && (
                                 <Image
-                                    src={member.image}
+                                    src={(member.image as any).url}
                                     alt={member.name}
                                     fill
                                     className="object-cover"
@@ -88,7 +75,7 @@ export function TeamGrid() {
                                 </h3>
                                 <div className="h-0.5 w-12 bg-white/30 mb-3 group-hover:w-full group-hover:bg-brand transition-all duration-500"></div>
                                 <p className="text-brand-blue font-black text-[11px] uppercase tracking-widest mb-4">
-                                    {member.role}
+                                    {member.department.name}
                                 </p>
                             </div>
 

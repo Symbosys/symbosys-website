@@ -3,6 +3,7 @@ import {
     PerksAndBenefits,
     OpenPositions,
 } from "@/components/user/careers";
+import { getAllJobs } from "@/actions/job";
 
 export const metadata = {
     title: "Careers - Join Symbosys Technologies",
@@ -10,7 +11,13 @@ export const metadata = {
         "Join our team of innovators and build the digital future. Explore open positions at Symbosys Software Services Pvt. Ltd.",
 };
 
-export default function CareersPage() {
+export default async function CareersPage() {
+    const { data: initialJobs, pagination } = await getAllJobs({
+        page: 1,
+        limit: 10,
+        status: "PUBLISHED"
+    });
+
     return (
         <div className="bg-surface dark:bg-gray-950 text-text-main dark:text-gray-100 font-sans antialiased selection:bg-brand/20 selection:text-brand dark:selection:bg-brand/40 relative overflow-x-hidden min-h-screen transition-colors duration-300">
             {/* Immersive Background Canvas (Consistent with other pages) */}
@@ -27,8 +34,11 @@ export default function CareersPage() {
 
             <main className="relative z-10">
                 <CareerHero />
+                <OpenPositions
+                    initialJobs={initialJobs || []}
+                    initialTotalPages={pagination?.totalPages || 1}
+                />
                 <PerksAndBenefits />
-                <OpenPositions />
             </main>
         </div>
     );

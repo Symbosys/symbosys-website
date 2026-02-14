@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-import { ThemeProvider } from "@/components/ThemeProvider";
-import { Toaster } from "sonner";
+import { Providers } from "@/components/Providers";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -56,10 +55,9 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} ${geistMono.variable} font-sans antialiased flex flex-col min-h-screen bg-background text-foreground transition-colors duration-300`}
       >
-        <ThemeProvider>
+        <Providers>
           {children}
-          <Toaster position="top-center" richColors />
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   );

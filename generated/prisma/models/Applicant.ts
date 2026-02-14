@@ -42,7 +42,6 @@ export type ApplicantMinAggregateOutputType = {
   phone: string | null
   linkedin: string | null
   portfolio: string | null
-  resumeUrl: string | null
   createdAt: Date | null
   updatedAt: Date | null
 }
@@ -55,7 +54,6 @@ export type ApplicantMaxAggregateOutputType = {
   phone: string | null
   linkedin: string | null
   portfolio: string | null
-  resumeUrl: string | null
   createdAt: Date | null
   updatedAt: Date | null
 }
@@ -91,7 +89,6 @@ export type ApplicantMinAggregateInputType = {
   phone?: true
   linkedin?: true
   portfolio?: true
-  resumeUrl?: true
   createdAt?: true
   updatedAt?: true
 }
@@ -104,7 +101,6 @@ export type ApplicantMaxAggregateInputType = {
   phone?: true
   linkedin?: true
   portfolio?: true
-  resumeUrl?: true
   createdAt?: true
   updatedAt?: true
 }
@@ -217,7 +213,7 @@ export type ApplicantGroupByOutputType = {
   phone: string | null
   linkedin: string | null
   portfolio: string | null
-  resumeUrl: string
+  resumeUrl: runtime.JsonValue
   createdAt: Date
   updatedAt: Date
   _count: ApplicantCountAggregateOutputType | null
@@ -253,7 +249,7 @@ export type ApplicantWhereInput = {
   phone?: Prisma.StringNullableFilter<"Applicant"> | string | null
   linkedin?: Prisma.StringNullableFilter<"Applicant"> | string | null
   portfolio?: Prisma.StringNullableFilter<"Applicant"> | string | null
-  resumeUrl?: Prisma.StringFilter<"Applicant"> | string
+  resumeUrl?: Prisma.JsonFilter<"Applicant">
   createdAt?: Prisma.DateTimeFilter<"Applicant"> | Date | string
   updatedAt?: Prisma.DateTimeFilter<"Applicant"> | Date | string
   applications?: Prisma.ApplicationListRelationFilter
@@ -284,7 +280,7 @@ export type ApplicantWhereUniqueInput = Prisma.AtLeast<{
   phone?: Prisma.StringNullableFilter<"Applicant"> | string | null
   linkedin?: Prisma.StringNullableFilter<"Applicant"> | string | null
   portfolio?: Prisma.StringNullableFilter<"Applicant"> | string | null
-  resumeUrl?: Prisma.StringFilter<"Applicant"> | string
+  resumeUrl?: Prisma.JsonFilter<"Applicant">
   createdAt?: Prisma.DateTimeFilter<"Applicant"> | Date | string
   updatedAt?: Prisma.DateTimeFilter<"Applicant"> | Date | string
   applications?: Prisma.ApplicationListRelationFilter
@@ -319,7 +315,7 @@ export type ApplicantScalarWhereWithAggregatesInput = {
   phone?: Prisma.StringNullableWithAggregatesFilter<"Applicant"> | string | null
   linkedin?: Prisma.StringNullableWithAggregatesFilter<"Applicant"> | string | null
   portfolio?: Prisma.StringNullableWithAggregatesFilter<"Applicant"> | string | null
-  resumeUrl?: Prisma.StringWithAggregatesFilter<"Applicant"> | string
+  resumeUrl?: Prisma.JsonWithAggregatesFilter<"Applicant">
   createdAt?: Prisma.DateTimeWithAggregatesFilter<"Applicant"> | Date | string
   updatedAt?: Prisma.DateTimeWithAggregatesFilter<"Applicant"> | Date | string
 }
@@ -331,7 +327,7 @@ export type ApplicantCreateInput = {
   phone?: string | null
   linkedin?: string | null
   portfolio?: string | null
-  resumeUrl: string
+  resumeUrl: Prisma.JsonNullValueInput | runtime.InputJsonValue
   createdAt?: Date | string
   updatedAt?: Date | string
   applications?: Prisma.ApplicationCreateNestedManyWithoutApplicantInput
@@ -345,7 +341,7 @@ export type ApplicantUncheckedCreateInput = {
   phone?: string | null
   linkedin?: string | null
   portfolio?: string | null
-  resumeUrl: string
+  resumeUrl: Prisma.JsonNullValueInput | runtime.InputJsonValue
   createdAt?: Date | string
   updatedAt?: Date | string
   applications?: Prisma.ApplicationUncheckedCreateNestedManyWithoutApplicantInput
@@ -358,7 +354,7 @@ export type ApplicantUpdateInput = {
   phone?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   linkedin?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   portfolio?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  resumeUrl?: Prisma.StringFieldUpdateOperationsInput | string
+  resumeUrl?: Prisma.JsonNullValueInput | runtime.InputJsonValue
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   applications?: Prisma.ApplicationUpdateManyWithoutApplicantNestedInput
@@ -372,7 +368,7 @@ export type ApplicantUncheckedUpdateInput = {
   phone?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   linkedin?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   portfolio?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  resumeUrl?: Prisma.StringFieldUpdateOperationsInput | string
+  resumeUrl?: Prisma.JsonNullValueInput | runtime.InputJsonValue
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   applications?: Prisma.ApplicationUncheckedUpdateManyWithoutApplicantNestedInput
@@ -386,7 +382,7 @@ export type ApplicantCreateManyInput = {
   phone?: string | null
   linkedin?: string | null
   portfolio?: string | null
-  resumeUrl: string
+  resumeUrl: Prisma.JsonNullValueInput | runtime.InputJsonValue
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -398,7 +394,7 @@ export type ApplicantUpdateManyMutationInput = {
   phone?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   linkedin?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   portfolio?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  resumeUrl?: Prisma.StringFieldUpdateOperationsInput | string
+  resumeUrl?: Prisma.JsonNullValueInput | runtime.InputJsonValue
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -411,7 +407,7 @@ export type ApplicantUncheckedUpdateManyInput = {
   phone?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   linkedin?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   portfolio?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  resumeUrl?: Prisma.StringFieldUpdateOperationsInput | string
+  resumeUrl?: Prisma.JsonNullValueInput | runtime.InputJsonValue
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -446,7 +442,6 @@ export type ApplicantMaxOrderByAggregateInput = {
   phone?: Prisma.SortOrder
   linkedin?: Prisma.SortOrder
   portfolio?: Prisma.SortOrder
-  resumeUrl?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
 }
@@ -459,7 +454,6 @@ export type ApplicantMinOrderByAggregateInput = {
   phone?: Prisma.SortOrder
   linkedin?: Prisma.SortOrder
   portfolio?: Prisma.SortOrder
-  resumeUrl?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
 }
@@ -489,7 +483,7 @@ export type ApplicantCreateWithoutApplicationsInput = {
   phone?: string | null
   linkedin?: string | null
   portfolio?: string | null
-  resumeUrl: string
+  resumeUrl: Prisma.JsonNullValueInput | runtime.InputJsonValue
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -502,7 +496,7 @@ export type ApplicantUncheckedCreateWithoutApplicationsInput = {
   phone?: string | null
   linkedin?: string | null
   portfolio?: string | null
-  resumeUrl: string
+  resumeUrl: Prisma.JsonNullValueInput | runtime.InputJsonValue
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -530,7 +524,7 @@ export type ApplicantUpdateWithoutApplicationsInput = {
   phone?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   linkedin?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   portfolio?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  resumeUrl?: Prisma.StringFieldUpdateOperationsInput | string
+  resumeUrl?: Prisma.JsonNullValueInput | runtime.InputJsonValue
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -543,7 +537,7 @@ export type ApplicantUncheckedUpdateWithoutApplicationsInput = {
   phone?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   linkedin?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   portfolio?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  resumeUrl?: Prisma.StringFieldUpdateOperationsInput | string
+  resumeUrl?: Prisma.JsonNullValueInput | runtime.InputJsonValue
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -654,7 +648,7 @@ export type $ApplicantPayload<ExtArgs extends runtime.Types.Extensions.InternalA
     phone: string | null
     linkedin: string | null
     portfolio: string | null
-    resumeUrl: string
+    resumeUrl: runtime.JsonValue
     createdAt: Date
     updatedAt: Date
   }, ExtArgs["result"]["applicant"]>
@@ -1088,7 +1082,7 @@ export interface ApplicantFieldRefs {
   readonly phone: Prisma.FieldRef<"Applicant", 'String'>
   readonly linkedin: Prisma.FieldRef<"Applicant", 'String'>
   readonly portfolio: Prisma.FieldRef<"Applicant", 'String'>
-  readonly resumeUrl: Prisma.FieldRef<"Applicant", 'String'>
+  readonly resumeUrl: Prisma.FieldRef<"Applicant", 'Json'>
   readonly createdAt: Prisma.FieldRef<"Applicant", 'DateTime'>
   readonly updatedAt: Prisma.FieldRef<"Applicant", 'DateTime'>
 }

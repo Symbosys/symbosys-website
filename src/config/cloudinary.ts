@@ -16,6 +16,7 @@ export const uploadToCloudinary = async (file: string) => {
   try {
     const result = await cloudinary.uploader.upload(file, {
       folder: cloudinaryFolder,
+      resource_type: "auto",
     });
     return {
       url: result.secure_url,

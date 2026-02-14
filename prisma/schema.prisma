@@ -13,6 +13,22 @@ datasource db {
   provider = "postgresql"
 }
 
+model Admin {
+  id Int @id @default(autoincrement())
+  name String
+  email String @unique
+  password String
+  role Role @default(ADMIN)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+enum Role {
+  ADMIN
+  SUB_ADMIN
+}
+
 model Enquiry {
   id      Int     @id @default(autoincrement())
   name    String
@@ -128,7 +144,7 @@ model Applicant {
   phone     String?
   linkedin  String?
   portfolio String?
-  resumeUrl String
+  resumeUrl Json
 
   applications Application[]
 
