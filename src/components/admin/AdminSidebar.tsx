@@ -11,6 +11,7 @@ const MENU_ITEMS = [
     { name: "Team", icon: "groups", href: "/admin/team" },
     { name: "Jobs", icon: "work", href: "/admin/jobs" },
     { name: "Job Applications", icon: "description", href: "/admin/applications" },
+    { name: "Setting", icon: "settings", href: "/admin/setting" },
 ];
 
 export function AdminSidebar() {

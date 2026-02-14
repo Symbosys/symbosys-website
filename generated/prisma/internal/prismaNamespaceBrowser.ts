@@ -95,6 +95,7 @@ export const TeamScalarFieldEnum = {
   name: 'name',
   image: 'image',
   departmentId: 'departmentId',
+  status: 'status',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
 } as const

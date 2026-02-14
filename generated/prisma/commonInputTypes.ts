@@ -136,6 +136,13 @@ export type JsonFilterBase<$PrismaModel = never> = {
   not?: runtime.InputJsonValue | Prisma.JsonFieldRefInput<$PrismaModel> | Prisma.JsonNullValueFilter
 }
 
+export type EnumTeamStatusFilter<$PrismaModel = never> = {
+  equals?: $Enums.TeamStatus | Prisma.EnumTeamStatusFieldRefInput<$PrismaModel>
+  in?: $Enums.TeamStatus[] | Prisma.ListEnumTeamStatusFieldRefInput<$PrismaModel>
+  notIn?: $Enums.TeamStatus[] | Prisma.ListEnumTeamStatusFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumTeamStatusFilter<$PrismaModel> | $Enums.TeamStatus
+}
+
 export type JsonWithAggregatesFilter<$PrismaModel = never> =
 | Prisma.PatchUndefined<
     Prisma.Either<Required<JsonWithAggregatesFilterBase<$PrismaModel>>, Exclude<keyof Required<JsonWithAggregatesFilterBase<$PrismaModel>>, 'path'>>,
@@ -161,6 +168,16 @@ export type JsonWithAggregatesFilterBase<$PrismaModel = never> = {
   _count?: Prisma.NestedIntFilter<$PrismaModel>
   _min?: Prisma.NestedJsonFilter<$PrismaModel>
   _max?: Prisma.NestedJsonFilter<$PrismaModel>
+}
+
+export type EnumTeamStatusWithAggregatesFilter<$PrismaModel = never> = {
+  equals?: $Enums.TeamStatus | Prisma.EnumTeamStatusFieldRefInput<$PrismaModel>
+  in?: $Enums.TeamStatus[] | Prisma.ListEnumTeamStatusFieldRefInput<$PrismaModel>
+  notIn?: $Enums.TeamStatus[] | Prisma.ListEnumTeamStatusFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumTeamStatusWithAggregatesFilter<$PrismaModel> | $Enums.TeamStatus
+  _count?: Prisma.NestedIntFilter<$PrismaModel>
+  _min?: Prisma.NestedEnumTeamStatusFilter<$PrismaModel>
+  _max?: Prisma.NestedEnumTeamStatusFilter<$PrismaModel>
 }
 
 export type StringNullableFilter<$PrismaModel = never> = {
@@ -359,6 +376,13 @@ export type NestedDateTimeWithAggregatesFilter<$PrismaModel = never> = {
   _max?: Prisma.NestedDateTimeFilter<$PrismaModel>
 }
 
+export type NestedEnumTeamStatusFilter<$PrismaModel = never> = {
+  equals?: $Enums.TeamStatus | Prisma.EnumTeamStatusFieldRefInput<$PrismaModel>
+  in?: $Enums.TeamStatus[] | Prisma.ListEnumTeamStatusFieldRefInput<$PrismaModel>
+  notIn?: $Enums.TeamStatus[] | Prisma.ListEnumTeamStatusFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumTeamStatusFilter<$PrismaModel> | $Enums.TeamStatus
+}
+
 export type NestedJsonFilter<$PrismaModel = never> =
 | Prisma.PatchUndefined<
     Prisma.Either<Required<NestedJsonFilterBase<$PrismaModel>>, Exclude<keyof Required<NestedJsonFilterBase<$PrismaModel>>, 'path'>>,
@@ -381,6 +405,16 @@ export type NestedJsonFilterBase<$PrismaModel = never> = {
   gt?: runtime.InputJsonValue | Prisma.JsonFieldRefInput<$PrismaModel>
   gte?: runtime.InputJsonValue | Prisma.JsonFieldRefInput<$PrismaModel>
   not?: runtime.InputJsonValue | Prisma.JsonFieldRefInput<$PrismaModel> | Prisma.JsonNullValueFilter
+}
+
+export type NestedEnumTeamStatusWithAggregatesFilter<$PrismaModel = never> = {
+  equals?: $Enums.TeamStatus | Prisma.EnumTeamStatusFieldRefInput<$PrismaModel>
+  in?: $Enums.TeamStatus[] | Prisma.ListEnumTeamStatusFieldRefInput<$PrismaModel>
+  notIn?: $Enums.TeamStatus[] | Prisma.ListEnumTeamStatusFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumTeamStatusWithAggregatesFilter<$PrismaModel> | $Enums.TeamStatus
+  _count?: Prisma.NestedIntFilter<$PrismaModel>
+  _min?: Prisma.NestedEnumTeamStatusFilter<$PrismaModel>
+  _max?: Prisma.NestedEnumTeamStatusFilter<$PrismaModel>
 }
 
 export type NestedStringNullableFilter<$PrismaModel = never> = {

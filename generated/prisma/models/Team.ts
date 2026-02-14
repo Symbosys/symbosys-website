@@ -40,6 +40,7 @@ export type TeamMinAggregateOutputType = {
   id: number | null
   name: string | null
   departmentId: number | null
+  status: $Enums.TeamStatus | null
   createdAt: Date | null
   updatedAt: Date | null
 }
@@ -48,6 +49,7 @@ export type TeamMaxAggregateOutputType = {
   id: number | null
   name: string | null
   departmentId: number | null
+  status: $Enums.TeamStatus | null
   createdAt: Date | null
   updatedAt: Date | null
 }
@@ -57,6 +59,7 @@ export type TeamCountAggregateOutputType = {
   name: number
   image: number
   departmentId: number
+  status: number
   createdAt: number
   updatedAt: number
   _all: number
@@ -77,6 +80,7 @@ export type TeamMinAggregateInputType = {
   id?: true
   name?: true
   departmentId?: true
+  status?: true
   createdAt?: true
   updatedAt?: true
 }
@@ -85,6 +89,7 @@ export type TeamMaxAggregateInputType = {
   id?: true
   name?: true
   departmentId?: true
+  status?: true
   createdAt?: true
   updatedAt?: true
 }
@@ -94,6 +99,7 @@ export type TeamCountAggregateInputType = {
   name?: true
   image?: true
   departmentId?: true
+  status?: true
   createdAt?: true
   updatedAt?: true
   _all?: true
@@ -190,6 +196,7 @@ export type TeamGroupByOutputType = {
   name: string
   image: runtime.JsonValue
   departmentId: number
+  status: $Enums.TeamStatus
   createdAt: Date
   updatedAt: Date
   _count: TeamCountAggregateOutputType | null
@@ -222,6 +229,7 @@ export type TeamWhereInput = {
   name?: Prisma.StringFilter<"Team"> | string
   image?: Prisma.JsonFilter<"Team">
   departmentId?: Prisma.IntFilter<"Team"> | number
+  status?: Prisma.EnumTeamStatusFilter<"Team"> | $Enums.TeamStatus
   createdAt?: Prisma.DateTimeFilter<"Team"> | Date | string
   updatedAt?: Prisma.DateTimeFilter<"Team"> | Date | string
   department?: Prisma.XOR<Prisma.DepartmentScalarRelationFilter, Prisma.DepartmentWhereInput>
@@ -232,6 +240,7 @@ export type TeamOrderByWithRelationInput = {
   name?: Prisma.SortOrder
   image?: Prisma.SortOrder
   departmentId?: Prisma.SortOrder
+  status?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
   department?: Prisma.DepartmentOrderByWithRelationInput
@@ -245,6 +254,7 @@ export type TeamWhereUniqueInput = Prisma.AtLeast<{
   name?: Prisma.StringFilter<"Team"> | string
   image?: Prisma.JsonFilter<"Team">
   departmentId?: Prisma.IntFilter<"Team"> | number
+  status?: Prisma.EnumTeamStatusFilter<"Team"> | $Enums.TeamStatus
   createdAt?: Prisma.DateTimeFilter<"Team"> | Date | string
   updatedAt?: Prisma.DateTimeFilter<"Team"> | Date | string
   department?: Prisma.XOR<Prisma.DepartmentScalarRelationFilter, Prisma.DepartmentWhereInput>
@@ -255,6 +265,7 @@ export type TeamOrderByWithAggregationInput = {
   name?: Prisma.SortOrder
   image?: Prisma.SortOrder
   departmentId?: Prisma.SortOrder
+  status?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
   _count?: Prisma.TeamCountOrderByAggregateInput
@@ -272,6 +283,7 @@ export type TeamScalarWhereWithAggregatesInput = {
   name?: Prisma.StringWithAggregatesFilter<"Team"> | string
   image?: Prisma.JsonWithAggregatesFilter<"Team">
   departmentId?: Prisma.IntWithAggregatesFilter<"Team"> | number
+  status?: Prisma.EnumTeamStatusWithAggregatesFilter<"Team"> | $Enums.TeamStatus
   createdAt?: Prisma.DateTimeWithAggregatesFilter<"Team"> | Date | string
   updatedAt?: Prisma.DateTimeWithAggregatesFilter<"Team"> | Date | string
 }
@@ -279,6 +291,7 @@ export type TeamScalarWhereWithAggregatesInput = {
 export type TeamCreateInput = {
   name: string
   image: Prisma.JsonNullValueInput | runtime.InputJsonValue
+  status?: $Enums.TeamStatus
   createdAt?: Date | string
   updatedAt?: Date | string
   department: Prisma.DepartmentCreateNestedOneWithoutTeamsInput
@@ -289,6 +302,7 @@ export type TeamUncheckedCreateInput = {
   name: string
   image: Prisma.JsonNullValueInput | runtime.InputJsonValue
   departmentId: number
+  status?: $Enums.TeamStatus
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -296,6 +310,7 @@ export type TeamUncheckedCreateInput = {
 export type TeamUpdateInput = {
   name?: Prisma.StringFieldUpdateOperationsInput | string
   image?: Prisma.JsonNullValueInput | runtime.InputJsonValue
+  status?: Prisma.EnumTeamStatusFieldUpdateOperationsInput | $Enums.TeamStatus
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   department?: Prisma.DepartmentUpdateOneRequiredWithoutTeamsNestedInput
@@ -306,6 +321,7 @@ export type TeamUncheckedUpdateInput = {
   name?: Prisma.StringFieldUpdateOperationsInput | string
   image?: Prisma.JsonNullValueInput | runtime.InputJsonValue
   departmentId?: Prisma.IntFieldUpdateOperationsInput | number
+  status?: Prisma.EnumTeamStatusFieldUpdateOperationsInput | $Enums.TeamStatus
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -315,6 +331,7 @@ export type TeamCreateManyInput = {
   name: string
   image: Prisma.JsonNullValueInput | runtime.InputJsonValue
   departmentId: number
+  status?: $Enums.TeamStatus
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -322,6 +339,7 @@ export type TeamCreateManyInput = {
 export type TeamUpdateManyMutationInput = {
   name?: Prisma.StringFieldUpdateOperationsInput | string
   image?: Prisma.JsonNullValueInput | runtime.InputJsonValue
+  status?: Prisma.EnumTeamStatusFieldUpdateOperationsInput | $Enums.TeamStatus
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -331,6 +349,7 @@ export type TeamUncheckedUpdateManyInput = {
   name?: Prisma.StringFieldUpdateOperationsInput | string
   image?: Prisma.JsonNullValueInput | runtime.InputJsonValue
   departmentId?: Prisma.IntFieldUpdateOperationsInput | number
+  status?: Prisma.EnumTeamStatusFieldUpdateOperationsInput | $Enums.TeamStatus
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -340,6 +359,7 @@ export type TeamCountOrderByAggregateInput = {
   name?: Prisma.SortOrder
   image?: Prisma.SortOrder
   departmentId?: Prisma.SortOrder
+  status?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
 }
@@ -353,6 +373,7 @@ export type TeamMaxOrderByAggregateInput = {
   id?: Prisma.SortOrder
   name?: Prisma.SortOrder
   departmentId?: Prisma.SortOrder
+  status?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
 }
@@ -361,6 +382,7 @@ export type TeamMinOrderByAggregateInput = {
   id?: Prisma.SortOrder
   name?: Prisma.SortOrder
   departmentId?: Prisma.SortOrder
+  status?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
 }
@@ -378,6 +400,10 @@ export type TeamListRelationFilter = {
 
 export type TeamOrderByRelationAggregateInput = {
   _count?: Prisma.SortOrder
+}
+
+export type EnumTeamStatusFieldUpdateOperationsInput = {
+  set?: $Enums.TeamStatus
 }
 
 export type TeamCreateNestedManyWithoutDepartmentInput = {
@@ -425,6 +451,7 @@ export type TeamUncheckedUpdateManyWithoutDepartmentNestedInput = {
 export type TeamCreateWithoutDepartmentInput = {
   name: string
   image: Prisma.JsonNullValueInput | runtime.InputJsonValue
+  status?: $Enums.TeamStatus
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -433,6 +460,7 @@ export type TeamUncheckedCreateWithoutDepartmentInput = {
   id?: number
   name: string
   image: Prisma.JsonNullValueInput | runtime.InputJsonValue
+  status?: $Enums.TeamStatus
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -471,6 +499,7 @@ export type TeamScalarWhereInput = {
   name?: Prisma.StringFilter<"Team"> | string
   image?: Prisma.JsonFilter<"Team">
   departmentId?: Prisma.IntFilter<"Team"> | number
+  status?: Prisma.EnumTeamStatusFilter<"Team"> | $Enums.TeamStatus
   createdAt?: Prisma.DateTimeFilter<"Team"> | Date | string
   updatedAt?: Prisma.DateTimeFilter<"Team"> | Date | string
 }
@@ -479,6 +508,7 @@ export type TeamCreateManyDepartmentInput = {
   id?: number
   name: string
   image: Prisma.JsonNullValueInput | runtime.InputJsonValue
+  status?: $Enums.TeamStatus
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -486,6 +516,7 @@ export type TeamCreateManyDepartmentInput = {
 export type TeamUpdateWithoutDepartmentInput = {
   name?: Prisma.StringFieldUpdateOperationsInput | string
   image?: Prisma.JsonNullValueInput | runtime.InputJsonValue
+  status?: Prisma.EnumTeamStatusFieldUpdateOperationsInput | $Enums.TeamStatus
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -494,6 +525,7 @@ export type TeamUncheckedUpdateWithoutDepartmentInput = {
   id?: Prisma.IntFieldUpdateOperationsInput | number
   name?: Prisma.StringFieldUpdateOperationsInput | string
   image?: Prisma.JsonNullValueInput | runtime.InputJsonValue
+  status?: Prisma.EnumTeamStatusFieldUpdateOperationsInput | $Enums.TeamStatus
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -502,6 +534,7 @@ export type TeamUncheckedUpdateManyWithoutDepartmentInput = {
   id?: Prisma.IntFieldUpdateOperationsInput | number
   name?: Prisma.StringFieldUpdateOperationsInput | string
   image?: Prisma.JsonNullValueInput | runtime.InputJsonValue
+  status?: Prisma.EnumTeamStatusFieldUpdateOperationsInput | $Enums.TeamStatus
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -513,6 +546,7 @@ export type TeamSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = r
   name?: boolean
   image?: boolean
   departmentId?: boolean
+  status?: boolean
   createdAt?: boolean
   updatedAt?: boolean
   department?: boolean | Prisma.DepartmentDefaultArgs<ExtArgs>
@@ -523,6 +557,7 @@ export type TeamSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensio
   name?: boolean
   image?: boolean
   departmentId?: boolean
+  status?: boolean
   createdAt?: boolean
   updatedAt?: boolean
   department?: boolean | Prisma.DepartmentDefaultArgs<ExtArgs>
@@ -533,6 +568,7 @@ export type TeamSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensio
   name?: boolean
   image?: boolean
   departmentId?: boolean
+  status?: boolean
   createdAt?: boolean
   updatedAt?: boolean
   department?: boolean | Prisma.DepartmentDefaultArgs<ExtArgs>
@@ -543,11 +579,12 @@ export type TeamSelectScalar = {
   name?: boolean
   image?: boolean
   departmentId?: boolean
+  status?: boolean
   createdAt?: boolean
   updatedAt?: boolean
 }
 
-export type TeamOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "name" | "image" | "departmentId" | "createdAt" | "updatedAt", ExtArgs["result"]["team"]>
+export type TeamOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "name" | "image" | "departmentId" | "status" | "createdAt" | "updatedAt", ExtArgs["result"]["team"]>
 export type TeamInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   department?: boolean | Prisma.DepartmentDefaultArgs<ExtArgs>
 }
@@ -568,6 +605,7 @@ export type $TeamPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs =
     name: string
     image: runtime.JsonValue
     departmentId: number
+    status: $Enums.TeamStatus
     createdAt: Date
     updatedAt: Date
   }, ExtArgs["result"]["team"]>
@@ -998,6 +1036,7 @@ export interface TeamFieldRefs {
   readonly name: Prisma.FieldRef<"Team", 'String'>
   readonly image: Prisma.FieldRef<"Team", 'Json'>
   readonly departmentId: Prisma.FieldRef<"Team", 'Int'>
+  readonly status: Prisma.FieldRef<"Team", 'TeamStatus'>
   readonly createdAt: Prisma.FieldRef<"Team", 'DateTime'>
   readonly updatedAt: Prisma.FieldRef<"Team", 'DateTime'>
 }

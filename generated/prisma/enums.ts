@@ -9,6 +9,14 @@
 * 🟢 You can import this file directly.
 */
 
+export const TeamStatus = {
+  ACTIVE: 'ACTIVE',
+  INACTIVE: 'INACTIVE'
+} as const
+
+export type TeamStatus = (typeof TeamStatus)[keyof typeof TeamStatus]
+
+
 export const JobType = {
   FULL_TIME: 'FULL_TIME',
   PART_TIME: 'PART_TIME',

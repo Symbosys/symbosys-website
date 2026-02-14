@@ -33,8 +33,15 @@ model Team {
   departmentId Int
   department   Department @relation(fields: [departmentId], references: [id])
 
+  status TeamStatus @default(ACTIVE)
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
+
+enum TeamStatus {
+  ACTIVE
+  INACTIVE
 }
 
 // Job Board Schema

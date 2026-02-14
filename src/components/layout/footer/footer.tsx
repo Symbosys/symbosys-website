@@ -154,7 +154,7 @@ function HoverFooter() {
 
                     {/* Copyright */}
                     <p className="text-center md:text-left">
-                        &copy; {new Date().getFullYear()} Symbosys. All rights reserved.
+                        &copy; 2026 Symbosys. All rights reserved.
                     </p>
                 </div>
             </div>
