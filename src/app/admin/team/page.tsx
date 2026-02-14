@@ -139,7 +139,7 @@ export default async function TeamPage({ searchParams }: PageProps) {
 
                 {/* Footer Count */}
                 <div className="px-6 py-4 border-t border-gray-100 dark:border-gray-800 bg-gray-50/30 dark:bg-gray-900/40">
-                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest font-black">
+                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">
                         Total Capacity: {members.length} Identitites Indexed
                     </p>
                 </div>

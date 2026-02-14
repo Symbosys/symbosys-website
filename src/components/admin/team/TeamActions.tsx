@@ -248,7 +248,7 @@ export function TeamActions({ member, mode }: TeamActionsProps) {
                             <div className="relative group">
                                 <div
                                     className={cn(
-                                        "size-32 rounded-2xl overflow-hidden border-2 border-dashed border-gray-200 dark:border-gray-800 flex items-center justify-center bg-gray-50 dark:bg-gray-900 flex-shrink-0 transition-all",
+                                        "size-32 rounded-2xl overflow-hidden border-2 border-dashed border-gray-200 dark:border-gray-800 flex items-center justify-center bg-gray-50 dark:bg-gray-900 shrink-0 transition-all",
                                         imagePreview ? "border-solid border-brand/50" : "hover:border-brand/50 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
                                     )}
                                     onClick={() => !imagePreview && fileInputRef.current?.click()}

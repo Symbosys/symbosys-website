@@ -183,14 +183,14 @@ export function EnquiryActions({ enquiryId, enquiryName, isRead }: EnquiryAction
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             onClick={() => setIsDetailsOpen(false)}
-                            className="fixed inset-0 bg-black/50 z-[100] backdrop-blur-[2px]"
+                            className="fixed inset-0 bg-black/50 z-100 backdrop-blur-[2px]"
                         />
                         <motion.div
                             initial={{ x: "100%" }}
                             animate={{ x: 0 }}
                             exit={{ x: "100%" }}
                             transition={{ type: "tween", duration: 0.3 }}
-                            className="fixed right-0 top-0 h-full w-full sm:max-w-lg bg-white dark:bg-gray-950 shadow-xl z-[101] flex flex-col overflow-hidden border-l border-gray-200 dark:border-gray-800 text-left"
+                            className="fixed right-0 top-0 h-full w-full sm:max-w-lg bg-white dark:bg-gray-950 shadow-xl z-101 flex flex-col overflow-hidden border-l border-gray-200 dark:border-gray-800 text-left"
                         >
                             {/* Header */}
                             <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 shrink-0">
@@ -258,7 +258,7 @@ export function EnquiryActions({ enquiryId, enquiryName, isRead }: EnquiryAction
                                             <div className="space-y-3">
                                                 <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 text-left">Subject</h3>
                                                 <div className="p-4 bg-gray-50 dark:bg-gray-900/40 border border-gray-200 dark:border-gray-800 rounded-lg text-left">
-                                                    <p className="text-base font-bold text-gray-900 dark:text-white break-words">
+                                                    <p className="text-base font-bold text-gray-900 dark:text-white wrap-break-word">
                                                         {enquiryDetails.subject}
                                                     </p>
                                                 </div>
@@ -266,7 +266,7 @@ export function EnquiryActions({ enquiryId, enquiryName, isRead }: EnquiryAction
                                             <div className="space-y-3">
                                                 <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 text-left">Message Content</h3>
                                                 <div className="p-5 bg-gray-50 dark:bg-gray-900/40 border border-gray-200 dark:border-gray-800 rounded-lg text-left">
-                                                    <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-wrap break-words">
+                                                    <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-wrap wrap-break-word">
                                                         {enquiryDetails.message}
                                                     </p>
                                                 </div>
