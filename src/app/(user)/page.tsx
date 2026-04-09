@@ -17,12 +17,17 @@ import {
   WhyChooseUs,
   WorkProcessSection,
 } from "@/components/user/home";
+import { homeMetadata, homeJsonLd } from "@/seo/home";
 
-
+export const metadata = homeMetadata;
 
 export default function Home() {
   return (
     <div className="bg-surface dark:bg-gray-950 text-text-main dark:text-gray-100 font-sans antialiased selection:bg-brand/20 selection:text-brand dark:selection:bg-brand/40 relative overflow-x-hidden transition-colors duration-300">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }}
+      />
       {/* Immersive Background Canvas */}
       <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
         {/* Main Primary Orb */}
