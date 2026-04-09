@@ -14,11 +14,14 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
+ 
 export const metadata: Metadata = {
   title: "Symbosys - Refractive Flow",
   description:
     "Premium IT solutions converting visitors into leads through trust and visual impact. Experience the refractive flow of innovation.",
+  verification: {
+    google: "Ks_ZfkXUn4vTI5JM4umttV84X-EFLQlZGgZAtKzP_Lc"
+  }
 };
 
 export default function RootLayout({
