@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { businessWebsiteMetadata } from "@/seo/products/Business-Website";
 
-export const metadata = {
-    title: "Business Website Development - Symbosys Technologies",
-    description: "Professional digital platforms to represent your brand, showcase products/services, and engage with potential clients.",
-};
+export const metadata = businessWebsiteMetadata;
 
 export default function BusinessWebsitePage() {
     return (

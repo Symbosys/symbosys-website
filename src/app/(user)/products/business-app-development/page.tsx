@@ -1,13 +1,16 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { businessAppDevelopmentMetadata, businessAppDevelopmentJsonLd } from "@/seo/products/Business-App-Development";
 
-export const metadata = {
-    title: "Business App Development - Symbosys Technologies",
-    description: "Powerful enterprise productivity tools and custom mobile apps that drive business growth and efficiency for Android and iOS.",
-};
+export const metadata = businessAppDevelopmentMetadata;
 
 export default function BusinessAppDevelopmentPage() {
     return (
-        <ProductLayout
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(businessAppDevelopmentJsonLd) }}
+            />
+            <ProductLayout
             title="Business App Development"
             subtitle="by Symbosys"
             description="Business App Development is a specialized service offered by Symbosys, a leading mobile software development company, dedicated to creating powerful and user-friendly mobile apps that drive business growth and efficiency. Whether you're looking to build an app for your business or need a comprehensive solution that enhances operations, Symbosys delivers high-performance mobile apps for both Android and iOS platforms."
@@ -89,5 +92,6 @@ export default function BusinessAppDevelopmentPage() {
                 }
             ]}
         />
+        </>
     );
 }

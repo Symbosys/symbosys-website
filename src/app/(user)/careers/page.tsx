@@ -4,12 +4,9 @@ import {
     OpenPositions,
 } from "@/components/user/careers";
 import { getAllJobs } from "@/actions/job";
+import { careerMetadata } from "@/seo/carrer";
 
-export const metadata = {
-    title: "Careers - Join Symbosys Technologies",
-    description:
-        "Join our team of innovators and build the digital future. Explore open positions at Symbosys Software Services Pvt. Ltd.",
-};
+export const metadata = careerMetadata;
 
 export default async function CareersPage() {
     const { data: initialJobs, pagination } = await getAllJobs({
