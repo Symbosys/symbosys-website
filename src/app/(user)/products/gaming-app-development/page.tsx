@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { gamingAppDevelopmentMetadata } from "@/seo/products/Gaming-App-Development";
 
-export const metadata = {
-    title: "Gaming App Development - Symbosys Technologies",
-    description: "Immersive mobile gaming experiences for Android and iOS platforms with captivating gameplay and stunning visuals.",
-};
+export const metadata = gamingAppDevelopmentMetadata;
 
 export default function GamingAppDevelopmentPage() {
     return (

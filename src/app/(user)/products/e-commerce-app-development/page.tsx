@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { eCommerceAppDevelopmentMetadata } from "@/seo/products/E-Commerce-App-Development";
 
-export const metadata = {
-    title: "E-Commerce App Development - Symbosys Technologies",
-    description: "Mobile-first shopping experiences with secure payments, real-time tracking, and seamless user experience for Android and iOS.",
-};
+export const metadata = eCommerceAppDevelopmentMetadata;
 
 export default function ECommerceAppDevelopmentPage() {
     return (

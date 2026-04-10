@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { collegeManagementSoftwareMetadata } from "@/seo/products/College-Management-Software";
 
-export const metadata = {
-    title: "College Management Software - Symbosys Technologies",
-    description: "Enterprise-grade university management solutions to streamline administrative, academic, and operational processes.",
-};
+export const metadata = collegeManagementSoftwareMetadata;
 
 export default function CollegeManagementPage() {
     return (

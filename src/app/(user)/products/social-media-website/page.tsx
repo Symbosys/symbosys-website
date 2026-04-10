@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { socialMediaWebsiteMetadata } from "@/seo/products/Social-Media-Website";
 
-export const metadata = {
-    title: "Social Media Website Development - Symbosys Technologies",
-    description: "Interactive digital platforms to facilitate communication, content sharing, and community building.",
-};
+export const metadata = socialMediaWebsiteMetadata;
 
 export default function SocialMediaWebsitePage() {
     return (

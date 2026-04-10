@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { entertainmentAppDevelopmentMetadata } from "@/seo/products/Entertainment-App-Development";
 
-export const metadata = {
-    title: "Entertainment App Development - Symbosys Technologies",
-    description: "Video streaming, live streaming, and dynamic entertainment apps that captivate audiences on Android and iOS platforms.",
-};
+export const metadata = entertainmentAppDevelopmentMetadata;
 
 export default function EntertainmentAppDevelopmentPage() {
     return (

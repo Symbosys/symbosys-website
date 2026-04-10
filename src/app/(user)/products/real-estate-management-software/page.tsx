@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { realEstateManagementSoftwareMetadata } from "@/seo/products/Real-Estate-Management-Software";
 
-export const metadata = {
-    title: "Real Estate Management Software - Symbosys Technologies",
-    description: "Property listings, tenant tracking, and CRM solutions to streamline real estate operations and financial management.",
-};
+export const metadata = realEstateManagementSoftwareMetadata;
 
 export default function RealEstateManagementPage() {
     return (

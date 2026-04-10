@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { transportManagementSoftwareMetadata } from "@/seo/products/Transport-Management-Software";
 
-export const metadata = {
-    title: "Transport Management Software - Symbosys Technologies",
-    description: "Fleet tracking, route optimization, and logistics solutions to streamline transport operations and improve efficiency.",
-};
+export const metadata = transportManagementSoftwareMetadata;
 
 export default function TransportManagementPage() {
     return (

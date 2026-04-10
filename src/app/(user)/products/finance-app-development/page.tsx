@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { financeAppDevelopmentMetadata } from "@/seo/products/Finance-App-Development";
 
-export const metadata = {
-    title: "Finance App Development - Symbosys Technologies",
-    description: "Secure fintech and banking solutions with loan lending, budgeting, and investment management features for Android and iOS.",
-};
+export const metadata = financeAppDevelopmentMetadata;
 
 export default function FinanceAppDevelopmentPage() {
     return (

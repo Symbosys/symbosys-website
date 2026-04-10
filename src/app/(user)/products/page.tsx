@@ -1,10 +1,7 @@
 import { ProductsShowcase } from "@/components/user/products";
+import { productsMetadata } from "@/seo/products";
 
-export const metadata = {
-    title: "Our Products - Symbosys Technologies",
-    description:
-        "Explore our wide range of digital products including websites, management software, and mobile applications developed by Symbosys Technologies.",
-};
+export const metadata = productsMetadata;
 
 export default function ProductsPage() {
     return (

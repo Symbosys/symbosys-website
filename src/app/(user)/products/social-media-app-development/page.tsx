@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { socialMediaAppDevelopmentMetadata } from "@/seo/products/Social-Media-App-Development";
 
-export const metadata = {
-    title: "Social Media App Development - Symbosys Technologies",
-    description: "Build engaging and scalable social networking apps that connect communities and foster meaningful interactions.",
-};
+export const metadata = socialMediaAppDevelopmentMetadata;
 
 export default function SocialMediaAppDevelopmentPage() {
     return (

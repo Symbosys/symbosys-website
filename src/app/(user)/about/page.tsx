@@ -4,12 +4,9 @@ import {
     CoreValues,
 } from "@/components/user/about";
 import { ContactCTA } from "@/components/user/home";
+import { aboutMetadata } from "@/seo/about";
 
-export const metadata = {
-    title: "About Us - Symbosys Technologies",
-    description:
-        "Learn about Symbosys Software Services Pvt. Ltd., our mission to deliver top-notch IT solutions, and our vision for the digital future.",
-};
+export const metadata = aboutMetadata;
 
 export default function AboutPage() {
     return (

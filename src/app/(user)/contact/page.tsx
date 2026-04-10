@@ -1,10 +1,7 @@
 import { ContactHero, ContactFormSection } from "@/components/user/contact";
+import { contactMetadata } from "@/seo/contact";
 
-export const metadata = {
-    title: "Contact Us - Symbosys Technologies",
-    description:
-        "Get in touch with Symbosys Software Services Pvt. Ltd. Contact us for project inquiries, careers, or any other questions.",
-};
+export const metadata = contactMetadata;
 
 export default function ContactPage() {
     return (

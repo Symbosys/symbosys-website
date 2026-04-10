@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { libraryManagementSoftwareMetadata } from "@/seo/products/Library-Management-Software";
 
-export const metadata = {
-    title: "Library Management Software - Symbosys Technologies",
-    description: "Digital cataloging and lending systems to streamline library operations and improve user experiences.",
-};
+export const metadata = libraryManagementSoftwareMetadata;
 
 export default function LibraryManagementPage() {
     return (

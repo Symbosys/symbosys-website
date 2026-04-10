@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { informativeWebsiteMetadata } from "@/seo/products/Informative-Website";
 
-export const metadata = {
-    title: "Informative Website Development - Symbosys Technologies",
-    description: "Professional landing pages and informative websites that tell your brand story and engage your audience.",
-};
+export const metadata = informativeWebsiteMetadata;
 
 export default function InformativeWebsitePage() {
     return (

@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { educationalWebsiteMetadata } from "@/seo/products/Educational-Website";
 
-export const metadata = {
-    title: "Educational Website Development - Symbosys Technologies",
-    description: "Dynamic digital platforms to deliver educational content, manage courses, and engage students.",
-};
+export const metadata = educationalWebsiteMetadata;
 
 export default function EducationalWebsitePage() {
     return (

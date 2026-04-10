@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { inventoryManagementSoftwareMetadata } from "@/seo/products/Inventory-Management-Software";
 
-export const metadata = {
-    title: "Inventory Management Software - Symbosys Technologies",
-    description: "Real-time stock and warehouse control solutions to streamline inventory operations and optimize supply chain management.",
-};
+export const metadata = inventoryManagementSoftwareMetadata;
 
 export default function InventoryManagementPage() {
     return (

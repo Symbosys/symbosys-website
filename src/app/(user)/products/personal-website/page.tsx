@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { personalWebsiteMetadata } from "@/seo/products/Personal-Website";
 
-export const metadata = {
-    title: "Personal Website Development - Symbosys Technologies",
-    description: "Customized digital platforms to showcase your personal brand, skills, achievements, and portfolio.",
-};
+export const metadata = personalWebsiteMetadata;
 
 export default function PersonalWebsitePage() {
     return (

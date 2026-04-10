@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { schoolManagementSoftwareMetadata } from "@/seo/products/School-Management-Software";
 
-export const metadata = {
-    title: "School Management Software - Symbosys Technologies",
-    description: "Streamline and automate administrative and academic processes within schools with our custom School Management Software.",
-};
+export const metadata = schoolManagementSoftwareMetadata;
 
 export default function SchoolManagementPage() {
     return (

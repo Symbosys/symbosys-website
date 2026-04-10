@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { fitnessAppDevelopmentMetadata } from "@/seo/products/Fitness-App-Development";
 
-export const metadata = {
-    title: "Fitness App Development - Symbosys Technologies",
-    description: "Health tracking and workout apps that empower users to achieve their fitness and wellness goals on Android and iOS.",
-};
+export const metadata = fitnessAppDevelopmentMetadata;
 
 export default function FitnessAppDevelopmentPage() {
     return (

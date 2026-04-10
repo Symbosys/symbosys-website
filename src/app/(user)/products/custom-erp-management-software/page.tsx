@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { customErpSoftwareMetadata } from "@/seo/products/Custom-ERP-Software";
 
-export const metadata = {
-    title: "Custom ERP Management Software - Symbosys Technologies",
-    description: "Tailored enterprise resource planning solutions to optimize workflows, enhance productivity, and provide real-time business insights.",
-};
+export const metadata = customErpSoftwareMetadata;
 
 export default function CustomERPManagementPage() {
     return (

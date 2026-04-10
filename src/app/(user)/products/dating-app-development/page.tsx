@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { datingAppDevelopmentMetadata } from "@/seo/products/Dating-App-Development";
 
-export const metadata = {
-    title: "Dating App Development - Symbosys Technologies",
-    description: "Build meaningful connections with innovative dating app solutions featuring advanced matching algorithms and secure messaging.",
-};
+export const metadata = datingAppDevelopmentMetadata;
 
 export default function DatingAppDevelopmentPage() {
     return (

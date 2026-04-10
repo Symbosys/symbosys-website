@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { constructionManagementSoftwareMetadata } from "@/seo/products/Construction-Management-Software";
 
-export const metadata = {
-    title: "Construction Management Software - Symbosys Technologies",
-    description: "Project planning, resource allocation, and financial tracking solutions for building and civil construction projects.",
-};
+export const metadata = constructionManagementSoftwareMetadata;
 
 export default function ConstructionManagementPage() {
     return (

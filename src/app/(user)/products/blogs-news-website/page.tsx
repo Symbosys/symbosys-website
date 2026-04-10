@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { blogNewsWebsiteMetadata } from "@/seo/products/blog-news-website";
 
-export const metadata = {
-    title: "Blogs & News Website Development - Symbosys Technologies",
-    description: "Dynamic digital platforms designed to publish and disseminate timely content, articles, and news updates with CMS, SEO optimization, and responsive design.",
-};
+export const metadata = blogNewsWebsiteMetadata;
 
 export default function BlogsNewsWebsitePage() {
     return (

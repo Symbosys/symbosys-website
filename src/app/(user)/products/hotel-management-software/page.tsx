@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { hotelManagementSoftwareMetadata } from "@/seo/products/Hotel-Management-Software";
 
-export const metadata = {
-    title: "Hotel Management Software - Symbosys Technologies",
-    description: "Streamline bookings and guest experiences with our comprehensive hotel management and reservation systems.",
-};
+export const metadata = hotelManagementSoftwareMetadata;
 
 export default function HotelManagementPage() {
     return (

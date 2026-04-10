@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { restaurantManagementSoftwareMetadata } from "@/seo/products/Restaurant-Management-Software";
 
-export const metadata = {
-    title: "Restaurant Management Software - Symbosys Technologies",
-    description: "POS, inventory, and order management solutions to streamline restaurant operations and improve customer satisfaction.",
-};
+export const metadata = restaurantManagementSoftwareMetadata;
 
 export default function RestaurantManagementPage() {
     return (

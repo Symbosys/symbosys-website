@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { ngoWebsiteMetadata } from "@/seo/products/NGO-Website";
 
-export const metadata = {
-    title: "NGO & Non-Profit Website Development - Symbosys Technologies",
-    description: "Specialized digital platforms designed to communicate mission, goals, and impact of NGOs and non-profits, optimized for donor engagement and volunteer management.",
-};
+export const metadata = ngoWebsiteMetadata;
 
 export default function NGONonProfitWebsitePage() {
     return (

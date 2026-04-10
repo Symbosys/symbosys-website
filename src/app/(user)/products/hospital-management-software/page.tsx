@@ -1,9 +1,7 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { hospitalManagementSoftwareMetadata } from "@/seo/products/Hospital-Management-Software";
 
-export const metadata = {
-    title: "Hospital Management Software - Symbosys Technologies",
-    description: "Healthcare workflow and patient management solutions to streamline clinical and operational processes in hospitals.",
-};
+export const metadata = hospitalManagementSoftwareMetadata;
 
 export default function HospitalManagementPage() {
     return (
