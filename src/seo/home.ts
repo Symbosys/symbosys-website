@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
 export const homeMetadata: Metadata = {
-  title: "Symbosys | Best software company in Ranchi",
+  title: "Symbosys | Best software companies in India",
   description:
-    "Symbosys is a leading software company in Ranchi offering web development, mobile apps, digital marketing & IT solutions for businesses.",
+    "Symbosys is a leading software company in India offering web development, mobile apps, digital marketing & IT solutions for businesses.",
   keywords:
-    "Looking for the best software company in Ranchi? Symbosys provides top-notch IT software services in Jharkhand.",
+    "Looking for the best software company in India? Symbosys provides top-notch IT software services in Jharkhand.",
   icons: {
     icon: "./img/favico.ico",
   },
@@ -21,7 +21,7 @@ export const homeJsonLd = {
   url: "https://symbosys.com/",
   logo: "https://symbosys.com/img/newlog.png",
   description:
-    "Symbosys is the best software company in Ranchi offering web development, mobile apps, ERP solutions, and digital transformation services.",
+    "Symbosys is the best software company in India offering web development, mobile apps, ERP solutions, and digital transformation services.",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Ranchi, Jharkhand",
