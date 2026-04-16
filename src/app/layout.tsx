@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Space_Grotesk, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -58,6 +59,19 @@ export default function RootLayout({
             `,
           }}
         />
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-CY808QHZRP"
+        />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-CY808QHZRP');
+          `}
+        </Script>
       </head>
       <body
         className={`${spaceGrotesk.variable} ${geistMono.variable} font-sans antialiased flex flex-col min-h-screen bg-background text-foreground transition-colors duration-300`}
