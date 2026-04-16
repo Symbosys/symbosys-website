@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description:
     "Premium IT solutions converting visitors into leads through trust and visual impact. Experience the refractive flow of innovation.",
   icons: {
-    icon: "/company/newlog-dark.webp",
+    icon: "/logo/symbosys.png",
   },
   verification: {
     google: "Ks_ZfkXUn4vTI5JM4umttV84X-EFLQlZGgZAtKzP_Lc"
@@ -39,6 +39,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/logo/symbosys.png" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
