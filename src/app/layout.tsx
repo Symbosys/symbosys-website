@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   title: "Symbosys - Refractive Flow",
   description:
     "Premium IT solutions converting visitors into leads through trust and visual impact. Experience the refractive flow of innovation.",
+  icons: {
+    icon: "/company/newlog-dark.webp",
+  },
   verification: {
     google: "Ks_ZfkXUn4vTI5JM4umttV84X-EFLQlZGgZAtKzP_Lc"
   }
