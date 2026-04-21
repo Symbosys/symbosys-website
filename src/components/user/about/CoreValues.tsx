@@ -3,21 +3,21 @@ import Image from "next/image";
 export function CoreValues() {
     const values = [
         {
-            title: "Client-Centric Approach",
+            title: "Client-Focused Excellence",
             description:
-                "Our top priority is understanding our clients' unique business perspectives. As a certified software development company, we are committed to designing products that are not only tailored to meet specific requirements but are also intuitive and user-friendly.",
+                "Our philosophy centers on deeply understanding your unique business landscape. We specialize in engineering intuitive, user-focused products that are precisely calibrated to meet and surpass your specific requirements.",
             icon: "diversity_3",
         },
         {
-            title: "Innovation",
+            title: "Relentless Innovation",
             description:
-                "We foster creativity and innovation, continually developing new ideas that enhance product functionality and drive optimal performance.",
+                "We cultivate a culture of creative problem-solving, constantly exploring emerging technologies and proprietary ideas to enhance product functionality and deliver peak performance.",
             icon: "lightbulb",
         },
         {
-            title: "Top Talent",
+            title: "Elite Expertise",
             description:
-                "We believe in attracting, supporting, and retaining top talent, ensuring that we consistently deliver exceptional value to our clients through the expertise and dedication of our team.",
+                "We recruit and nurture the industry's brightest talent, ensuring our clients benefit from a dedicated team that is passionate about delivering technical superiority and exceptional value.",
             icon: "workspace_premium",
         },
     ];
@@ -25,14 +25,14 @@ export function CoreValues() {
     return (
         <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32">
             <div className="text-center mb-16">
-                <div className="inline-block px-4 py-1.5 rounded-full bg-brand/10 text-brand text-sm font-bold mb-4">
-                    Principles
+                <div className="inline-block px-4 py-1.5 rounded-full bg-brand/10 text-brand text-xs font-bold mb-4 uppercase tracking-wider">
+                    Our Foundation
                 </div>
                 <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white mb-6">
                     Core <span className="text-brand">Values</span>
                 </h2>
                 <p className="text-text-muted dark:text-gray-400 text-lg max-w-2xl mx-auto">
-                    The principles that guide our culture, innovation, and client relationships.
+                    The core doctrines that drive our technical innovation, internal culture, and client partnerships.
                 </p>
             </div>
 
@@ -40,13 +40,14 @@ export function CoreValues() {
                 {/* Image */}
                 <div className="relative order-2 lg:order-1">
                     <div className="absolute inset-0 bg-brand/5 dark:bg-brand/10 rounded-4xl rotate-1 scale-95 blur-sm"></div>
-                    <div className="glass-card rounded-4xl p-8 sticky top-32">
+                    <div className="glass-card rounded-4xl overflow-hidden sticky top-32 border border-white/10 shadow-2xl group">
+
                         <div className="relative w-full aspect-square">
                             <Image
                                 src="/about/core-values.webp"
                                 alt="Core Values"
                                 fill
-                                className="object-contain mix-blend-multiply dark:mix-blend-screen dark:opacity-90"
+                                className="object-cover group-hover:scale-110 transition-transform duration-700"
                             />
                         </div>
                         {/* Background blobs */}

@@ -10,23 +10,22 @@ export function AboutIntro() {
                         <span className="material-symbols-outlined text-brand text-sm">
                             info
                         </span>
-                        <span className="text-xs font-bold text-brand">
-                            Who We Are
+                        <span className="text-xs font-bold text-brand uppercase tracking-wider">
+                            Our Origin Story
                         </span>
                     </div>
                     <h1 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white mb-6 leading-tight">
-                        About <span className="text-brand">Symbosys</span> <br />
-                        Software Services Pvt. Ltd.
+                        About Symbosys Software
                     </h1>
                     <div className="space-y-4 text-text-muted dark:text-gray-400 text-lg leading-relaxed">
                         <p>
-                            Symbosys Software Service Pvt. Ltd. is one of the fastest-growing IT companies in Ranchi serving 500+ clients throughout Jharkhand and other parts of India. We have a team of highly skilled and dedicated designers and developers who have years of experience and having the capabilities to accomplish projects within a specified deadline.
+                            Symbosys Software Service Pvt. Ltd. stands as a premier IT powerhouse in Ranchi, empowering over 500+ clients across Jharkhand and India. Our elite team of veteran designers and developers is dedicated to transforming complex challenges into streamlined digital excellence, consistently delivering high-impact results on schedule.
                         </p>
                         <p>
-                            In order to understand customer’s requirements from their niche point of view, we personally let our developers interact directly with our clients and allow them to take their own decision making approach. Being a leading software company in Ranchi, we believe in providing quality service to our clients as we know the value of trust and expectation they have on us.
+                            To truly capture your business perspective, we facilitate direct collaboration between our technical experts and our clients. This transparent partnership allows us to build solutions that are perfectly aligned with your goals, anchored in a foundation of quality service and mutual trust.
                         </p>
                         <p>
-                            Nowadays, even small businessmen have started accepting the power of digital innovations that vastly changing the way of running business. Software, mobile app, and websites are the mediums through which they can be a racer of their competitive tracks. We specialized in designing and developing highly responsive and interactive software, mobile apps, and websites that are responsible for refining business processes and help to reach the goals effectively.
+                            We specialize in helping businesses navigate the digital age through innovation. Whether through custom enterprise software, mobile applications, or high-conversion websites, we engineer responsive platforms that optimize operations and give our clients a decisive edge in their respective industries.
                         </p>
                     </div>
                 </div>
@@ -34,13 +33,13 @@ export function AboutIntro() {
                 {/* Image */}
                 <div className="relative order-1 lg:order-2">
                     <div className="absolute inset-0 bg-brand/5 dark:bg-brand/10 rounded-4xl -rotate-3 scale-95 blur-sm"></div>
-                    <div className="relative glass-card rounded-4xl p-8 overflow-hidden group">
-                        <div className="relative w-full aspect-square max-w-md mx-auto">
+                    <div className="relative glass-card rounded-4xl overflow-hidden group border border-white/10 shadow-2xl">
+                        <div className="relative w-full aspect-square md:aspect-4/3 lg:aspect-square">
                             <Image
                                 src="/about/aboutnew.webp"
                                 alt="About Symbosys Team"
                                 fill
-                                className="object-contain group-hover:scale-105 transition-transform duration-500 mix-blend-multiply dark:mix-blend-screen dark:opacity-90"
+                                className="object-cover group-hover:scale-110 transition-transform duration-700"
                                 priority
                             />
                         </div>
