@@ -5,6 +5,6 @@ export const hospitalManagementSoftwareMetadata: Metadata = {
   description:
     "Symbosys Hospital Management Software helps hospitals manage patients, billing, OPD, IPD, pharmacy & reports efficiently with smart digital solutions.",
   alternates: {
-    canonical: "https://www.symbosys.com/Hospital-Management-Software.php",
+    canonical: "https://www.symbosys.com/products/hospital-management-software",
   },
 };

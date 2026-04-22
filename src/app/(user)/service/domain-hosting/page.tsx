@@ -1,8 +1,6 @@
-export const metadata = {
-    title: "Domain & Hosting Services - Symbosys Technologies",
-    description:
-        "Symbosys offers comprehensive domain and hosting services including shared hosting, VPS, dedicated servers, cloud hosting, and WordPress hosting.",
-};
+import { domainHostingMetadata } from "@/seo/services/Domain-Hosting";
+
+export const metadata = domainHostingMetadata;
 
 export default function DomainHostingPage() {
     return (

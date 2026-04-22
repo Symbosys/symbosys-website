@@ -5,6 +5,6 @@ export const fitnessAppDevelopmentMetadata: Metadata = {
   description:
     "Symbosys offers custom fitness app development with user-friendly design, workout tracking, and scalable mobile solutions for startups and businesses.",
   alternates: {
-    canonical: "https://www.symbosys.com/Fitness-App-Development.php",
+    canonical: "https://www.symbosys.com/products/fitness-app-development",
   },
 };

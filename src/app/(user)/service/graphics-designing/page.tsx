@@ -1,10 +1,7 @@
 import Image from "next/image";
+import { graphicsDesigningMetadata } from "@/seo/services/Graphics-Designing";
 
-export const metadata = {
-    title: "Creative Graphic Design & Brand Identity | Symbosys Technologies",
-    description:
-        "Symbosys is a premier creative agency delivering high-impact logo design, brand identity, and 3D visuals. Elevate your brand with our elite design solutions.",
-};
+export const metadata = graphicsDesigningMetadata;
 
 export default function GraphicsDesigningPage() {
     return (

@@ -1,10 +1,7 @@
 import Image from "next/image";
+import { seoOptimizationMetadata } from "@/seo/services/SEO-Optimization";
 
-export const metadata = {
-    title: "Dominating Search: Advanced SEO & Digital Marketing | Symbosys",
-    description:
-        "Scale your business with Ranchi's most effective SEO strategies. We drive organic growth, higher rankings, and measurable ROI through data-backed digital marketing.",
-};
+export const metadata = seoOptimizationMetadata;
 
 export default function SEOOptimizationPage() {
     const benefits = [

@@ -5,6 +5,6 @@ export const restaurantManagementSoftwareMetadata: Metadata = {
   description:
     "Symbosys Restaurant Management Software helps manage billing, POS, orders, inventory, reports easily. Best solution for restaurants & cafes.",
   alternates: {
-    canonical: "https://www.symbosys.com/Restaurant-Management-Software.php",
+    canonical: "https://www.symbosys.com/products/restaurant-management-software",
   },
 };

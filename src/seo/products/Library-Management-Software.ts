@@ -5,6 +5,6 @@ export const libraryManagementSoftwareMetadata: Metadata = {
   description:
     "Discover Symbosys Library Management Software for seamless library operations. Manage books, members, and transactions efficiently.",
   alternates: {
-    canonical: "https://www.symbosys.com/Library-Management-Software.php",
+    canonical: "https://www.symbosys.com/products/library-management-software",
   },
 };

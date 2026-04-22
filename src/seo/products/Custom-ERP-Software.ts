@@ -5,6 +5,6 @@ export const customErpSoftwareMetadata: Metadata = {
   description:
     "symbosys offers custom ERP software solutions to streamline business operations, improve efficiency, and integrate all processes in one system.",
   alternates: {
-    canonical: "https://www.symbosys.com/Custom-ERP-Software.php",
+    canonical: "https://www.symbosys.com/products/custom-erp-management-software",
   },
 };

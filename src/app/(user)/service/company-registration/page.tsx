@@ -1,8 +1,6 @@
-export const metadata = {
-    title: "Company Registration & E-Filing - Symbosys Technologies",
-    description:
-        "Symbosys offers comprehensive company registration and e-filing services including accounting, auditing, GST registration, PF, ESIC, and MSME registration.",
-};
+import { companyRegistrationMetadata } from "@/seo/services/Company-Registration";
+
+export const metadata = companyRegistrationMetadata;
 
 export default function CompanyRegistrationPage() {
     return (

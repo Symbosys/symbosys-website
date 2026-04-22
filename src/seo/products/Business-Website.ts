@@ -5,6 +5,6 @@ export const businessWebsiteMetadata: Metadata = {
   description:
     "Symbosys is a trusted software development company in India offering custom web, mobile apps, and business IT solutions for startups & enterprises.",
   alternates: {
-    canonical: "https://www.symbosys.com/Business-Website.php",
+    canonical: "https://www.symbosys.com/products/business-website",
   },
 };

@@ -1,8 +1,6 @@
-export const metadata = {
-    title: "Software Development - Symbosys Technologies",
-    description:
-        "Symbosys is a leading software development company delivering high-quality ERP systems, custom software, and enterprise solutions across industries.",
-};
+import { softwareDevelopmentMetadata } from "@/seo/services/Software-Development";
+
+export const metadata = softwareDevelopmentMetadata;
 
 export default function SoftwareDevelopmentPage() {
     return (

@@ -1,8 +1,6 @@
-export const metadata = {
-    title: "Video & Animation Services - Symbosys Technologies",
-    description:
-        "Symbosys creates high-quality promotional videos and animations including explainer videos, corporate videos, product demos, 2D/3D animations, and motion graphics.",
-};
+import { videoAnimationMetadata } from "@/seo/services/Video-Animation";
+
+export const metadata = videoAnimationMetadata;
 
 export default function VideoAnimationPage() {
     return (

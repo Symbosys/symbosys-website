@@ -1,8 +1,6 @@
-export const metadata = {
-    title: "Trademark & ISO Certification - Symbosys Technologies",
-    description:
-        "Symbosys offers trademark registration and ISO certification services to help businesses protect their brand identity and meet international quality standards.",
-};
+import { trademarkIsoCertificationMetadata } from "@/seo/services/Trademark-ISO-Certification";
+
+export const metadata = trademarkIsoCertificationMetadata;
 
 export default function TrademarkISOPage() {
     return (

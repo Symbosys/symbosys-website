@@ -5,6 +5,6 @@ export const informativeWebsiteMetadata: Metadata = {
   description:
     "Symbosys provides professional informative website development services with responsive design, secure systems, and SEO-friendly features.",
   alternates: {
-    canonical: "https://www.symbosys.com/Informative-Website.php",
+    canonical: "https://www.symbosys.com/products/informative-website",
   },
 };

@@ -5,14 +5,14 @@ export const businessAppDevelopmentMetadata: Metadata = {
   description:
     "Symbosys is a leading business app development and software development company in India, delivering scalable, secure, and innovative digital solutions.",
   alternates: {
-    canonical: "https://www.symbosys.com/Business-App-Development.php",
+    canonical: "https://www.symbosys.com/products/business-app-development",
   },
 };
 
 export const businessAppDevelopmentJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  url: "https://symbosys.com/Business-App-Development.php",
+  url: "https://symbosys.com/products/business-app-development",
   name: "Business App Development | Symbosys - Best Software Company in Ranchi",
   description:
     "Symbosys offers professional business app development services to build scalable, user-friendly mobile & web applications to automate and grow your business.",
@@ -55,13 +55,13 @@ export const businessAppDevelopmentJsonLd = {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://symbosys.com/Business-App-Development.php",
+        "item": "https://symbosys.com/products/business-app-development",
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Business App Development",
-        "item": "https://symbosys.com/Business-App-Development.php",
+        "item": "https://symbosys.com/products/business-app-development",
       },
     ],
   },

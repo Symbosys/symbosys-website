@@ -5,6 +5,6 @@ export const ngoWebsiteMetadata: Metadata = {
   description:
     "Symbosys offers professional NGO website development services with secure, responsive, and donation-ready designs to help NGOs grow online.",
   alternates: {
-    canonical: "https://www.symbosys.com/NGO-Website.php",
+    canonical: "https://www.symbosys.com/products/ngo-non-profit-website",
   },
 };

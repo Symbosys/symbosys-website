@@ -5,6 +5,6 @@ export const eCommerceAppDevelopmentMetadata: Metadata = {
   description:
     "Symbosys offers secure, fast, and scalable e-commerce website development to grow your online business with modern design and smart features.",
   alternates: {
-    canonical: "https://www.symbosys.com/E-Commerce-App-Development.php",
+    canonical: "https://www.symbosys.com/products/e-commerce-app-development",
   },
 };

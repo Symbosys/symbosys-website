@@ -5,6 +5,6 @@ export const hotelManagementSoftwareMetadata: Metadata = {
   description:
     "Symbosys Hotel Management Software helps hotels manage bookings, billing, guests, and staff efficiently with secure, user-friendly hotel solutions.",
   alternates: {
-    canonical: "https://www.symbosys.com/Hotel-Management-Software.php",
+    canonical: "https://www.symbosys.com/products/hotel-management-software",
   },
 };

@@ -5,6 +5,6 @@ export const blogNewsWebsiteMetadata: Metadata = {
   description:
     "Symbosys is a trusted software company in Ranchi offering website development, mobile apps, SEO, and digital solutions for growing businesses.",
   alternates: {
-    canonical: "https://www.symbosys.com/blog-news-website.php",
+    canonical: "https://www.symbosys.com/products/blogs-news-website",
   },
 };

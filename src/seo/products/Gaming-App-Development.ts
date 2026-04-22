@@ -5,6 +5,6 @@ export const gamingAppDevelopmentMetadata: Metadata = {
   description:
     "Symbosys offers professional gaming app development services with high graphics, smooth gameplay, and scalable solutions for Android & iOS.",
   alternates: {
-    canonical: "https://www.symbosys.com/Gaming-App-Development.php",
+    canonical: "https://www.symbosys.com/products/gaming-app-development",
   },
 };

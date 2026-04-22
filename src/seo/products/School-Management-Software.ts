@@ -5,6 +5,6 @@ export const schoolManagementSoftwareMetadata: Metadata = {
   description:
     "Symbosys School Management Software helps schools manage students, fees, attendance, exams & reports with an easy, secure all-in-one ERP system.",
   alternates: {
-    canonical: "https://www.symbosys.com/School-Management-Software.php",
+    canonical: "https://www.symbosys.com/products/school-management-software",
   },
 };

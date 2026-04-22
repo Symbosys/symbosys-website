@@ -5,6 +5,6 @@ export const transportManagementSoftwareMetadata: Metadata = {
   description:
     "Transport Management Software companies helps manage fleets, routes, tracking, billing, and logistics efficiently with real-time reporting and automation.",
   alternates: {
-    canonical: "https://www.symbosys.com/Transport-Management-Software.php",
+    canonical: "https://www.symbosys.com/products/transport-management-software",
   },
 };

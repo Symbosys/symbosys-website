@@ -1,10 +1,7 @@
 import Image from "next/image";
+import { websiteDesigningMetadata } from "@/seo/services/Website-Designing";
 
-export const metadata = {
-    title: "Next-Gen Website Design & Development | Symbosys Technologies",
-    description:
-        "Symbosys is Ranchi's leading web development agency, delivering high-performance, bespoke digital experiences for forward-thinking brands.",
-};
+export const metadata = websiteDesigningMetadata;
 
 export default function WebsiteDesigningPage() {
     const webCategories = [

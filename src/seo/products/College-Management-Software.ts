@@ -5,6 +5,6 @@ export const collegeManagementSoftwareMetadata: Metadata = {
   description:
     "Symbosys offers smart college management software in India. Trusted software development company providing ERP, automation & digital solutions.",
   alternates: {
-    canonical: "https://www.symbosys.com/College-Management-Software.php",
+    canonical: "https://www.symbosys.com/products/college-management-software",
   },
 };

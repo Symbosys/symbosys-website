@@ -5,6 +5,6 @@ export const educationalWebsiteMetadata: Metadata = {
   description:
     "Symbosys offers professional educational website development for schools, colleges, and institutes with responsive design, secure systems, and SEO-friendly features.",
   alternates: {
-    canonical: "https://www.symbosys.com/Educational-Website.php",
+    canonical: "https://www.symbosys.com/products/educational-website",
   },
 };
