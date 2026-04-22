@@ -11,5 +11,5 @@ export const companyRegistrationMetadata: Metadata = {
   ],
   alternates: {
     canonical: "https://www.symbosys.com/service/company-registration",
-  },
+  }
 };

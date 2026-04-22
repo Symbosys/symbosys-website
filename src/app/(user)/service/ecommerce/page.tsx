@@ -1,10 +1,7 @@
 import Image from "next/image";
+import { ecommerceMetadata } from "@/seo/services/Ecommerce";
 
-export const metadata = {
-    title: "E-Commerce / MLM / CMS - Symbosys Technologies",
-    description:
-        "Symbosys offers comprehensive E-commerce, MLM, and CMS solutions to help you establish and grow your online business with ease.",
-};
+export const metadata = ecommerceMetadata;
 
 export default function EcommercePage() {
     const ecommerceFeatures = [

@@ -1,10 +1,7 @@
 import Image from "next/image";
+import { digitalMarketingMetadata } from "@/seo/services/Digital-Marketing";
 
-export const metadata = {
-    title: "Digital Marketing - Symbosys Technologies",
-    description:
-        "Symbosys offers comprehensive digital marketing services to amplify your online presence and expand your reach to potential customers in Ranchi, Jharkhand.",
-};
+export const metadata = digitalMarketingMetadata;
 
 export default function DigitalMarketingPage() {
     const services = [
