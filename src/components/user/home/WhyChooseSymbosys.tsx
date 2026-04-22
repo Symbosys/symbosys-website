@@ -26,7 +26,7 @@ export function WhyChooseSymbosys() {
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white">
                         Defining the Standards of <br />
-                        <span className="text-brand text-transparent bg-clip-text bg-linear-to-r from-brand to-brand-blue">
+                        <span className="text-brand bg-clip-text bg-linear-to-r from-brand to-brand-blue">
                             Digital Transformation
                         </span>
                     </h2>
