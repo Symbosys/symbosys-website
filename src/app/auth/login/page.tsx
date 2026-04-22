@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { login } from "@/actions/admin";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
@@ -19,15 +19,15 @@ export default function LoginPage() {
         password: "",
     });
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
         setIsLoading(true);
 
         try {
             const result = await login(formData);
             if (result.success) {
-                toast.success("Welcome back!");
                 router.push("/admin");
+                toast.success("Welcome back!");
                 router.refresh();
             } else {
                 toast.error(result.error || "Invalid credentials");

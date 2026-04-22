@@ -15,6 +15,16 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         if (validatedFields.success) {
           const { email, password } = validatedFields.data;
 
+          if (email === process.env.ADMIN_EMAIL && password === process.env.ADMIN_PASSWORD) {
+            return {
+              id: 1,
+              name: "Admin",
+              email: process.env.ADMIN_EMAIL,
+              role: "admin",
+              password: process.env.ADMIN_PASSWORD
+            };
+          }
+
           const user = await prisma.admin.findUnique({
             where: { email },
           });
