@@ -1,42 +1,42 @@
 import Image from "next/image";
 
 export const metadata = {
-    title: "SEO Optimization - Symbosys Technologies",
+    title: "Dominating Search: Advanced SEO & Digital Marketing | Symbosys",
     description:
-        "Symbosys offers comprehensive SEO optimization services to help your business rank on top search engine pages and increase traffic and conversions.",
+        "Scale your business with Ranchi's most effective SEO strategies. We drive organic growth, higher rankings, and measurable ROI through data-backed digital marketing.",
 };
 
 export default function SEOOptimizationPage() {
     const benefits = [
         {
             icon: "trending_up",
-            title: "Top Rank in Search Engine Pages",
-            description: "Around 60% of the users using google search query visit only the first three results of the Google page and ignore the rest. With a result-driven SEO strategy, we will help you to rank on the top three results of search engine pages."
+            title: "Dominate Top Rankings",
+            description: "Statistically, 60% of clicks go to the top three search results. We don't just aim for page one; we aim for the summit. Our precision-engineered SEO tactics are designed to put your brand in that elite top-tier spot."
         },
         {
             icon: "person_add",
-            title: "Increase Traffic and Conversion",
-            description: "Getting top rank in search engine pages with the most searched keywords ultimately brings a large flow of traffic and conversion for your website."
+            title: "Exponential Traffic & ROI",
+            description: "Ranking for high-intent keywords isn't just about traffic—it's about the right traffic. We target the search terms that drive high-value conversions, turning searchers into loyal customers."
         },
         {
             icon: "storefront",
-            title: "Bring Revenue for Local Business",
-            description: "Most of the businesses are searched from mobile devices and most of them are local visitors. Local visitors are more likely to get convert and bring revenue for your business. With a Local SEO strategy, we will help you to discover your business in local searches as well."
+            title: "Local Market Authority",
+            description: "With the rise of mobile search, local visibility is everything. We optimize your presence for Ranchi-specific queries, ensuring that when local customers are ready to buy, your business is the first one they see."
         },
         {
             icon: "emoji_events",
-            title: "Beat Competitors",
-            description: "SEO rankings never remain constant unless you are not working on SEO strategies regularly. We keep an eye on the latest and ongoing google algorithm to keep you stay ahead of your competitor."
+            title: "Outpace the Competition",
+            description: "Google's algorithms are constantly evolving, and so are we. We proactively refine your strategy to ensure you don't just reach the top—you stay there, leaving your competitors in the rearview mirror."
         },
         {
             icon: "visibility",
-            title: "Improves Business Recognition",
-            description: "With paid ads and a quality content approach we can make your business popular among your potential customers."
+            title: "Instant Brand Recognition",
+            description: "Through a strategic mix of high-quality content and targeted ads, we build a brand presence that is both familiar and trusted by your potential customers."
         },
         {
             icon: "handshake",
-            title: "Build Trustworthy Customers",
-            description: "Continuing SEO strategies for a long period of time also helps to build trustworthy customers as customers only search those sites which they find more often on search."
+            title: "Built-In Customer Trust",
+            description: "Searchers trust Google. By consistently appearing at the top of organic results, your brand inherits that trust, fostering long-term loyalty and lowering your cost per acquisition."
         }
     ];
 
@@ -73,10 +73,10 @@ export default function SEOOptimizationPage() {
                                 <span className="text-sm font-semibold text-white uppercase tracking-widest">SEO Optimization</span>
                             </div>
                             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 text-liquid-glow max-w-3xl">
-                                Social Marketing & Digital Marketing
+                                Data-Driven SEO and Digital Marketing Mastery
                             </h1>
                             <p className="text-lg text-white/90 max-w-2xl leading-relaxed">
-                                Amplify your online presence and expand your reach to potential customers in Ranchi, Jharkhand with our comprehensive SEO and digital marketing strategies.
+                                Scale your brand's digital authority in Ranchi and beyond. We combine technical SEO with creative marketing to place your business where your customers are searching.
                             </p>
                         </div>
                     </div>
@@ -88,13 +88,13 @@ export default function SEOOptimizationPage() {
                     <div className="grid lg:grid-cols-2 gap-8 mb-16 items-center">
                         <div className="glass-card rounded-3xl p-8 md:p-12">
                             <h2 className="text-2xl md:text-3xl font-bold text-text-main mb-6 dark:text-white">
-                                <span className="text-transparent bg-clip-text bg-linear-to-r from-green-500 via-emerald-500 to-teal-500">Digital Marketing</span> Excellence
+                                Dominate the <span className="text-transparent bg-clip-text bg-linear-to-r from-green-500 via-emerald-500 to-teal-500">Digital Landscape</span>
                             </h2>
                             <p className="text-lg text-text-muted dark:text-gray-300 leading-relaxed mb-6">
-                                Are you seeking to amplify your online presence and expand your reach to potential customers in Ranchi, Jharkhand? Look no further than the dynamic realm of digital and social media marketing!
+                                Ready to turn search results into sales? In the competitive Ranchi market, visibility isn't just an advantage—it's a necessity. We specialize in digital and social marketing strategies that do more than just get clicks; they build empires.
                             </p>
                             <p className="text-lg text-text-muted dark:text-gray-300 leading-relaxed">
-                                In today's rapidly evolving world, establishing a robust online presence is indispensable for businesses striving to maintain competitiveness. From the intricacies of SEO to the efficacy of paid promotions, we delve into the strategies that can propel your business growth.
+                                The digital world moves fast. To stay ahead, your business needs more than a basic website. It needs a high-performance growth engine. From technical SEO audits to viral social campaigns, we engineer the pathways that lead customers directly to you.
                             </p>
                         </div>
                         <div className="relative rounded-3xl overflow-hidden bg-white/50 backdrop-blur-sm p-6 flex items-center justify-center min-h-[350px]">
@@ -111,10 +111,10 @@ export default function SEOOptimizationPage() {
                     {/* Digital Marketing Description */}
                     <div className="glass-card rounded-3xl p-8 md:p-12 mb-16">
                         <h2 className="text-2xl md:text-3xl font-bold text-text-main mb-6 text-center dark:text-white">
-                            What is <span className="text-transparent bg-clip-text bg-linear-to-r from-green-500 via-emerald-500 to-teal-500">Digital Marketing</span>?
+                            Fueling Growth in the <span className="text-transparent bg-clip-text bg-linear-to-r from-green-500 via-emerald-500 to-teal-500">Digital Age</span>
                         </h2>
                         <p className="text-lg text-text-muted dark:text-gray-300 leading-relaxed text-center max-w-4xl mx-auto">
-                            Digital marketing serves as the cornerstone for unlocking success in the digital era. With a strategic approach, businesses can forge connections with their target audience and drive conversions to unprecedented heights. From the intricacies of search engine optimization (SEO) to the dynamics of pay-per-click (PPC) advertising, there exists a plethora of avenues to elevate your brand's visibility online.
+                            Digital marketing is your roadmap to sustainable success. By blending Search Engine Optimization (SEO) with performance-based advertising like PPC, we create a multi-channel presence that captures attention and converts it into revenue. It's about being in the right place, at the right time, with the right message.
                         </p>
                     </div>
 
@@ -155,10 +155,10 @@ export default function SEOOptimizationPage() {
                             </h2>
                             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                                 {[
-                                    { icon: "public", title: "Global Reach", desc: "Reach customers worldwide with optimized online presence" },
-                                    { icon: "savings", title: "Cost Effective", desc: "Get more ROI compared to traditional marketing" },
-                                    { icon: "schedule", title: "24/7 Visibility", desc: "Your business stays visible around the clock" },
-                                    { icon: "insights", title: "Measurable Results", desc: "Track and analyze your marketing performance" }
+                                    { icon: "public", title: "Global Scalability", desc: "Take your business from local Ranchi roots to a global audience with an optimized digital footprint." },
+                                    { icon: "savings", title: "High-Impact ROI", desc: "SEO provides one of the highest returns on investment by targeting active customer intent." },
+                                    { icon: "schedule", title: "Uninterrupted Presence", desc: "Your optimized website works for you 24/7, capturing leads while you sleep." },
+                                    { icon: "insights", title: "Transparent Analytics", desc: "We provide clear, actionable insights into your performance so you can see your investment grow." }
                                 ].map((item, index) => (
                                     <div key={index} className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-colors text-center">
                                         <span className="material-symbols-outlined text-4xl text-white mb-4 block">{item.icon}</span>
@@ -173,10 +173,10 @@ export default function SEOOptimizationPage() {
                     {/* CTA Section */}
                     <div className="text-center glass-card rounded-3xl p-8 md:p-12">
                         <h2 className="text-2xl md:text-3xl font-bold text-text-main dark:text-white mb-4">
-                            Ready to Rank Higher?
+                            Ready to Own the Search Results?
                         </h2>
                         <p className="text-text-muted mb-8 max-w-2xl mx-auto dark:text-gray-300">
-                            Let Symbosys boost your search engine rankings and drive more organic traffic to your website. Contact us today for a free SEO audit.
+                            Stop losing customers to your competitors. Partner with Ranchi's SEO experts to audit your presence and start your journey to the top of the search results today.
                         </p>
                         <button className="px-8 py-4 rounded-full bg-linear-to-r from-green-600 via-emerald-600 to-green-600 text-white font-bold shadow-xl shadow-green-500/30 hover:shadow-2xl hover:shadow-emerald-500/40 hover:scale-105 transition-all duration-300 light-shimmer">
                             Get Free SEO Audit

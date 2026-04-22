@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 export const metadata = {
-    title: "Graphics Designing - Symbosys Technologies",
+    title: "Creative Graphic Design & Brand Identity | Symbosys Technologies",
     description:
-        "Symbosys is a leading graphic design agency providing logo design, brand identity, social media graphics, print design, and 3D graphic design services.",
+        "Symbosys is a premier creative agency delivering high-impact logo design, brand identity, and 3D visuals. Elevate your brand with our elite design solutions.",
 };
 
 export default function GraphicsDesigningPage() {
@@ -40,10 +40,10 @@ export default function GraphicsDesigningPage() {
                                 <span className="text-sm font-semibold text-white uppercase tracking-widest">Graphics Design</span>
                             </div>
                             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 text-liquid-glow max-w-3xl">
-                                Graphic Designing by Symbosys
+                                Visual Storytelling and Creative Brand Design
                             </h1>
                             <p className="text-lg text-white/90 max-w-2xl leading-relaxed">
-                                Symbosys is a leading graphic design agency providing a wide range of graphic design services tailored to meet the needs of businesses, organizations, and individuals.
+                                Symbosys is a world-class creative agency delivering bespoke graphic design solutions that capture attention and amplify your brand's unique narrative.
                             </p>
                         </div>
                     </div>
@@ -54,7 +54,7 @@ export default function GraphicsDesigningPage() {
                     {/* Introduction */}
                     <div className="glass-card rounded-3xl p-8 md:p-12 mb-12">
                         <p className="text-lg text-text-muted dark:text-gray-300 leading-relaxed">
-                            Our team of creative designers is dedicated to delivering high-quality designs that effectively communicate your brand message and leave a lasting impression. Whether you are searching for graphic design companies near you or need the expertise of freelance graphic designers near you, Symbosys is your go-to solution for all things graphic design.
+                            Our elite team of designers is dedicated to crafting high-fidelity visuals that communicate your brand's essence with clarity and impact. From conceptualizing modern identities to engineering immersive 3D experiences, Symbosys is your ultimate partner for high-performance creative design.
                         </p>
                     </div>
 
@@ -67,33 +67,33 @@ export default function GraphicsDesigningPage() {
                             {[
                                 {
                                     icon: "linked_services",
-                                    title: "Logo Design",
-                                    description: "As a premier graphic logo designer near you, we specialize in creating impactful logos that reflect your brand's identity. Our team works closely with you to develop company logo designs that are unique, memorable, and versatile."
+                                    title: "Signature Logo Design",
+                                    description: "We engineer high-impact logos that serve as the cornerstone of your brand identity. Our designers specialize in creating unique, scalable, and memorable marks that resonate with your target audience."
                                 },
                                 {
                                     icon: "branding_watermark",
-                                    title: "Brand Identity Design",
-                                    description: "Beyond logo design, we offer comprehensive brand identity design services that include color schemes, typography, and visual elements to create a cohesive brand image."
+                                    title: "Comprehensive Brand Identity",
+                                    description: "Beyond the logo, we architect complete visual ecosystems—including curated color palettes and refined typography—to ensure your brand maintains a cohesive and professional presence."
                                 },
                                 {
                                     icon: "share",
-                                    title: "Social Media Graphic Design",
-                                    description: "Our social media graphic design services include creating eye-catching graphics for social media posts, banners, and ads that help you engage with your audience and promote your brand effectively."
+                                    title: "High-Engagement Social Media Design",
+                                    description: "We craft visually stunning assets for social platforms that drive engagement and amplify your digital reach through creative storytelling and aesthetic precision."
                                 },
                                 {
                                     icon: "print",
-                                    title: "Print Design",
-                                    description: "As a full-service graphic design and printing company, we provide a wide range of print design services, including brochures, flyers, posters, business cards, and more."
+                                    title: "Professional Print & Collateral",
+                                    description: "As a full-spectrum design and production partner, we deliver high-quality print solutions for brochures, posters, and corporate stationery that leave a lasting physical impression."
                                 },
                                 {
                                     icon: "view_in_ar",
-                                    title: "3D Graphic Design",
-                                    description: "We provide 3D graphic design services for businesses looking to create immersive visual experiences. Our 3D graphic designers are skilled in creating realistic models, animations, and renderings."
+                                    title: "Immersive 3D Visualization",
+                                    description: "We push the boundaries of design with sophisticated 3D models and animations, providing businesses with immersive visual assets that bring complex concepts to life."
                                 },
                                 {
                                     icon: "contact_page",
-                                    title: "Business Cards Design",
-                                    description: "A business card is often a client's first impression of your company. We offer graphic design business cards that are professionally designed to reflect your brand's image."
+                                    title: "Bespoke Business Stationery",
+                                    description: "We design professional business cards and stationery that reflect your brand's sophistication, ensuring every physical touchpoint reinforces your professional integrity."
                                 }
                             ].map((service, index) => (
                                 <div key={index} className="group relative">
@@ -117,12 +117,12 @@ export default function GraphicsDesigningPage() {
                         </h2>
                         <div className="grid md:grid-cols-2 gap-6">
                             {[
-                                { title: "Understanding Client Needs", desc: "At Symbosys, we begin every project by thoroughly understanding our Client's needs and goals. This allows us to create designs that are not only visually appealing but also strategically aligned with your brand's objectives." },
-                                { title: "Creative Collaboration", desc: "Our team believes in the power of collaboration. We work closely with our clients throughout the design process, incorporating feedback and ideas to ensure the final product exceeds expectations." },
-                                { title: "Latest Design Trends", desc: "We stay current with the latest design trends and technologies to ensure our clients receive modern, innovative solutions." },
-                                { title: "Attention to Detail", desc: "We believe that great design is in the details. Our team pays meticulous attention to every element of the design process, from color choices to typography." },
-                                { title: "Versatility and Adaptability", desc: "Our designs are versatile and adaptable, meaning they can be used across various mediums and platforms without losing quality or impact." },
-                                { title: "Ongoing Support", desc: "We offer ongoing support and are always available for revisions or updates. We aim to build long-term relationships with our clients." }
+                                { title: "Strategic Goal Alignment", desc: "Every project begins with a deep dive into your business objectives. We ensure our creative output is perfectly calibrated to drive your specific goals and market success." },
+                                { title: "Collaborative Synergy", desc: "We believe in transparent, iterative design. Our team works in lockstep with yours, integrating feedback to ensure the final product is a perfect reflection of your vision." },
+                                { title: "Contemporary Design Logic", desc: "We stay at the forefront of global design trends and emerging technologies, providing your brand with innovative solutions that remain relevant and forward-thinking." },
+                                { title: "Meticulous Aesthetic Detail", desc: "Great design lives in the details. From pixel-perfect spacing to intentional typography choices, we maintain the highest standards of aesthetic precision." },
+                                { title: "Multi-Platform Adaptability", desc: "Our designs are engineered for versatility, maintaining their impact and quality across every digital and physical medium your brand occupies." },
+                                { title: "Persistent Creative Partnership", desc: "We don't just deliver files; we build relationships. We provide ongoing support and revisions to ensure your brand evolves seamlessly as your business grows." }
                             ].map((item, index) => (
                                 <div key={index} className="glass-card rounded-xl p-6 hover:-translate-y-1 transition-transform duration-300">
                                     <div className="flex items-start gap-4">
@@ -152,10 +152,10 @@ export default function GraphicsDesigningPage() {
                             </h2>
                             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                                 {[
-                                    { icon: "location_on", title: "Local Expertise", desc: "We understand the local market and can provide tailored solutions that resonate with your audience." },
-                                    { icon: "apps", title: "Diverse Services", desc: "From graphic design and printing services to digital graphic design, we offer a wide range of services." },
-                                    { icon: "groups", title: "Experienced Team", desc: "Our team comprises some of the best graphic designers with years of experience creating stunning visuals." },
-                                    { icon: "thumb_up", title: "Client Satisfaction", desc: "We are committed to providing high-quality services that exceed client expectations." }
+                                    { icon: "location_on", title: "Strategic Market Insight", desc: "We leverage local and global market trends to provide design solutions that resonate deeply with your specific audience." },
+                                    { icon: "apps", title: "End-to-End Creative Ecosystem", desc: "From initial sketches to final print production, we provide a unified ecosystem for all your creative and visual needs." },
+                                    { icon: "groups", title: "Elite Design Collective", desc: "Our team features veteran creatives who are passionate about pushing the boundaries of visual communication." },
+                                    { icon: "thumb_up", title: "Commitment to Excellence", desc: "We are dedicated to delivering high-fidelity design solutions that consistently exceed expectations and drive growth." }
                                 ].map((item, index) => (
                                     <div key={index} className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-colors">
                                         <span className="material-symbols-outlined text-3xl text-white mb-4 block">{item.icon}</span>
@@ -170,10 +170,10 @@ export default function GraphicsDesigningPage() {
                     {/* CTA Section */}
                     <div className="text-center glass-card rounded-3xl p-8 md:p-12">
                         <h2 className="text-2xl md:text-3xl font-bold text-text-main dark:text-white mb-4">
-                            Ready to Elevate Your Brand?
+                            Elevate Your Visual Identity
                         </h2>
                         <p className="text-text-muted mb-8 max-w-2xl mx-auto dark:text-gray-300">
-                            Whether you are looking for a graphic design business near you or need the services of a freelance graphic designer, Symbosys is here to help. Contact us today to learn more about how we can elevate your brand with our expert graphic design services.
+                            Whether you're looking for a complete brand overhaul or specialized creative assets, Symbosys has the expertise to transform your vision into an iconic brand. Let's create something extraordinary together.
                         </p>
                         <button className="px-8 py-4 rounded-full bg-linear-to-r from-violet-600 via-fuchsia-600 to-violet-600 text-white font-bold shadow-xl shadow-violet-500/30 hover:shadow-2xl hover:shadow-fuchsia-500/40 hover:scale-105 transition-all duration-300 light-shimmer">
                             Get Started Today

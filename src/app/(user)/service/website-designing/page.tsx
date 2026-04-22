@@ -1,61 +1,61 @@
 import Image from "next/image";
 
 export const metadata = {
-    title: "Website Designing & Development - Symbosys Technologies",
+    title: "Next-Gen Website Design & Development | Symbosys Technologies",
     description:
-        "Symbosys is a leading website designing company in Ranchi offering top-class website designing services for various types of businesses.",
+        "Symbosys is Ranchi's leading web development agency, delivering high-performance, bespoke digital experiences for forward-thinking brands.",
 };
 
 export default function WebsiteDesigningPage() {
     const webCategories = [
-        "E-commerce Websites",
-        "Web Portals",
-        "Blogging Websites",
-        "Informational Websites",
-        "Educational Websites",
-        "Business Websites",
-        "Personal Websites",
-        "Media Websites",
-        "Entertainment Websites",
-        "Directory Websites"
+        "Enterprise E-commerce",
+        "High-Scale Web Portals",
+        "Editorial & Blogs",
+        "Corporate Solutions",
+        "LMS & Education",
+        "Professional Services",
+        "Portfolio Sites",
+        "Digital Media",
+        "Entertainment Hubs",
+        "Directory Systems"
     ];
 
     const webSolutions = [
-        "Mobile web Development",
-        "Custom Theme Integration",
-        "Chatbots",
-        "Mailing System",
-        "Payment Gateway Integration",
-        "Web Content Management",
-        "Multilanguage Support",
-        "Database Driven Web Application Development"
+        "Responsive Mobile Web",
+        "Bespoke Theme Engineering",
+        "AI Chatbot Integration",
+        "Automated Mailing Systems",
+        "Secure Payment Gateways",
+        "Headless CMS Integration",
+        "Multilingual Support",
+        "Data-Driven Web Apps"
     ];
 
     const services = [
         {
             icon: "code",
-            title: "Web Programming",
-            description: "Programming or coding is the main and base practice for every developer for creating webpages. We take every project to rigorous testing to ensure that website doesn't look only impressive but also producing the best functionality. This eventually helps to improve your brand visibility to a larger extent."
+            title: "Strategic Web Engineering",
+            description: "Coding is our craft and the backbone of every digital experience. We subject every line of code to rigorous optimization, ensuring your platform isn't just aesthetically pleasing but is a high-functioning engine that exponentially increases your brand's digital footprint."
         },
         {
             icon: "design_services",
-            title: "UI/UX Design",
-            description: "Users only engaged on those websites which have a good interface and are easy to navigate. In order to give your website a user-friendly interface that is usable, useful, and desirable, we offer UI/UX design."
+            title: "Immersive UI/UX Design",
+            description: "Modern audiences demand seamless experiences. We engineer user-centric interfaces that prioritize intuitive navigation and aesthetic delight, transforming passive visitors into loyal brand advocates through superior design logic."
         },
         {
             icon: "article",
-            title: "Content Management",
-            description: "Not every developer is aware of SEO and content management that are significantly important for achieving your business goal. We offer SEO-friendly web designs that allow the content management team to plot the right type of content on every webpage."
+            title: "Optimized Content Ecosystems",
+            description: "A great website requires more than just code; it requires a strategic content foundation. We integrate SEO-focused architecture that empowers your marketing team to deploy high-impact content with effortless precision, driving organic growth and authority."
         }
     ];
 
     const whyChoose = [
-        { icon: "auto_awesome", title: "Sophisticated Web Design", desc: "The websites are sophisticatedly designed based on the SEO guidelines defined by Google." },
-        { icon: "brush", title: "Unique Appearance", desc: "We provide a unique appearance to your website that will make your company stand out from other competitors." },
-        { icon: "widgets", title: "Special Elements", desc: "Enriched with all the necessary UI and UX elements, your website becomes appealing and extremely intuitive." },
-        { icon: "category", title: "Varied Designs", desc: "From real estate to ecommerce, we have designed for customers from all fields." },
-        { icon: "navigation", title: "Easy Navigation", desc: "Specially designed to improve the quality of visitor communication with easy to understand navigational pathways." },
-        { icon: "verified", title: "Utmost Quality", desc: "We assure nothing but the best results to our clients for their demands, along with the utmost quality." }
+        { icon: "auto_awesome", title: "SEO-Optimized Architecture", desc: "Every platform we build is engineered from the ground up to align with Google's most sophisticated search algorithms." },
+        { icon: "brush", title: "Bespoke Visual Identity", desc: "We craft distinctive digital aesthetics that differentiate your brand and resonate with your target demographic." },
+        { icon: "widgets", title: "Intuitive User Experience", desc: "By integrating essential UI and UX principles, we ensure your website is as functional as it is beautiful." },
+        { icon: "category", title: "Cross-Industry Expertise", desc: "Our portfolio spans everything from high-scale e-commerce to complex corporate portals, proving our versatility." },
+        { icon: "navigation", title: "Strategic Navigation", desc: "We architect intelligent user journeys that simplify communication and guide visitors effortlessly toward your goals." },
+        { icon: "verified", title: "Uncompromising Quality", desc: "We are committed to delivering technical excellence and rigorous quality assurance in every project we undertake." }
     ];
 
     return (
@@ -91,10 +91,10 @@ export default function WebsiteDesigningPage() {
                                 <span className="text-sm font-semibold text-white uppercase tracking-widest">Web Development</span>
                             </div>
                             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 text-liquid-glow max-w-3xl">
-                                Website Designing and Development
+                                Bespoke Website Design and Strategic Development
                             </h1>
                             <p className="text-lg text-white/90 max-w-2xl leading-relaxed">
-                                Symbosys Software Service Pvt. Ltd in Ranchi is the main name in the field of offering top-class Website Designing Services for various types of businesses.
+                                Symbosys Technologies is Ranchi's premier digital architect, specializing in high-performance web solutions that propel modern businesses into the future.
                             </p>
                         </div>
                     </div>
@@ -106,10 +106,10 @@ export default function WebsiteDesigningPage() {
                     <div className="grid lg:grid-cols-2 gap-8 mb-16">
                         <div className="glass-card rounded-3xl p-8 md:p-12">
                             <p className="text-lg text-text-muted dark:text-gray-300 leading-relaxed mb-6">
-                                We have an exceptionally skilled group of designers and developers who utilize current innovation to make your website unique, interactive, and highly responsive. Our system is novel and immaculate from other web designing companies. Our experts are continuously striving to ensure that your aspirations and expectations are met.
+                                Our elite collective of designers and developers leverages state-of-the-art technologies to build digital platforms that are not just visually stunning, but inherently intuitive and lightning-fast. Our methodology is built on technical precision and creative audacity, ensuring your digital presence sets a new industry standard.
                             </p>
                             <p className="text-lg text-text-muted dark:text-gray-300 leading-relaxed">
-                                We put talented and creative minds on your site that assembles your business with your clients. Being a leading Website Designing Company in Ranchi, we not only offer our Website Designing and Development service for different businesses but also take care of its maintenance over a specified time horizon.
+                                We unite visionary design with robust engineering to bridge the gap between your brand and its audience. As Ranchi's benchmark for web excellence, we handle the full lifecycle of your project—from strategic planning and development to proactive maintenance and long-term optimization.
                             </p>
                         </div>
                         <div className="relative rounded-3xl overflow-hidden min-h-[300px]">
@@ -198,10 +198,10 @@ export default function WebsiteDesigningPage() {
                     {/* CTA Section */}
                     <div className="text-center glass-card rounded-3xl p-8 md:p-12">
                         <h2 className="text-2xl md:text-3xl font-bold text-text-main dark:text-white mb-4">
-                            Ready to Build Your Website?
+                            Elevate Your Digital Presence
                         </h2>
                         <p className="text-text-muted mb-8 max-w-2xl mx-auto dark:text-gray-300">
-                            We are centered around designing a site that works for your clients and for the development of your business too. Contact us today to get started!
+                            We are dedicated to architecting digital platforms that prioritize your users' needs while accelerating your business growth. Let's build something extraordinary together.
                         </p>
                         <button className="px-8 py-4 rounded-full bg-linear-to-r from-violet-600 via-blue-600 to-violet-600 text-white font-bold shadow-xl shadow-violet-500/30 hover:shadow-2xl hover:shadow-blue-500/40 hover:scale-105 transition-all duration-300 light-shimmer">
                             Start Your Project
