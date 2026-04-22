@@ -5,7 +5,7 @@ export const metadata = blogNewsWebsiteMetadata;
 
 export default function BlogsNewsWebsitePage() {
     return (
-        <ProductLayout
+        <ProductLayout 
             title="Blogs & News Website"
             subtitle="by Symbosys"
             description="Blogs and news websites are dynamic digital platforms designed by Symbosys to publish and disseminate timely content, articles, and news updates. These websites are tailored to enhance reader engagement with features such as CMS, SEO optimization, and responsive design."
