@@ -3,20 +3,24 @@ import Image from "next/image";
 export function BusinessBenefits() {
     const benefits = [
         {
-            title: "World Class CRM Services",
-            description: "App Development, Software Development, best in class Apps",
+            title: "Enterprise-Grade Ecosystems",
+            description:
+                "Architecting high-performance environments including CRM, ERP, and bespoke software solutions calibrated for global scale.",
         },
         {
-            title: "Smart Source for making software",
-            description: "Connect sales, service, marketing, commerce & IT services",
+            title: "Unified Strategic Integration",
+            description:
+                "Seamlessly synchronizing sales, marketing, and IT operations to create a cohesive, data-driven business infrastructure.",
         },
         {
-            title: "Fast Making software to value",
-            description: "Ease of Design & implementation at speed with team support",
+            title: "Rapid Value Realization",
+            description:
+                "Accelerating time-to-market through agile development methodologies and dedicated technical support ecosystems.",
         },
         {
-            title: "Better & Flexible",
-            description: "Solutions for any type of business or Industry",
+            title: "Adaptive & Scalable Frameworks",
+            description:
+                "Delivering flexible, future-proof digital solutions engineered to evolve alongside your business and industry demands.",
         },
     ];
 
@@ -30,7 +34,7 @@ export function BusinessBenefits() {
                         <div className="relative w-full aspect-square max-w-md mx-auto">
                             <Image
                                 src="/home/your_businesses.webp"
-                                alt="Business Benefits"
+                                alt="Strategic Business Benefits"
                                 fill
                                 className="object-contain group-hover:scale-105 transition-transform duration-500 mix-blend-multiply dark:mix-blend-screen dark:opacity-90"
                                 priority
@@ -45,7 +49,8 @@ export function BusinessBenefits() {
                 {/* Right: Content */}
                 <div className="order-1 lg:order-2">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-main dark:text-white mb-8 leading-tight">
-                        Here are the benefits your businesses can <span className="text-brand">get from Symbosys.</span>
+                        Drive Operational Excellence <br />
+                        <span className="text-brand">with Strategic Solutions.</span>
                     </h2>
 
                     <div className="space-y-6">

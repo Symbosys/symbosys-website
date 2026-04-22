@@ -26,8 +26,8 @@ export function IndustriesSection() {
         <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32">
             <div className="text-center mb-16">
                 <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white mb-6 leading-tight max-w-4xl mx-auto">
-                    We offer managed IT services that are tailored to meet the{" "}
-                    <span className="text-brand">unique needs of your industry</span>
+                    Precision-Engineered IT Solutions for{" "}
+                    <span className="text-brand">Your Industry</span>
                 </h2>
             </div>
 

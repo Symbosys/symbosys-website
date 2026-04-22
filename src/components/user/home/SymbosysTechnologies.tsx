@@ -12,9 +12,9 @@ export function SymbosysTechnologies() {
                         <div className="relative w-full aspect-square max-w-md mx-auto">
                             <Image
                                 src="/home/Symbosys_Technologies.webp"
-                                alt="Symbosys Technologies - IT Solutions"
+                                alt="Symbosys Technologies - Innovation & Digital Excellence"
                                 fill
-                                className="object-contain group-hover:scale-105 transition-transform duration-500 mix-blend-multiply dark:mix-blend-screen dark:opacity-90"
+                                className="object-contain group-hover:scale-105 transition-transform duration-500"
                                 priority
                             />
                         </div>
@@ -40,27 +40,31 @@ export function SymbosysTechnologies() {
                     </h2>
 
                     <p className="text-lg md:text-xl font-semibold text-transparent bg-clip-text bg-linear-to-r from-brand to-brand-blue mb-6">
-                        THE BEST SOFTWARE COMPANY IN Jharkhand
+                        Pioneering Digital Innovation in Jharkhand
                     </p>
 
                     <p className="text-text-muted dark:text-gray-400 text-lg leading-relaxed mb-8">
-                        Introducing Symbosys Technologies Pvt. Ltd. – the beacon of
-                        innovation in Ranchi&apos;s dynamic IT landscape. As an ISO
-                        powerhouse, we design custom software, develop captivating
-                        e-commerce platforms, and create seamless mobile applications. A
-                        decade&apos;s worth of expertise pushes us further than others do by
-                        merging cutting-edge technology with limitless creativity. Come and
-                        be part of an odyssey where excellence knows no bounds. Welcome to
-                        SYMBOSYS — where dreams take a digital form.
+                        At Symbosys Technologies Pvt. Ltd., we represent the pinnacle of
+                        technological advancement in Ranchi&apos;s evolving IT landscape.
+                        As a certified ISO 9001:2015 leader, we specialize in
+                        engineering bespoke software, developing high-performance
+                        e-commerce platforms, and building intuitive mobile
+                        applications. With over a decade of proven expertise, we
+                        redefine industry standards by merging state-of-the-art
+                        technology with boundary-pushing creativity. Join us on a
+                        transformative journey where excellence is the only standard.
+                        Welcome to SYMBOSYS—the place where your digital vision becomes
+                        reality.
                     </p>
 
                     <Link href="/about" className="cursor-pointer">
                         <button className="group h-14 px-8 rounded-full bg-brand text-white font-bold text-lg shadow-xl shadow-brand/30 hover:shadow-2xl hover:shadow-brand/40 hover:-translate-y-1 transition-all duration-300 flex items-center gap-3 cursor-pointer">
-                            Read More
+                            Explore Our Story
                             <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
                                 arrow_forward
                             </span>
-                        </button></Link>
+                        </button>
+                    </Link>
                 </div>
             </div>
         </section>

@@ -1,27 +1,27 @@
 export function WorkProcessSection() {
     const processes = [
         {
-            title: "Select the Engagement Timeline for Your Project",
+            title: "Engagement & Resource Calibration",
             description:
-                "Through careful planning and a strategic approach, we guarantee the seamless assignment of the ideal development team to implement the expert consultations we provide.",
+                "Through meticulous planning and strategic resource allocation, we ensure the optimal assignment of a dedicated engineering team to materialize your project vision.",
             icon: "calendar_month",
         },
         {
-            title: "Swift and Innovative",
+            title: "Agile & Adaptive Innovation",
             description:
-                "Delivering state-of-the-art solutions with a dedication to excellence, we ensure prompt and impactful results for your business.",
+                "Deploying state-of-the-art technical frameworks with a commitment to architectural excellence, we ensure rapid and performance-driven results for your enterprise.",
             icon: "rocket_launch",
         },
         {
-            title: "Direct Contact with Experts",
+            title: "Transparent Engineering Discourse",
             description:
-                "To avoid confusion and frequent queries during the project design phase, we allow our clients to interact directly with our developers and engage in detailed discussions about their projects.",
+                "To ensure perfect alignment and mitigate technical debt, we facilitate direct access to our senior developers, fostering deep technical communication throughout the implementation lifecycle.",
             icon: "connect_without_contact",
         },
         {
-            title: "On-Time Project Delivery",
+            title: "Precision-Driven Delivery Cycles",
             description:
-                "Our software development team has an elemental habit of executing projects before the deadline. Therefore, you can expect 100% on-time delivery of your project, fulfilling all requirements.",
+                "Our engineering culture is built on high-fidelity delivery. We maintain 100% adherence to project milestones, ensuring your solution is deployed on schedule with absolute requirement compliance.",
             icon: "schedule",
         },
     ];
@@ -42,9 +42,10 @@ export function WorkProcessSection() {
                     </div>
                     <div className="h-px md:h-24 w-full md:w-px bg-brand/20"></div>
                     <p className="text-lg md:text-xl text-text-muted dark:text-gray-400 leading-relaxed">
-                        We are dedicated to achieving results and surpassing clients&apos;
-                        expectations. The joy and satisfaction of our clients are our
-                        driving force, pushing us to strive further.
+                        We are relentlessly focused on engineering high-impact results and
+                        transcending client benchmarks. Our commitment to technical
+                        integrity and operational excellence drives us to push the
+                        boundaries of digital possibility.
                     </p>
                 </div>
             </div>
@@ -52,10 +53,10 @@ export function WorkProcessSection() {
             {/* Work Process Steps */}
             <div className="text-center mb-12">
                 <div className="inline-block px-4 py-1.5 rounded-full bg-brand/10 text-brand text-sm font-bold mb-4">
-                    How We Work
+                    Our Methodology
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white">
-                    Our Work Process
+                    Our Strategic Workflow
                 </h2>
             </div>
 

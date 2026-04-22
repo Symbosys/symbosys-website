@@ -1,21 +1,21 @@
 export function WhyChooseSymbosys() {
     const reasons = [
         {
-            title: "Fast and Innovative",
+            title: "Agile Innovation",
             description:
-                "We provide innovative solutions and take a quality-centric approach to deliver result-oriented business solutions promptly. Our services not only enhance workflow processes but also guarantee success for your businesses.",
+                "We deliver disruptive digital solutions through a quality-centric engineering approach, ensuring high-velocity deployment without compromising on architectural integrity. Our frameworks are designed to optimize organizational workflows and catalyze business success.",
             icon: "rocket_launch",
         },
         {
-            title: "Client Satisfaction",
+            title: "Measurable Impact",
             description:
-                "With our innovative software solutions, we’ve driven significant transformations in our customers’ businesses, earning widespread recognition for delivering satisfactory results.",
-            icon: "computer",
+                "Our bespoke software ecosystems have triggered profound operational transformations for our global clientele. We are recognized for our ability to translate complex technical challenges into tangible, performance-driven results.",
+            icon: "insights",
         },
         {
-            title: "Enthusiastic Team",
+            title: "Elite Engineering Culture",
             description:
-                "Our rich portfolio speaks volumes about our enthusiasm and dedication to every project we undertake. Having completed numerous projects for large employee-based organizations, we’ve garnered remarkable recognition for our commitment to quality-standard services.",
+                "Our extensive portfolio reflects a relentless dedication to technical excellence. Having architected critical systems for high-scale organizations, we maintain a sterling reputation for delivering quality-standard industrial services.",
             icon: "groups",
         },
     ];
@@ -25,7 +25,10 @@ export function WhyChooseSymbosys() {
             <div className="glass-panel rounded-4xl p-8 md:p-16">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white">
-                        Why Choose <span className="text-brand">Symbosys</span>
+                        Defining the Standards of <br />
+                        <span className="text-brand text-transparent bg-clip-text bg-linear-to-r from-brand to-brand-blue">
+                            Digital Transformation
+                        </span>
                     </h2>
                 </div>
 

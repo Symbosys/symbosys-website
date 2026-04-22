@@ -20,23 +20,24 @@ export function ExpertSoftware() {
                     </div>
 
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-main dark:text-white mb-4 leading-tight">
-                        Elevating your digital presence with{" "}
+                        Scaling Your Enterprise with{" "}
                         <span className="text-transparent bg-clip-text bg-linear-to-r from-brand-purple to-brand-blue">
-                            Expert Software Services
+                            High-Performance Software
                         </span>
                     </h2>
 
                     <p className="text-text-muted dark:text-gray-400 text-lg leading-relaxed mb-6">
-                        Transform Your Business with Expert Software Solutions. Our advanced
-                        software solutions are designed to streamline operations and improve
-                        customer service for businesses to thrive. Utilizing our technology,
-                        companies can achieve unparalleled service quality and significant
-                        growth, strengthening their market leadership.
+                        Revolutionize your business operations through our suite of
+                        intelligent software architectures. We engineer advanced, scalable
+                        solutions tailored to optimize internal workflows and elevate the
+                        end-user experience. By leveraging our technology, your organization
+                        can achieve superior operational efficiency and sustainable market
+                        expansion.
                     </p>
 
                     <p className="text-text-main dark:text-gray-200 font-semibold mb-4">
-                        Discover our suite of highly interactive and customer-engaging
-                        software offerings:
+                        Explore our specialized portfolio of enterprise-grade software
+                        products:
                     </p>
 
                     {/* Offerings List */}
@@ -59,17 +60,18 @@ export function ExpertSoftware() {
                     </div>
 
                     <p className="text-text-muted dark:text-gray-400 text-base mb-6 italic">
-                        Join us at Symbosys, where every solution is a testament to our
-                        commitment to your success.
+                        At Symbosys, we transform complex technical requirements into
+                        seamless, value-driven business assets.
                     </p>
 
                     <Link href="/service/software-development" className="cursor-pointer">
                         <button className="group h-14 px-8 rounded-full bg-linear-to-r from-brand-purple to-brand-blue text-white font-bold text-lg shadow-xl shadow-brand-purple/30 hover:shadow-2xl hover:shadow-brand-purple/40 hover:-translate-y-1 transition-all duration-300 flex items-center gap-3 cursor-pointer">
-                            Read More
+                            Explore Solutions
                             <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
                                 arrow_forward
                             </span>
-                        </button></Link>
+                        </button>
+                    </Link>
                 </div>
 
                 {/* Right: Image */}

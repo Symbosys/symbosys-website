@@ -3,55 +3,55 @@ export function BoostBusiness() {
         {
             title: "Web Design & Development",
             description:
-                "We are a creative group of designers and developers. Our fluid designs always surprise whatever device you have. Web development is our strength & high in demand.",
+                "We engineer high-fidelity, responsive digital interfaces that deliver seamless user experiences across all hardware platforms, combining aesthetic precision with technical robustness.",
             icon: "web",
         },
         {
             title: "Software Development",
             description:
-                "If you have a long-term business plan and want to develop software in stages to achieve a bigger goal, Brightcode would like to be your software development firm.",
+                "Specializing in enterprise-grade software engineering, Symbosys serves as your long-term technology partner, translating complex business logic into scalable, modular architectures.",
             icon: "developer_board",
         },
         {
             title: "Mobile Apps Development",
             description:
-                "We deliver custom Android apps with high performance and utility ranging from productivity business and mCommerce to gaming leisure and social apps.",
+                "Our team delivers high-performance native and cross-platform mobile applications, focusing on utility, security, and superior user engagement for diverse business models.",
             icon: "smartphone",
         },
         {
             title: "Search Engine Optimization",
             description:
-                "We offer you the best SEO Service in Ranchi that provides a cutting-edge technology-supported, process-oriented, latest algorithm-based approach towards the project.",
+                "We implement sophisticated, algorithm-aware SEO strategies that leverage technical optimization and process-driven methodologies to ensure your brand dominates search rankings.",
             icon: "search",
         },
         {
             title: "Graphic Designing",
             description:
-                "Our innovative approaches with an integration of modern technologies give us a unique blend of power to create responsive and concise design with uniform cross-platform compatibility.",
+                "Our design philosophy integrates modern visual aesthetics with platform-specific requirements, creating a cohesive brand identity that maintains uniformity across all touchpoints.",
             icon: "brush",
         },
         {
             title: "Domain & Hosting",
             description:
-                "Domains serve as the digital equivalents of street addresses. Our offerings include domain management, SSL certificates, facilitating users in locating your website effortlessly.",
+                "Managing the foundational architecture of your digital identity, we provide secure domain governance, SSL integration, and high-availability hosting for maximum uptime.",
             icon: "dns",
         },
         {
             title: "Ecommerce Website",
             description:
-                "E-commerce stands as a beacon of innovation in the retail landscape, bestowing upon consumers the power to peruse and procure goods from the comfort of their abodes.",
+                "We architect high-conversion e-commerce ecosystems that redefine the retail experience through intuitive navigation, secure processing, and streamlined management.",
             icon: "shopping_cart",
         },
         {
             title: "Video & Animation",
             description:
-                "The Rise of Video and Animation In the fast-paced world of digital marketing, video and animation have emerged as game-changers. Gone are the days of static ads.",
+                "In the high-velocity digital space, our cinematic video and motion graphics serve as powerful tools, transforming static concepts into dynamic and engaging visual narratives.",
             icon: "movie",
         },
         {
             title: "Digital Marketing",
             description:
-                "In today's rapidly evolving world, digital marketing serves as the cornerstone for unlocking a robust online presence for businesses striving to maintain competitiveness.",
+                "Serving as the cornerstone of your strategy, our marketing solutions utilize data-driven insights and multi-channel campaigns to unlock robust visibility and competitive advantage.",
             icon: "campaign",
         },
     ];
@@ -60,8 +60,8 @@ export function BoostBusiness() {
         <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32">
             <div className="text-center mb-16">
                 <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white mb-6 leading-tight">
-                    Symbosys services that Boost your <br />
-                    <span className="text-brand">business Online & Offline</span>
+                    Strategic Digital Ecosystems to <br />
+                    <span className="text-brand">Scale Your Business Globally</span>
                 </h2>
             </div>
 

@@ -12,36 +12,37 @@ export function BuildProjectTogether() {
                     {/* Left: Content */}
                     <div className="lg:w-1/2">
                         <div className="inline-block px-4 py-1.5 rounded-full bg-brand/10 text-brand text-sm font-bold mb-6">
-                            Collaboration
+                            Strategic Partnership
                         </div>
                         <h2 className="text-3xl md:text-5xl font-bold text-text-main dark:text-white mb-6 leading-tight">
-                            Let&apos;s Build Your <br />
+                            Architecting Your <br />
                             <span className="text-transparent bg-clip-text bg-linear-to-r from-brand to-brand-blue">
-                                Project Together
+                                Vision Into Reality
                             </span>
                         </h2>
                         <h3 className="text-xl font-semibold text-text-main dark:text-white mb-6">
-                            Collaborate with our team of experts to bring your vision to life.
+                            Partner with our senior engineering team to transform your
+                            strategic concepts into high-scale industrial assets.
                         </h3>
                         <p className="text-text-muted dark:text-gray-400 leading-relaxed mb-6">
-                            At Symbosys Technologies, we believe in the power of
-                            collaboration. Our team of experts is dedicated to bringing your
-                            vision to life by working closely with you to understand your
-                            unique needs and business objectives. Whether you have a clear
-                            vision or need guidance in shaping your ideas, we&apos;re here to
-                            help.
+                            At Symbosys Technologies, we view collaboration as a strategic
+                            partnership. Our multidisciplinary engineering group is
+                            dedicated to materializing your vision through an iterative,
+                            high-fidelity development process. We work in sync with your
+                            leadership to distill complex business objectives into
+                            actionable technical frameworks, whether you are scaling an
+                            existing system or engineering a new disruptive platform.
                         </p>
                         <p className="text-text-muted dark:text-gray-400 leading-relaxed mb-8">
-                            Our experienced software developers, website developers, graphic
-                            designers and project managers are committed to delivering custom
-                            solutions that not only meet but exceed your expectations. From
-                            ideation to development and deployment, we&apos;ll be with you
-                            every step of the way, ensuring your project&apos;s success. We
-                            value your input and will continuously incorporate your feedback
-                            to ensure the final product aligns perfectly with your goals.
+                            Our veteran software architects, full-stack engineers, and
+                            dedicated product managers are committed to delivering bespoke
+                            digital ecosystems that transcend industrial standards. From
+                            initial conceptualization to global deployment, we maintain a
+                            transparent, feedback-driven lifecycle to ensure every technical
+                            milestone aligns perfectly with your long-term commercial goals.
                         </p>
                         <button className="group px-8 py-4 rounded-full bg-brand text-white font-bold shadow-lg shadow-brand/20 hover:bg-brand-blue hover:scale-105 transition-all duration-300 flex items-center gap-2">
-                            Start Your Project
+                            Initialize Your Project
                             <span className="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">
                                 arrow_forward
                             </span>
@@ -62,7 +63,7 @@ export function BuildProjectTogether() {
                                 ></iframe>
                             </div>
                             <p className="text-center text-sm text-text-muted dark:text-gray-400 mt-4 italic">
-                                Watch how we bring ideas to reality
+                                Experience our engineering journey from concept to deployment
                             </p>
                         </div>
 
@@ -71,7 +72,7 @@ export function BuildProjectTogether() {
                             <div className="absolute inset-0 bg-linear-to-r from-transparent via-brand/5 to-transparent rounded-3xl"></div>
                             <div className="relative glass-card rounded-3xl p-6 overflow-hidden hover:scale-[1.01] transition-transform duration-500">
                                 <h4 className="text-center text-lg font-bold text-text-main dark:text-white mb-4">
-                                    Our Collaborative Workflow
+                                    Our Integrated Development Lifecycle
                                 </h4>
                                 <div className="relative w-full aspect-2/1">
                                     <Image

@@ -1,21 +1,21 @@
 export function WhyChooseUs() {
     const features = [
         {
-            title: "Expertise and Experience",
+            title: "Technical Proficiency",
             description:
-                "Our team of software experts has extensive experience in developing and implementing software solutions for businesses of all sizes.",
+                "Our multidisciplinary engineering collective brings decades of experience in architecting and deploying high-scale software ecosystems for global enterprises.",
             icon: "workspace_premium",
         },
         {
-            title: "Customized Solutions",
+            title: "Precision-Tailored Architectures",
             description:
-                "We understand that every business is unique, and therefore, we offer customized software solutions tailored to meet your specific requirements.",
+                "We specialize in engineering bespoke digital frameworks meticulously calibrated to align with your specific operational objectives and growth strategies.",
             icon: "dashboard_customize",
         },
         {
-            title: "Customer-centric Approach",
+            title: "Radical Client Commitment",
             description:
-                "We take a customer-centric approach to our work, putting our clients' needs and satisfaction at the forefront of everything we do.",
+                "We maintain a relentless focus on partner success, integrating your strategic goals into our core development philosophy to ensure every delivery transcends expectations.",
             icon: "favorite",
         },
     ];
@@ -26,19 +26,20 @@ export function WhyChooseUs() {
                 {/* Left Content */}
                 <div className="lg:w-1/2">
                     <h2 className="text-4xl md:text-5xl font-bold text-text-main dark:text-white mb-6 leading-tight">
-                        What makes Symbosys <br />
+                        What Defines the <br />
                         <span className="text-transparent bg-clip-text bg-linear-to-r from-brand to-brand-blue">
-                            Standout From the Crowd?
+                            Symbosys Advantage?
                         </span>
                     </h2>
                     <p className="text-text-muted dark:text-gray-400 text-lg leading-relaxed mb-8">
-                        In a digital world filled with options, we distinguish ourselves
-                        through unwavering commitment to quality, innovation, and client
-                        success. We don&apos;t just build software; we build legacies.
+                        In a saturated digital marketplace, we differentiate our services
+                        through a relentless pursuit of engineering excellence, disruptive
+                        innovation, and measurable client impact. We don&apos;t just deliver
+                        code; we architect transformative business legacies.
                     </p>
 
                     <button className="group h-12 px-6 rounded-full border border-brand/20 dark:border-white/10 bg-brand/5 dark:bg-gray-800/10 text-brand font-bold hover:bg-brand hover:text-white transition-all duration-300 flex items-center gap-2">
-                        Discover More
+                        Learn More
                         <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">
                             arrow_forward
                         </span>

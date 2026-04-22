@@ -17,7 +17,7 @@ import {
   WhyChooseUs,
   WorkProcessSection,
 } from "@/components/user/home";
-import { homeMetadata, homeJsonLd } from "@/seo/home";
+import { homeMetadata } from "@/seo/home";
 
 export const metadata = homeMetadata;
 
