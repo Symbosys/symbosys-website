@@ -5,6 +5,6 @@ export const productsMetadata: Metadata = {
   description:
     "Explore Symbosys products including IT solutions, software, digital services, and smart business tools designed to grow, manage, and scale your business efficiently.",
   alternates: {
-    canonical: "https://www.symbosys.com/products.php",
+    canonical: "https://www.symbosys.com/products",
   },
 };

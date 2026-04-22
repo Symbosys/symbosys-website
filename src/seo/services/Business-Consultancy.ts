@@ -5,7 +5,7 @@ export const businessConsultancyMetadata: Metadata = {
   description:
     "Symbosys is a trusted software development company in India offering business consultancy, custom software, IT solutions, and digital growth services.",
   alternates: {
-    canonical: "https://www.symbosys.com/Business-Consultancy.php",
+    canonical: "https://www.symbosys.com/service/business-consultancy",
   },
 };
 
@@ -13,7 +13,7 @@ export const businessConsultancyJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "Symbosys",
-  url: "https://symbosys.com/Business-Consultancy.php",
+  url: "https://symbosys.com/service/business-consultancy",
   logo: "https://symbosys.com/img/newlog.png",
   description:
     "Symbosys offers professional business consultancy services in Ranchi that help companies optimize strategy, improve performance, and grow revenue with expert guidance.",
@@ -48,7 +48,7 @@ export const businessConsultancyJsonLd = {
       name: "Business Consultancy",
       description:
         "Expert business consultancy services including strategic planning, business growth support and management consulting.",
-      url: "https://symbosys.com/Business-Consultancy.php",
+      url: "https://symbosys.com/service/business-consultancy",
     },
     {
       "@type": "Service",

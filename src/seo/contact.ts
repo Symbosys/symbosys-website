@@ -5,6 +5,6 @@ export const contactMetadata: Metadata = {
   description:
     "Contact Symbosys for website development, digital marketing, app development & IT solutions. Get expert support and quick response today.",
   alternates: {
-    canonical: "https://www.symbosys.com/contact.php",
+    canonical: "https://www.symbosys.com/contact",
   },
 };
