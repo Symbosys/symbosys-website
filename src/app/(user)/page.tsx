@@ -16,6 +16,7 @@ import {
   WhyChooseSymbosys,
   WhyChooseUs,
   WorkProcessSection,
+  CompanyBrochure,
 } from "@/components/user/home";
 import { homeMetadata } from "@/seo/home";
 
@@ -71,6 +72,9 @@ export default function Home() {
 
         {/* 9. Why Choose Us Section */}
         <WhyChooseUs />
+
+        {/* Company Brochure Download Section */}
+        <CompanyBrochure />
 
         {/* 10. Boost Business Section */}
         <BoostBusiness />

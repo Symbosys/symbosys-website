@@ -16,4 +16,5 @@ export { GetInTouch } from "./GetInTouch";
 export { ContactCTA } from "./ContactCTA";
 export { TechStackSection } from "./TechStackSection";
 export { Hero } from "./Hero";
+export { CompanyBrochure } from "./CompanyBrochure";
 

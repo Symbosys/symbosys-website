@@ -1,7 +1,16 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { Plus, Loader2, Pencil, Trash2, Shield, User, Mail, Lock, X } from "lucide-react";
+import { createAdmin, deleteAdmin, updateAdmin } from "@/actions/admin";
+import {
+    AlertDialog,
+    AlertDialogAction,
+    AlertDialogCancel,
+    AlertDialogContent,
+    AlertDialogDescription,
+    AlertDialogFooter,
+    AlertDialogHeader,
+    AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
 import {
     Dialog,
@@ -21,21 +30,11 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
-import { createAdmin, updateAdmin, deleteAdmin } from "@/actions/admin";
 import { Role } from "@/validation/admin";
-import { toast } from "sonner";
+import { Loader2, Lock, Mail, Pencil, Plus, Shield, Trash2, User } from "lucide-react";
 import { useRouter } from "next/navigation";
-import {
-    AlertDialog,
-    AlertDialogAction,
-    AlertDialogCancel,
-    AlertDialogContent,
-    AlertDialogDescription,
-    AlertDialogFooter,
-    AlertDialogHeader,
-    AlertDialogTitle,
-} from "@/components/ui/alert-dialog";
-import { cn } from "@/lib/utils";
+import { useEffect, useState } from "react";
+import { toast } from "sonner";
 
 interface AdminActionsProps {
     admin?: any;

@@ -27,8 +27,8 @@ export default function LoginPage() {
             const result = await login(formData);
             if (result.success) {
                 router.push("/admin");
-                toast.success("Welcome back!");
                 router.refresh();
+                toast.success("Welcome back!");
             } else {
                 toast.error(result.error || "Invalid credentials");
             }

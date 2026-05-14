@@ -6,6 +6,7 @@ import { useState } from "react";
 import { logout } from "@/actions/admin";
 import { LogOut, Loader2 } from "lucide-react";
 import { toast } from "sonner";
+import { useSession } from "next-auth/react";
 
 const MENU_ITEMS = [
     { name: "Dashboard", icon: "dashboard", href: "/admin" },
@@ -17,10 +18,10 @@ const MENU_ITEMS = [
     { name: "Setting", icon: "settings", href: "/admin/setting" },
 ];
 
-import { useSession } from "next-auth/react";
 
 export function AdminSidebar() {
     const { data: session } = useSession();
+    console.log({session})
     const user = session?.user;
     const pathname = usePathname();
     const router = useRouter();
