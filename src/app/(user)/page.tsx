@@ -19,6 +19,7 @@ import {
   CompanyBrochure,
 } from "@/components/user/home";
 import { homeMetadata } from "@/seo/home";
+import { homeSchema } from "@/schema/home";
 
 export const metadata = homeMetadata;
 
@@ -28,27 +29,7 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Symbosys Software Company",
-            "url": "https://www.symbosys.com/",
-            "logo": "https://www.symbosys.com/company/newlog.webp",
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "7992202650",
-              "contactType": "customer service",
-              "areaServed": "IN",
-              "availableLanguage": ["en", "Hindi"]
-            },
-            "sameAs": [
-              "https://www.facebook.com/symbosystech",
-              "https://x.com/SymbosysTech",
-              "https://www.instagram.com/symbosys/",
-              "https://www.youtube.com/@Symbosys",
-              "https://symbosys.com/"
-            ]
-          })
+          __html: JSON.stringify(homeSchema)
         }}
       />
       {/* Immersive Background Canvas */}
