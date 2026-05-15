@@ -25,6 +25,32 @@ export const metadata = homeMetadata;
 export default function Home() {
   return (
     <div className="bg-surface dark:bg-gray-950 text-text-main dark:text-gray-100 font-sans antialiased selection:bg-brand/20 selection:text-brand dark:selection:bg-brand/40 relative overflow-x-hidden transition-colors duration-300">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Symbosys Software Company",
+            "url": "https://www.symbosys.com/",
+            "logo": "https://www.symbosys.com/company/newlog.webp",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "7992202650",
+              "contactType": "customer service",
+              "areaServed": "IN",
+              "availableLanguage": ["en", "Hindi"]
+            },
+            "sameAs": [
+              "https://www.facebook.com/symbosystech",
+              "https://x.com/SymbosysTech",
+              "https://www.instagram.com/symbosys/",
+              "https://www.youtube.com/@Symbosys",
+              "https://symbosys.com/"
+            ]
+          })
+        }}
+      />
       {/* Immersive Background Canvas */}
       <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
         {/* Main Primary Orb */}
