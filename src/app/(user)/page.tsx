@@ -81,7 +81,7 @@ export default function Home() {
         <WhyChooseUs />
 
         {/* Company Brochure Download Section */}
-        <CompanyBrochure />
+        {/* <CompanyBrochure /> */}
 
         {/* 10. Boost Business Section */}
         <BoostBusiness />

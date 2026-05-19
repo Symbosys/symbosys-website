@@ -6,6 +6,7 @@ import {
     JoinTeamCTA,
 } from "@/components/user/our-team";
 import { ContactCTA } from "@/components/user/home";
+import { teamsSchema } from "@/schema/teams";
 
 export const metadata = {
     title: "Our Team - Symbosys Technologies",
@@ -16,6 +17,12 @@ export const metadata = {
 export default function OurTeamPage() {
     return (
         <div className="bg-surface dark:bg-gray-950 text-text-main dark:text-gray-100 font-sans antialiased selection:bg-brand/20 selection:text-brand dark:selection:bg-brand/40 relative overflow-x-hidden min-h-screen transition-colors duration-300">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(teamsSchema)
+                }}
+            />
             {/* Immersive Background Canvas */}
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
                 {/* Main Primary Orb */}
@@ -46,3 +53,4 @@ export default function OurTeamPage() {
         </div>
     );
 }
+

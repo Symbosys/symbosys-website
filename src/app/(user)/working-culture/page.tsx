@@ -7,6 +7,7 @@ import {
     JoinCultureCTA,
 } from "@/components/user/working-culture";
 import { ContactCTA } from "@/components/user/home";
+import { cultureSchema } from "@/schema/culture";
 
 export const metadata = {
     title: "Working Culture - Symbosys Technologies",
@@ -17,6 +18,12 @@ export const metadata = {
 export default function WorkingCulturePage() {
     return (
         <div className="bg-surface dark:bg-gray-950 text-text-main dark:text-gray-100 font-sans antialiased selection:bg-brand/20 selection:text-brand dark:selection:bg-brand/40 relative overflow-x-hidden min-h-screen transition-colors duration-300">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(cultureSchema)
+                }}
+            />
             {/* Immersive Background Canvas (Consistent with site) */}
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
                 {/* Main Primary Orb */}
@@ -53,3 +60,4 @@ export default function WorkingCulturePage() {
         </div>
     );
 }
+
