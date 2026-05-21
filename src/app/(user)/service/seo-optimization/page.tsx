@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { seoOptimizationMetadata } from "@/seo/services/SEO-Optimization";
+import { seoServiceSchema, seoBreadcrumbSchema, seoFaqSchema } from "@/schema/services/seo-optimization";
 
 export const metadata = seoOptimizationMetadata;
 
@@ -39,6 +40,18 @@ export default function SEOOptimizationPage() {
 
     return (
         <div className="bg-surface text-text-main font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen dark:text-white transition-colors duration-300">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(seoServiceSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(seoBreadcrumbSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(seoFaqSchema) }}
+            />
             {/* Liquid Light Immersive Background Canvas */}
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-[15%] -left-[10%] w-[70vw] h-[70vw] bg-linear-to-br from-green-400/15 via-emerald-400/10 to-teal-400/15 rounded-full blur-3xl light-orb" />

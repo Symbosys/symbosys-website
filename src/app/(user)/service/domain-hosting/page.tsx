@@ -1,10 +1,15 @@
 import { domainHostingMetadata } from "@/seo/services/Domain-Hosting";
+import { domainHostingSchema } from "@/schema/services/domain-hosting";
 
 export const metadata = domainHostingMetadata;
 
 export default function DomainHostingPage() {
     return (
         <div className="bg-surface text-text-main font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen dark:text-white transition-colors duration-300">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(domainHostingSchema) }}
+            />
             {/* Liquid Light Immersive Background Canvas */}
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-[15%] -left-[10%] w-[70vw] h-[70vw] bg-linear-to-br from-blue-400/15 via-indigo-400/10 to-violet-400/15 rounded-full blur-3xl light-orb" />

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { digitalMarketingMetadata } from "@/seo/services/Digital-Marketing";
+import { digitalMarketingSchema } from "@/schema/services/digital-marketing";
 
 export const metadata = digitalMarketingMetadata;
 
@@ -15,6 +16,10 @@ export default function DigitalMarketingPage() {
 
     return (
         <div className="bg-surface text-text-main font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen dark:text-white transition-colors duration-300">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(digitalMarketingSchema) }}
+            />
             {/* Liquid Light Immersive Background Canvas */}
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-[15%] -left-[10%] w-[70vw] h-[70vw] bg-linear-to-br from-orange-400/15 via-red-400/10 to-pink-400/15 rounded-full blur-3xl light-orb" />

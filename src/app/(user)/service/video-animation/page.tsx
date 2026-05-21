@@ -1,10 +1,15 @@
 import { videoAnimationMetadata } from "@/seo/services/Video-Animation";
+import { videoAnimationSchema } from "@/schema/services/video-animation";
 
 export const metadata = videoAnimationMetadata;
 
 export default function VideoAnimationPage() {
     return (
         <div className="bg-surface text-text-main font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen dark:text-white transition-colors duration-300">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(videoAnimationSchema) }}
+            />
             {/* Liquid Light Immersive Background Canvas */}
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-[15%] -left-[10%] w-[70vw] h-[70vw] bg-linear-to-br from-rose-400/15 via-pink-400/10 to-orange-400/15 rounded-full blur-3xl light-orb" />
