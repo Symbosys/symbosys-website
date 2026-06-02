@@ -12,6 +12,9 @@ export const homeMetadata: Metadata = {
   verification: {
     google: "Ks_ZfkXUn4vTI5JM4umttV84X-EFLQlZGgZAtKzP_Lc",
   },
+  alternates: {
+    canonical: "https://www.symbosys.com"
+  }
 };
 
 export const homeJsonLd = {
@@ -22,7 +25,6 @@ export const homeJsonLd = {
   logo: "https://symbosys.com/img/newlog.png",
   description:
     "Symbosys is the best software company in India offering web development, mobile apps, ERP solutions, and digital transformation services.",
-  canonical: "https://symbosys.com/",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Ranchi, Jharkhand",
