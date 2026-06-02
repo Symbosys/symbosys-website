@@ -22,6 +22,7 @@ export const homeJsonLd = {
   logo: "https://symbosys.com/img/newlog.png",
   description:
     "Symbosys is the best software company in India offering web development, mobile apps, ERP solutions, and digital transformation services.",
+  canonical: "https://symbosys.com/",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Ranchi, Jharkhand",
