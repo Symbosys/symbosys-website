@@ -1,21 +1,29 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Space_Grotesk, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
-import "material-symbols/outlined.css";
 import { Providers } from "@/components/Providers";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
   subsets: ["latin"],
-  display: "swap",
+  display: "optional",
   weight: ["300", "400", "500", "600", "700"],
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-  display: "swap"
+  display: "optional"
+});
+
+const materialSymbols = localFont({
+  src: "../../node_modules/material-symbols/material-symbols-outlined.woff2",
+  variable: "--font-material-symbols",
+  display: "optional",
+  weight: "100 700",
+  style: "normal",
 });
  
 export const metadata: Metadata = {
@@ -72,7 +80,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className={`${spaceGrotesk.variable} ${geistMono.variable} font-sans antialiased flex flex-col min-h-screen bg-background text-foreground transition-colors duration-300`}
+        className={`${spaceGrotesk.variable} ${geistMono.variable} ${materialSymbols.variable} font-sans antialiased flex flex-col min-h-screen bg-background text-foreground transition-colors duration-300`}
       >
         <Providers>
           {children}
