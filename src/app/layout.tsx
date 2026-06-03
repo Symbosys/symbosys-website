@@ -2,18 +2,20 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { Space_Grotesk, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import "material-symbols/outlined.css";
 import { Providers } from "@/components/Providers";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
   subsets: ["latin"],
+  display: "swap",
   weight: ["300", "400", "500", "600", "700"],
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap"
 });
  
 export const metadata: Metadata = {
@@ -36,10 +38,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="" suppressHydrationWarning>
       <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-          rel="stylesheet"
-        />
         <link rel="icon" href="/logo/symbosys.webp" />
         <script
           dangerouslySetInnerHTML={{
