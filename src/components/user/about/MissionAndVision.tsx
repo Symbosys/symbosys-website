@@ -11,7 +11,7 @@ export function MissionAndVision() {
                     <div className="relative glass-card rounded-4xl overflow-hidden group border border-white/10 shadow-2xl">
                         <div className="relative w-full aspect-video">
                             <Image
-                                src="/about/mission.jpg"
+                                src="/about/mission.webp"
                                 alt="Our Mission"
                                 fill
                                 className="object-cover group-hover:scale-110 transition-transform duration-700"

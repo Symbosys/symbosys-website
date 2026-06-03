@@ -32,10 +32,10 @@ export function TechStackSection() {
                     radius={80}
                     customAngles={[0, 180]}
                 >
-                    <TechIcon src="/teach/React.png" label="React" />
+                    <TechIcon src="/teach/React.webp" label="React" />
                     <TechIcon
-                        src="/teach/Next.js.png"
-                        darkSrc="/teach/Next.js-dark.png"
+                        src="/teach/Next.js.webp"
+                        darkSrc="/teach/Next.js-dark.webp"
                         label="Next.js"
                     />
                 </OrbitingCircles>
@@ -47,13 +47,13 @@ export function TechStackSection() {
                     reverse
                     customAngles={[45, 135, 225, 315]}
                 >
-                    <TechIcon src="/teach/Node.js.png" label="Node.js" />
+                    <TechIcon src="/teach/Node.js.webp" label="Node.js" />
                     <TechIcon
-                        src="/teach/Express.png"
-                        darkSrc="/teach/Express.js-dark.png"
+                        src="/teach/Express.webp"
+                        darkSrc="/teach/Express.js-dark.webp"
                         label="Express"
                     />
-                    <TechIcon src="/teach/Bun.png" label="Bun" />
+                    <TechIcon src="/teach/Bun.webp" label="Bun" />
                     <TechIcon
                         src="/teach/prisma-light.svg"
                         darkSrc="/teach/prisma.svg"
@@ -70,16 +70,16 @@ export function TechStackSection() {
                     reverse
                     customAngles={[0, 60, 120, 180, 240, 300]}
                 >
-                    <TechIcon src="/teach/Redis.png" label="Redis" />
-                    <TechIcon src="/teach/Docker.png" label="Docker" />
-                    <TechIcon src="/teach/Kubernetes.png" label="Kubernetes" />
+                    <TechIcon src="/teach/Redis.webp" label="Redis" />
+                    <TechIcon src="/teach/Docker.webp" label="Docker" />
+                    <TechIcon src="/teach/Kubernetes.webp" label="Kubernetes" />
                     <TechIcon
-                        src="/teach/Rust.png"
-                        darkSrc="/teach/Rust-dark.png"
+                        src="/teach/Rust.webp"
+                        darkSrc="/teach/Rust-dark.webp"
                         label="Rust"
                     />
-                    <TechIcon src="/teach/PostgresSQL.png" label="PostgreSQL" />
-                    <TechIcon src="/teach/MySQL.png" label="MySQL" />
+                    <TechIcon src="/teach/PostgresSQL.webp" label="PostgreSQL" />
+                    <TechIcon src="/teach/MySQL.webp" label="MySQL" />
                 </OrbitingCircles>
             </div>
         </section>
