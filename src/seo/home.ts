@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const homeMetadata: Metadata = {
-  title: "Symbosys | Best software companies in India",
+  title: "software development company in india | Web Development | Symbosys",
   description:
-    "Symbosys is a leading software company in India offering web development, mobile apps, digital marketing & IT solutions for businesses.",
+    "Symbosys is a Software Development Company in India delivering custom software, web development, mobile apps, and digital marketing solutions.",
   keywords:
     "Looking for the best software company in India? Symbosys provides top-notch IT software services in Jharkhand.",
   icons: {
@@ -13,7 +13,7 @@ export const homeMetadata: Metadata = {
     google: "Ks_ZfkXUn4vTI5JM4umttV84X-EFLQlZGgZAtKzP_Lc",
   },
   alternates: {
-    canonical: "https://www.symbosys.com"
+    canonical: "https://symbosys.com/"
   }
 };
 

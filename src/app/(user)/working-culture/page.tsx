@@ -1,64 +1,66 @@
 import {
-    CultureHero,
-    OurPhilosophy,
-    LifeAtSymbosys,
-    WorkEnvironment,
-    TeamTestimonials,
-    JoinCultureCTA,
+  CultureHero,
+  OurPhilosophy,
+  LifeAtSymbosys,
+  WorkEnvironment,
+  TeamTestimonials,
+  JoinCultureCTA,
 } from "@/components/user/working-culture";
 import { ContactCTA } from "@/components/user/home";
 import { cultureSchema } from "@/schema/culture";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Working Culture - Symbosys Technologies",
-    description:
-        "Discover the vibrant working culture at Symbosys Software Services. We foster innovation, collaboration, and continuous growth in a people-first environment.",
+  title: "Working Culture - Symbosys Technologies",
+  description:
+    "Discover the vibrant working culture at Symbosys Software Services. We foster innovation, collaboration, and continuous growth in a people-first environment.",
+  alternates: {
+    canonical: "https://www.symbosys.com/working-culture",
+  },
 };
 
 export default function WorkingCulturePage() {
-    return (
-        <div className="bg-surface dark:bg-gray-950 text-text-main dark:text-gray-100 font-sans antialiased selection:bg-brand/20 selection:text-brand dark:selection:bg-brand/40 relative overflow-x-hidden min-h-screen transition-colors duration-300">
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(cultureSchema)
-                }}
-            />
-            {/* Immersive Background Canvas (Consistent with site) */}
-            <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
-                {/* Main Primary Orb */}
-                <div className="absolute -top-[10%] -left-[5%] w-[60vw] h-[60vw] bg-brand/10 dark:bg-brand/15 rounded-full blur-3xl animate-float"></div>
-                {/* Secondary Blue Orb */}
-                <div className="absolute -bottom-[10%] -right-[10%] w-[50vw] h-[50vw] bg-brand-blue/10 dark:bg-brand-blue/15 rounded-full blur-3xl animate-float-delayed"></div>
-                {/* Accent Purple Orb */}
-                <div className="absolute top-[40%] left-[30%] w-[30vw] h-[30vw] bg-brand-purple/10 dark:bg-brand-purple/15 rounded-full blur-3xl animate-float"></div>
-                {/* White/Dark overlay */}
-                <div className="absolute inset-0 bg-white/20 dark:bg-gray-950/50 backdrop-blur-xs"></div>
-            </div>
+  return (
+    <div className="bg-surface dark:bg-gray-950 text-text-main dark:text-gray-100 font-sans antialiased selection:bg-brand/20 selection:text-brand dark:selection:bg-brand/40 relative overflow-x-hidden min-h-screen transition-colors duration-300">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(cultureSchema),
+        }}
+      />
+      {/* Immersive Background Canvas (Consistent with site) */}
+      <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+        {/* Main Primary Orb */}
+        <div className="absolute -top-[10%] -left-[5%] w-[60vw] h-[60vw] bg-brand/10 dark:bg-brand/15 rounded-full blur-3xl animate-float"></div>
+        {/* Secondary Blue Orb */}
+        <div className="absolute -bottom-[10%] -right-[10%] w-[50vw] h-[50vw] bg-brand-blue/10 dark:bg-brand-blue/15 rounded-full blur-3xl animate-float-delayed"></div>
+        {/* Accent Purple Orb */}
+        <div className="absolute top-[40%] left-[30%] w-[30vw] h-[30vw] bg-brand-purple/10 dark:bg-brand-purple/15 rounded-full blur-3xl animate-float"></div>
+        {/* White/Dark overlay */}
+        <div className="absolute inset-0 bg-white/20 dark:bg-gray-950/50 backdrop-blur-xs"></div>
+      </div>
 
-            <main className="relative z-10">
-                {/* 1. Hero Section + Our Philosophy */}
-                <CultureHero>
-                    <OurPhilosophy />
-                </CultureHero>
+      <main className="relative z-10">
+        {/* 1. Hero Section + Our Philosophy */}
+        <CultureHero>
+          <OurPhilosophy />
+        </CultureHero>
 
-                {/* 4. Life at Symbosys - Bento Grid */}
-                <LifeAtSymbosys />
+        {/* 4. Life at Symbosys - Bento Grid */}
+        <LifeAtSymbosys />
 
-                {/* 5. Work Environment */}
-                <WorkEnvironment />
+        {/* 5. Work Environment */}
+        <WorkEnvironment />
 
-                {/* 7. Team Testimonials */}
-                <TeamTestimonials />
+        {/* 7. Team Testimonials */}
+        <TeamTestimonials />
 
-                {/* 8. Join Our Culture CTA */}
-                <JoinCultureCTA />
+        {/* 8. Join Our Culture CTA */}
+        <JoinCultureCTA />
 
-                {/* 9. Contact CTA (shared) */}
-                <ContactCTA />
-            </main>
-        </div>
-    );
+        {/* 9. Contact CTA (shared) */}
+        <ContactCTA />
+      </main>
+    </div>
+  );
 }
-
