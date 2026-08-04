@@ -20,8 +20,9 @@ import {
 } from "@/components/user/home";
 import { homeMetadata } from "@/seo/home";
 import { homeSchema } from "@/schema/home";
+import { Metadata } from "next";
 
-export const metadata = homeMetadata;
+export const metadata: Metadata = homeMetadata;
 
 export default function Home() {
   return (

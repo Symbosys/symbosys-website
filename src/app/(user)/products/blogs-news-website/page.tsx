@@ -1,8 +1,9 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { blogNewsWebsiteMetadata } from "@/seo/products/blog-news-website";
 import { blogsNewsWebsiteSchema } from "@/schema/products/blogs-news-website";
+import { Metadata } from "next";
 
-export const metadata = blogNewsWebsiteMetadata;
+export const metadata: Metadata = blogNewsWebsiteMetadata;
 
 export default function BlogsNewsWebsitePage() {
     return (

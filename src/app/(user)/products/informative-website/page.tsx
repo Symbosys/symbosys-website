@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { informativeWebsiteMetadata } from "@/seo/products/Informative-Website";
+import { Metadata } from "next";
 
-export const metadata = informativeWebsiteMetadata;
+export const metadata: Metadata = informativeWebsiteMetadata;
 
 export default function InformativeWebsitePage() {
     return (

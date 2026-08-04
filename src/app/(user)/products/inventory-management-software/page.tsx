@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { inventoryManagementSoftwareMetadata } from "@/seo/products/Inventory-Management-Software";
+import { Metadata } from "next";
 
-export const metadata = inventoryManagementSoftwareMetadata;
+export const metadata: Metadata = inventoryManagementSoftwareMetadata;
 
 export default function InventoryManagementPage() {
     return (

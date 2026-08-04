@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { eCommerceAppDevelopmentMetadata } from "@/seo/products/E-Commerce-App-Development";
+import { Metadata } from "next";
 
-export const metadata = eCommerceAppDevelopmentMetadata;
+export const metadata: Metadata = eCommerceAppDevelopmentMetadata;
 
 export default function ECommerceAppDevelopmentPage() {
     return (

@@ -1,7 +1,8 @@
 import { ContactHero, ContactFormSection } from "@/components/user/contact";
 import { contactMetadata } from "@/seo/contact";
+import { Metadata } from "next";
 
-export const metadata = contactMetadata;
+export const metadata: Metadata = contactMetadata;
 
 export default function ContactPage() {
     return (

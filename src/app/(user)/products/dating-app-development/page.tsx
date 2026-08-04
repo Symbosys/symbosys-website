@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { datingAppDevelopmentMetadata } from "@/seo/products/Dating-App-Development";
+import { Metadata } from "next";
 
-export const metadata = datingAppDevelopmentMetadata;
+export const metadata: Metadata = datingAppDevelopmentMetadata;
 
 export default function DatingAppDevelopmentPage() {
     return (

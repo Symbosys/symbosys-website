@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { hospitalManagementSoftwareMetadata } from "@/seo/products/Hospital-Management-Software";
+import { Metadata } from "next";
 
-export const metadata = hospitalManagementSoftwareMetadata;
+export const metadata: Metadata = hospitalManagementSoftwareMetadata;
 
 export default function HospitalManagementPage() {
     return (

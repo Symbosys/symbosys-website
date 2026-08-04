@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { entertainmentAppDevelopmentMetadata } from "@/seo/products/Entertainment-App-Development";
+import { Metadata } from "next";
 
-export const metadata = entertainmentAppDevelopmentMetadata;
+export const metadata: Metadata = entertainmentAppDevelopmentMetadata;
 
 export default function EntertainmentAppDevelopmentPage() {
     return (

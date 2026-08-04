@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { fitnessAppDevelopmentMetadata } from "@/seo/products/Fitness-App-Development";
+import { Metadata } from "next";
 
-export const metadata = fitnessAppDevelopmentMetadata;
+export const metadata: Metadata = fitnessAppDevelopmentMetadata;
 
 export default function FitnessAppDevelopmentPage() {
     return (

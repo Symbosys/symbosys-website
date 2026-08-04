@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { mobileAppDevelopmentSchema } from "@/schema/services/mobile-app-development";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "Elite Mobile App Development | Android & iOS Solutions | Symbosys",
     description:
         "Symbosys delivers high-performance, custom mobile applications for Android and iOS. Transform your business with user-centric apps engineered for scale.",
@@ -26,7 +27,7 @@ export default function MobileAppDevelopmentPage() {
             <main className="relative z-10 pt-32 pb-20">
                 {/* Hero Section with Background Image */}
                 <section className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-                    <div className="relative overflow-hidden rounded-3xl min-h-[400px]">
+                    <div className="relative overflow-hidden rounded-3xl min-h-100">
                         {/* Background Image */}
                         <Image
                             src="/services/mobilebc.webp"
@@ -39,7 +40,7 @@ export default function MobileAppDevelopmentPage() {
                         <div className="absolute inset-0 bg-linear-to-r from-cyan-900/90 via-blue-900/80 to-transparent" />
 
                         {/* Content */}
-                        <div className="relative z-10 p-8 md:p-16 flex flex-col justify-center min-h-[400px]">
+                        <div className="relative z-10 p-8 md:p-16 flex flex-col justify-center min-h-100">
                             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/30 w-fit mb-6">
                                 <span className="material-symbols-outlined text-white">phone_iphone</span>
                                 <span className="text-sm font-semibold text-white uppercase tracking-widest">Mobile Development</span>

@@ -1,14 +1,14 @@
 import {
-    TeamHero,
-    Leadership,
-    TeamGrid,
-    TeamCulture,
     JoinTeamCTA,
+    Leadership,
+    TeamCulture,
+    TeamGrid,
+    TeamHero,
 } from "@/components/user/our-team";
-import { ContactCTA } from "@/components/user/home";
 import { teamsSchema } from "@/schema/teams";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "Our Team - Symbosys Technologies",
     description:
         "Meet the brilliant minds behind Symbosys Software Services. Our talented team of developers, designers, marketers, and leaders drives innovation across every project.",

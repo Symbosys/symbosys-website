@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { socialMediaAppDevelopmentMetadata } from "@/seo/products/Social-Media-App-Development";
+import { Metadata } from "next";
 
-export const metadata = socialMediaAppDevelopmentMetadata;
+export const metadata: Metadata = socialMediaAppDevelopmentMetadata;
 
 export default function SocialMediaAppDevelopmentPage() {
     return (

@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { businessAppDevelopmentMetadata, businessAppDevelopmentJsonLd } from "@/seo/products/Business-App-Development";
+import { Metadata } from "next";
 
-export const metadata = businessAppDevelopmentMetadata;
+export const metadata: Metadata = businessAppDevelopmentMetadata;
 
 export default function BusinessAppDevelopmentPage() {
     return (

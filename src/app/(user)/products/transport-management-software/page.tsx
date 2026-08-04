@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { transportManagementSoftwareMetadata } from "@/seo/products/Transport-Management-Software";
+import { Metadata } from "next";
 
-export const metadata = transportManagementSoftwareMetadata;
+export const metadata: Metadata = transportManagementSoftwareMetadata;
 
 export default function TransportManagementPage() {
     return (

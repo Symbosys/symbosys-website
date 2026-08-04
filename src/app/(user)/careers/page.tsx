@@ -5,8 +5,9 @@ import {
 } from "@/components/user/careers";
 import { getAllJobs } from "@/actions/job";
 import { careerMetadata } from "@/seo/carrer";
+import { Metadata } from "next";
 
-export const metadata = careerMetadata;
+export const metadata: Metadata = careerMetadata;
 
 export default async function CareersPage() {
     const { data: initialJobs, pagination } = await getAllJobs({

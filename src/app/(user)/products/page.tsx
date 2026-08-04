@@ -1,8 +1,9 @@
 import { ProductsShowcase } from "@/components/user/products";
 import { productsMetadata } from "@/seo/products";
 import { productsSchema } from "@/schema/products";
+import { Metadata } from "next";
 
-export const metadata = productsMetadata;
+export const metadata: Metadata = productsMetadata;
 
 export default function ProductsPage() {
     return (

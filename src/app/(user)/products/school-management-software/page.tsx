@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { schoolManagementSoftwareMetadata } from "@/seo/products/School-Management-Software";
+import { Metadata } from "next";
 
-export const metadata = schoolManagementSoftwareMetadata;
+export const metadata: Metadata = schoolManagementSoftwareMetadata;
 
 export default function SchoolManagementPage() {
     return (

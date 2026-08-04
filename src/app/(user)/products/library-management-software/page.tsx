@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { libraryManagementSoftwareMetadata } from "@/seo/products/Library-Management-Software";
+import { Metadata } from "next";
 
-export const metadata = libraryManagementSoftwareMetadata;
+export const metadata: Metadata = libraryManagementSoftwareMetadata;
 
 export default function LibraryManagementPage() {
     return (

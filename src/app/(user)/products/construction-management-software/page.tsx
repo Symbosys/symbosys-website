@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { constructionManagementSoftwareMetadata } from "@/seo/products/Construction-Management-Software";
+import { Metadata } from "next";
 
-export const metadata = constructionManagementSoftwareMetadata;
+export const metadata: Metadata = constructionManagementSoftwareMetadata;
 
 export default function ConstructionManagementPage() {
     return (

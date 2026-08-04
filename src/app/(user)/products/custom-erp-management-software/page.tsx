@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { customErpSoftwareMetadata } from "@/seo/products/Custom-ERP-Software";
+import { Metadata } from "next";
 
-export const metadata = customErpSoftwareMetadata;
+export const metadata: Metadata = customErpSoftwareMetadata;
 
 export default function CustomERPManagementPage() {
     return (

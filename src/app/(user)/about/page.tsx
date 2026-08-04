@@ -6,8 +6,9 @@ import {
 import { ContactCTA } from "@/components/user/home";
 import { aboutMetadata } from "@/seo/about";
 import { aboutSchema } from "@/schema/about";
+import { Metadata } from "next";
 
-export const metadata = aboutMetadata;
+export const metadata: Metadata = aboutMetadata;
 
 export default function AboutPage() {
     return (

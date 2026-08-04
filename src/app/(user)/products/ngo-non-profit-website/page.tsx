@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { ngoWebsiteMetadata } from "@/seo/products/NGO-Website";
+import { Metadata } from "next";
 
-export const metadata = ngoWebsiteMetadata;
+export const metadata: Metadata = ngoWebsiteMetadata;
 
 export default function NGONonProfitWebsitePage() {
     return (

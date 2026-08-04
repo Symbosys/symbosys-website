@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { ecommerceProductSchema } from "@/schema/products/e-commerce";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "E-Commerce Website Development - Symbosys Technologies",
     description: "Build robust, secure, and scalable e-commerce platforms with Symbosys. From planning to launch, we deliver custom online store solutions.",
 };

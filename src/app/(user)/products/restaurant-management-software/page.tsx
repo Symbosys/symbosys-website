@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { restaurantManagementSoftwareMetadata } from "@/seo/products/Restaurant-Management-Software";
+import { Metadata } from "next";
 
-export const metadata = restaurantManagementSoftwareMetadata;
+export const metadata: Metadata = restaurantManagementSoftwareMetadata;
 
 export default function RestaurantManagementPage() {
     return (

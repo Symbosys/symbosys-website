@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { seoOptimizationMetadata } from "@/seo/services/SEO-Optimization";
 import { seoServiceSchema, seoBreadcrumbSchema, seoFaqSchema } from "@/schema/services/seo-optimization";
+import { Metadata } from "next";
 
-export const metadata = seoOptimizationMetadata;
+export const metadata: Metadata = seoOptimizationMetadata;
 
 export default function SEOOptimizationPage() {
     const benefits = [
@@ -64,7 +65,7 @@ export default function SEOOptimizationPage() {
             <main className="relative z-10 pt-32 pb-20">
                 {/* Hero Section with Background Image */}
                 <section className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-                    <div className="relative overflow-hidden rounded-3xl min-h-[400px]">
+                    <div className="relative overflow-hidden rounded-3xl min-h-100">
                         {/* Background Image */}
                         <Image
                             src="/services/seobc.webp"
@@ -77,7 +78,7 @@ export default function SEOOptimizationPage() {
                         <div className="absolute inset-0 bg-linear-to-r from-green-900/90 via-emerald-900/80 to-transparent" />
 
                         {/* Content */}
-                        <div className="relative z-10 p-8 md:p-16 flex flex-col justify-center min-h-[400px]">
+                        <div className="relative z-10 p-8 md:p-16 flex flex-col justify-center min-h-100">
                             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/30 w-fit mb-6">
                                 <span className="material-symbols-outlined text-white">search</span>
                                 <span className="text-sm font-semibold text-white uppercase tracking-widest">SEO Optimization</span>
@@ -107,7 +108,7 @@ export default function SEOOptimizationPage() {
                                 The digital world moves fast. To stay ahead, your business needs more than a basic website. It needs a high-performance growth engine. From technical SEO audits to viral social campaigns, we engineer the pathways that lead customers directly to you.
                             </p>
                         </div>
-                        <div className="relative rounded-3xl overflow-hidden bg-white/50 backdrop-blur-sm p-6 flex items-center justify-center min-h-[350px]">
+                        <div className="relative rounded-3xl overflow-hidden bg-white/50 backdrop-blur-sm p-6 flex items-center justify-center min-h-87.5">
                             <Image
                                 src="/services/seos.webp"
                                 alt="SEO Strategy Illustration"

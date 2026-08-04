@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { financeAppDevelopmentMetadata } from "@/seo/products/Finance-App-Development";
+import { Metadata } from "next";
 
-export const metadata = financeAppDevelopmentMetadata;
+export const metadata: Metadata = financeAppDevelopmentMetadata;
 
 export default function FinanceAppDevelopmentPage() {
     return (

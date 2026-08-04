@@ -41,7 +41,7 @@ export default function LoginPage() {
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-950 p-6">
-            <div className="w-full max-w-[450px]">
+            <div className="w-full max-w-112.5">
                 {/* Logo area */}
                 <div className="text-center mb-10">
                     <div className="inline-flex items-center justify-center size-16 rounded-2xl bg-brand mb-6 shadow-xl shadow-brand/20">

@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { hotelManagementSoftwareMetadata } from "@/seo/products/Hotel-Management-Software";
+import { Metadata } from "next";
 
-export const metadata = hotelManagementSoftwareMetadata;
+export const metadata: Metadata = hotelManagementSoftwareMetadata;
 
 export default function HotelManagementPage() {
     return (

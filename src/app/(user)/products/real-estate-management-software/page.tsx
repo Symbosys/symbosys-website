@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { realEstateManagementSoftwareMetadata } from "@/seo/products/Real-Estate-Management-Software";
+import { Metadata } from "next";
 
-export const metadata = realEstateManagementSoftwareMetadata;
+export const metadata: Metadata = realEstateManagementSoftwareMetadata;
 
 export default function RealEstateManagementPage() {
     return (

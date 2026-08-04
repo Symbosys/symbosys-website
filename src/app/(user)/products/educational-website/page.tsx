@@ -1,7 +1,8 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { educationalWebsiteMetadata } from "@/seo/products/Educational-Website";
+import { Metadata } from "next";
 
-export const metadata = educationalWebsiteMetadata;
+export const metadata: Metadata = educationalWebsiteMetadata;
 
 export default function EducationalWebsitePage() {
     return (

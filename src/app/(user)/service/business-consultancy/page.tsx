@@ -1,7 +1,8 @@
 import { businessConsultancyMetadata } from "@/seo/services/Business-Consultancy";
 import { businessConsultancySchema } from "@/schema/services/business-consultancy";
+import { Metadata } from "next";
 
-export const metadata = businessConsultancyMetadata;
+export const metadata: Metadata = businessConsultancyMetadata;
 
 export default function BusinessConsultancyPage() {
     return (
@@ -22,12 +23,12 @@ export default function BusinessConsultancyPage() {
             <main className="relative z-10 pt-32 pb-20">
                 {/* Hero Section */}
                 <section className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-                    <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-slate-700 via-gray-700 to-zinc-700 min-h-[400px]">
+                    <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-slate-700 via-gray-700 to-zinc-700 min-h-100">
                         <div className="absolute inset-0 aurora-bg opacity-50" />
                         <div className="absolute top-1/4 right-1/4 w-48 h-48 rounded-full bg-white/20 blur-3xl light-pulse-orb" />
                         <div className="absolute bottom-1/3 left-1/3 w-32 h-32 rounded-full bg-slate-300/30 blur-2xl light-orb" />
 
-                        <div className="relative z-10 p-8 md:p-16 flex flex-col justify-center min-h-[400px]">
+                        <div className="relative z-10 p-8 md:p-16 flex flex-col justify-center min-h-100">
                             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/30 w-fit mb-6">
                                 <span className="material-symbols-outlined text-white">handshake</span>
                                 <span className="text-sm font-semibold text-white uppercase tracking-widest">Business Consultancy</span>
