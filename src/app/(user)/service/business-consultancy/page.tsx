@@ -1,10 +1,15 @@
 import { businessConsultancyMetadata } from "@/seo/services/Business-Consultancy";
+import { businessConsultancySchema } from "@/schema/services/business-consultancy";
 
 export const metadata = businessConsultancyMetadata;
 
 export default function BusinessConsultancyPage() {
     return (
         <div className="bg-surface text-text-main font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen dark:text-white transition-colors duration-300">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(businessConsultancySchema) }}
+            />
             {/* Liquid Light Immersive Background Canvas */}
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-[15%] -left-[10%] w-[70vw] h-[70vw] bg-linear-to-br from-slate-400/15 via-gray-400/10 to-zinc-400/15 rounded-full blur-3xl light-orb" />

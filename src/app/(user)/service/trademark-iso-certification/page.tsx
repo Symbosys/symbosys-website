@@ -1,10 +1,16 @@
 import { trademarkIsoCertificationMetadata } from "@/seo/services/Trademark-ISO-Certification";
+import { trademarkIsoCertificationSchema } from "@/schema/services/trademark-iso-certification";
+import { Metadata } from "next";
 
-export const metadata = trademarkIsoCertificationMetadata;
+export const metadata: Metadata = trademarkIsoCertificationMetadata;
 
 export default function TrademarkISOPage() {
     return (
         <div className="bg-surface text-text-main transition-colors duration-300 font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen dark:text-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(trademarkIsoCertificationSchema) }}
+            />
             {/* Liquid Light Immersive Background Canvas */}
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-[15%] -left-[10%] w-[70vw] h-[70vw] bg-linear-to-br from-purple-400/15 via-indigo-400/10 to-blue-400/15 rounded-full blur-3xl light-orb" />

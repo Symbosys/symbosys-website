@@ -1,11 +1,17 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
 import { blogNewsWebsiteMetadata } from "@/seo/products/blog-news-website";
+import { blogsNewsWebsiteSchema } from "@/schema/products/blogs-news-website";
 
 export const metadata = blogNewsWebsiteMetadata;
 
 export default function BlogsNewsWebsitePage() {
     return (
-        <ProductLayout
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(blogsNewsWebsiteSchema) }}
+            />
+            <ProductLayout
             title="Blogs & News Website"
             subtitle="by Symbosys"
             description="Blogs and news websites are dynamic digital platforms designed by Symbosys to publish and disseminate timely content, articles, and news updates. These websites are tailored to enhance reader engagement with features such as CMS, SEO optimization, and responsive design."
@@ -62,5 +68,6 @@ export default function BlogsNewsWebsitePage() {
                 }
             ]}
         />
+        </>
     );
 }

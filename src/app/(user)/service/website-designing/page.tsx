@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { websiteDesigningMetadata } from "@/seo/services/Website-Designing";
 import { websiteDesigningSchema } from "@/schema/services/website-designing";
+import { Metadata } from "next";
 
-export const metadata = websiteDesigningMetadata;
+export const metadata: Metadata = websiteDesigningMetadata;
 
 export default function WebsiteDesigningPage() {
     const webCategories = [

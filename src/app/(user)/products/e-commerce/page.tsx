@@ -1,4 +1,5 @@
 import { ProductLayout } from "@/components/user/products/ProductLayout";
+import { ecommerceProductSchema } from "@/schema/products/e-commerce";
 
 export const metadata = {
     title: "E-Commerce Website Development - Symbosys Technologies",
@@ -7,7 +8,12 @@ export const metadata = {
 
 export default function EcommerceProductPage() {
     return (
-        <ProductLayout
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(ecommerceProductSchema) }}
+            />
+            <ProductLayout
             title="E-Commerce Website"
             subtitle="by Symbosys"
             description="An E-Commerce website is a specialized online platform designed by Symbosys, a leading provider of custom e-commerce website development services. Our e-commerce websites enable businesses to sell products and services online, providing a secure and user-friendly experience for customers. With features like responsive design, integrated payment gateways, and SEO optimization, Symbosys ensures your e-commerce platform meets your business needs and drives sales."
@@ -81,6 +87,7 @@ export default function EcommerceProductPage() {
                 }
             ]}
         />
+        </>
     );
 }
 

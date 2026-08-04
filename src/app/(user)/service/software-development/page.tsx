@@ -1,10 +1,15 @@
 import { softwareDevelopmentMetadata } from "@/seo/services/Software-Development";
+import { softwareDevelopmentSchema } from "@/schema/services/software-development";
 
 export const metadata = softwareDevelopmentMetadata;
 
 export default function SoftwareDevelopmentPage() {
     return (
         <div className="bg-surface text-text-main font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen dark:text-white transition-colors duration-300">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareDevelopmentSchema) }}
+            />
             {/* Liquid Light Immersive Background Canvas */}
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-[15%] -left-[10%] w-[70vw] h-[70vw] bg-linear-to-br from-emerald-400/15 via-teal-400/10 to-cyan-400/15 rounded-full blur-3xl light-orb" />

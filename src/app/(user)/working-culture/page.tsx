@@ -8,8 +8,9 @@ import {
 } from "@/components/user/working-culture";
 import { ContactCTA } from "@/components/user/home";
 import { cultureSchema } from "@/schema/culture";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "Working Culture - Symbosys Technologies",
     description:
         "Discover the vibrant working culture at Symbosys Software Services. We foster innovation, collaboration, and continuous growth in a people-first environment.",

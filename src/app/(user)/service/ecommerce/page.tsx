@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ecommerceMetadata } from "@/seo/services/Ecommerce";
+import { ecommerceServiceSchema } from "@/schema/services/ecommerce";
 
 export const metadata = ecommerceMetadata;
 
@@ -27,6 +28,10 @@ export default function EcommercePage() {
 
     return (
         <div className="bg-surface text-text-main font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen dark:text-white transition-colors duration-300">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(ecommerceServiceSchema) }}
+            />
             {/* Liquid Light Immersive Background Canvas */}
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-[15%] -left-[10%] w-[70vw] h-[70vw] bg-linear-to-br from-amber-400/15 via-orange-400/10 to-yellow-400/15 rounded-full blur-3xl light-orb" />

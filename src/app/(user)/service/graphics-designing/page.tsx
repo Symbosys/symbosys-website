@@ -1,11 +1,16 @@
 import Image from "next/image";
 import { graphicsDesigningMetadata } from "@/seo/services/Graphics-Designing";
+import { graphicsDesigningSchema } from "@/schema/services/graphics-designing";
 
 export const metadata = graphicsDesigningMetadata;
 
 export default function GraphicsDesigningPage() {
     return (
         <div className="bg-surface text-text-main font-sans antialiased selection:bg-brand/20 selection:text-brand relative overflow-x-hidden min-h-screen dark:text-white transition-colors duration-300">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(graphicsDesigningSchema) }}
+            />
             {/* Liquid Light Immersive Background Canvas */}
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-[15%] -left-[10%] w-[70vw] h-[70vw] bg-linear-to-br from-violet-400/15 via-fuchsia-400/10 to-cyan-400/15 rounded-full blur-3xl light-orb" />
