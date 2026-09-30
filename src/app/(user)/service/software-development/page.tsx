@@ -37,7 +37,7 @@ export default function SoftwareDevelopmentPage() {
                                 Software Development by Symbosys
                             </h1>
                             <p className="text-lg text-white/90 max-w-2xl leading-relaxed">
-                                At Symbosys, we are a leading software development company committed to delivering high-quality software development services that cater to the diverse needs of businesses across industries.
+                                At Symbosys, we are a software development company in Ranchi offering high-quality custom software development services for businesses across different industries.
                             </p>
                         </div>
                     </div>
