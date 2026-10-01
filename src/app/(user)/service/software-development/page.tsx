@@ -49,8 +49,15 @@ export default function SoftwareDevelopmentPage() {
                     {/* Introduction */}
                     <div className="glass-card rounded-3xl p-8 md:p-12 mb-12">
                         <p className="text-lg text-text-muted dark:text-gray-300 leading-relaxed">
-                            With a team of skilled software developers and engineers, we offer end-to-end solutions that include custom software design, development, and maintenance. We aim to help businesses streamline operations, improve efficiency, and achieve their objectives with tailored software solutions.
-                        </p>
+    With a team of skilled software developers and engineers, we offer end-to-end solutions that include custom software design, development, and maintenance. We aim to help businesses streamline operations, improve efficiency, and achieve their objectives with tailored software solutions. For website designing and development, explore our{" "}
+    <Link
+        href="/service/website-designing"
+        className="text-brand font-semibold hover:underline"
+    >
+        Website Designing & Development
+    </Link>{" "}
+    services.
+</p>
                     </div>
 
                     {/* ERP Systems Grid */}
