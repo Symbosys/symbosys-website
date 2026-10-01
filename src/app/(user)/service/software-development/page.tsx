@@ -1,6 +1,7 @@
 import { softwareDevelopmentMetadata } from "@/seo/services/Software-Development";
 import { softwareDevelopmentSchema } from "@/schema/services/software-development";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = softwareDevelopmentMetadata;
 
@@ -164,9 +165,12 @@ export default function SoftwareDevelopmentPage() {
                         <p className="text-text-muted mb-8 max-w-2xl mx-auto dark:text-gray-300">
                             With a focus on innovation and excellence, Symbosys stands out as a leading name in software development in India. Contact us today to discuss your project.
                         </p>
-                        <button className="px-8 py-4 rounded-full bg-linear-to-r from-emerald-600 via-teal-600 to-emerald-600 text-white font-bold shadow-xl shadow-emerald-500/30 hover:shadow-2xl hover:shadow-teal-500/40 hover:scale-105 transition-all duration-300 light-shimmer">
-                            Start Your Project
-                        </button>
+                        <Link
+    href="/contact"
+    className="inline-block px-8 py-4 rounded-full bg-linear-to-r from-emerald-600 via-teal-600 to-emerald-600 text-white font-bold shadow-xl shadow-emerald-500/30 hover:shadow-2xl hover:shadow-teal-500/40 hover:scale-105 transition-all duration-300 light-shimmer"
+>
+    Start Your Project
+</Link>
                     </div>
                 </section>
             </main>
