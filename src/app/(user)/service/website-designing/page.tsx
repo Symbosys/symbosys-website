@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { websiteDesigningMetadata } from "@/seo/services/Website-Designing";
 import { websiteDesigningSchema } from "@/schema/services/website-designing";
 import { Metadata } from "next";
@@ -93,12 +94,12 @@ export default function WebsiteDesigningPage() {
                                 <span className="material-symbols-outlined text-white">web</span>
                                 <span className="text-sm font-semibold text-white uppercase tracking-widest">Web Development</span>
                             </div>
-                            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 text-liquid-glow max-w-3xl">
-                                Bespoke Website Design and Strategic Development
-                            </h1>
-                            <p className="text-lg text-white/90 max-w-2xl leading-relaxed">
-                                Symbosys Technologies is Ranchi's premier digital architect, specializing in high-performance web solutions that propel modern businesses into the future.
-                            </p>
+                          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 text-liquid-glow max-w-3xl">
+    Website Development Company in Ranchi
+</h1>
+                          <p className="text-lg text-white/90 max-w-2xl leading-relaxed">
+    Symbosys is a website development company in Ranchi offering responsive business websites, e-commerce websites and custom web solutions for businesses.
+</p>
                         </div>
                     </div>
                 </section>
@@ -206,9 +207,12 @@ export default function WebsiteDesigningPage() {
                         <p className="text-text-muted mb-8 max-w-2xl mx-auto dark:text-gray-300">
                             We are dedicated to architecting digital platforms that prioritize your users' needs while accelerating your business growth. Let's build something extraordinary together.
                         </p>
-                        <button className="px-8 py-4 rounded-full bg-linear-to-r from-violet-600 via-blue-600 to-violet-600 text-white font-bold shadow-xl shadow-violet-500/30 hover:shadow-2xl hover:shadow-blue-500/40 hover:scale-105 transition-all duration-300 light-shimmer">
-                            Start Your Project
-                        </button>
+                       <Link
+    href="/contact"
+    className="inline-block px-8 py-4 rounded-full bg-linear-to-r from-violet-600 via-blue-600 to-violet-600 text-white font-bold shadow-xl shadow-violet-500/30 hover:shadow-2xl hover:shadow-blue-500/40 hover:scale-105 transition-all duration-300 light-shimmer"
+>
+    Start Your Project
+</Link>
                     </div>
                 </section>
             </main>
