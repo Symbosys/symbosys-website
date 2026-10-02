@@ -94,8 +94,8 @@ export default function WebsiteDesigningPage() {
                                 <span className="material-symbols-outlined text-white">web</span>
                                 <span className="text-sm font-semibold text-white uppercase tracking-widest">Web Development</span>
                             </div>
-                          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 text-liquid-glow max-w-3xl">
-    Website Development Company in Ranchi
+                        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 text-liquid-glow max-w-3xl">
+    Website Development by Symbosys
 </h1>
                           <p className="text-lg text-white/90 max-w-2xl leading-relaxed">
     Symbosys is a website development company in Ranchi offering responsive business websites, e-commerce websites and custom web solutions for businesses.
